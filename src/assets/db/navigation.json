@@ -1,9 +1,31 @@
 [{
-  "label": "home",
-  "sectionId": "home",
-  "id": "home"
-}, {
-  "label": "resume",
-  "sectionId": "resume",
-  "id": "resume"
-}]
+    "label": "home",
+    "sectionId": "home",
+    "id": "home"
+  }, {
+    "label": "resume",
+    "sectionId": "resume",
+    "id": "resume"
+  }, {
+    "label": "portafolio",
+    "sectionId": "portafolio",
+    "id": "portafolio"
+  }, {
+    "label": "resume",
+    "sectionId": "resume",
+    "id": "resume"
+  }, {
+    "label": "testimonials",
+    "sectionId": "testimonials",
+    "id": "testimonials"
+  },
+  {
+    "label": "blog",
+    "sectionId": "blog",
+    "id": "blog"
+  }, {
+    "label": "contact",
+    "sectionId": "contact",
+    "id": "contact"
+  }
+]

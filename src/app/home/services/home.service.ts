@@ -14,4 +14,8 @@ export class HomeService {
   getNavigation(): Observable<INavigation[]> {
     return this.http.get<any>(this.url + 'navigation.json');
   }
+
+  getResume(): Observable<any> {
+    return this.http.get<any>(this.url + 'resume.json');
+  }
 }

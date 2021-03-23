@@ -9,12 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   navigation: INavigation[] = [];
+  resume: any;
 
   constructor(private homeService: HomeService) {}
 
   ngOnInit(): void {
     this.homeService.getNavigation().subscribe((data) => {
       this.navigation = data;
+    });
+    this.homeService.getResume().subscribe((data) => {
+      this.resume = data;
     });
   }
 }
