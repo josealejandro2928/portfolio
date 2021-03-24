@@ -1,7 +1,9 @@
 // ---------------Material Themin -----------------///
 @import "~@angular/material/theming";
 @include mat-core();
-$font_family: Roboto, "Helvetica Neue", sans-serif;
+$font_family: Roboto,
+"Helvetica Neue",
+sans-serif;
 $custom-typography: mat-typography-config($font-family: $font_family);
 // Override the typography in the core CSS.
 @include mat-core($custom-typography);
@@ -30,7 +32,7 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
   $theme-main-300: mat-color($custom-primary, 300);
   $theme-main-100: mat-color($custom-primary, 100);
   $theme-accent: $accent-color;
-  $color: rgba(0,0,0,.87);
+  $color: rgba(0, 0, 0, .87);
   ///////////////////////////////////////
 
   .color-main-theme {
@@ -39,6 +41,33 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
 
   .color-accent-theme {
     color: $theme-accent !important;
+  }
+
+
+  .navbar.active {
+    background-color: #fff;
+    color: $theme-main;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .21);
+
+    .navbar-layout {
+      margin-top: 0px !important;
+    }
+
+    .navItem {
+      color: $theme-main;
+    }
+
+    .navItem.active {
+      &::before {
+        background-color: $theme-main;
+      }
+    }
+
+  }
+
+  .btn-theme {
+    background-color: $theme-main !important;
+    color: #fff !important;
   }
 
 }
@@ -60,6 +89,7 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
   $theme-main-100: mat-color($custom-primary, 100);
   $theme-accent: $accent-color;
   $color: #fff;
+
   ///////////////////////////////////////
   .color-main-theme {
     color: $theme-main !important;
@@ -67,6 +97,36 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
 
   .color-accent-theme {
     color: $theme-accent !important;
+  }
+
+  .navbar.active {
+    background-color: #212121;
+    color: $theme-main;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .21);
+
+    .navbar-layout {
+      margin-top: 0px !important;
+    }
+
+    .navItem {
+      color: $theme-main;
+    }
+
+    .navItem.active {
+      &::before {
+        background-color: $theme-main;
+      }
+    }
+
+  }
+
+  .sec-padding {
+    color: #fff !important;
+  }
+
+  .btn-theme {
+    background-color: $theme-main !important;
+    color: #fff !important;
   }
 
 }

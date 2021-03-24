@@ -4,9 +4,9 @@ import {
   OnInit,
   ChangeDetectionStrategy,
   Input,
-  AfterContentInit,
   AfterViewInit,
   ElementRef,
+  ChangeDetectorRef,
 } from '@angular/core';
 
 @Component({
@@ -22,17 +22,65 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   @Input() set _navigation(value) {
     if (value) {
       this.navigation = value;
+      if (this.navigation.length) {
+        this.navigation[0].active = true;
+      }
     }
   }
   elRef: HTMLElement;
-
-  constructor(private _elRef: ElementRef) {
+  darkModeActivated = false;
+  constructor(private _elRef: ElementRef, private chRef: ChangeDetectorRef) {
     this.elRef = this._elRef.nativeElement;
+    this.darkModeActivated =
+      localStorage.getItem('darkModeActivated') == 'true';
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.chooseTheme();
+    const navbar: any = this.elRef.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 25) {
+        navbar.classList.add('active');
+      } else {
+        navbar.classList.remove('active');
+      }
+      this.checkNavItems();
+      this.chRef.markForCheck();
+    });
+  }
 
   ngAfterViewInit(): void {
     this.navBarItems = this.elRef.querySelectorAll('.navItem');
+  }
+
+  checkNavItems() {
+    for (const item of this.navigation) {
+      const section = document.getElementById(item.sectionId);
+      if (section) {
+        const top = section.getBoundingClientRect().top;
+        const bodyHeigt = document.body.offsetHeight;
+        if (bodyHeigt / 2 > top - 150 && top >= 0) {
+          item.active = true;
+        } else {
+          item.active = false;
+        }
+      }
+    }
+  }
+
+  themeToogle() {
+    this.darkModeActivated = !this.darkModeActivated;
+    localStorage.setItem(
+      'darkModeActivated',
+      this.darkModeActivated ? 'true' : 'false'
+    );
+    this.chooseTheme();
+  }
+  chooseTheme() {
+    if (this.darkModeActivated) {
+      document.body.className = 'mat-typography darkThemeClass';
+    } else {
+      document.body.className = 'mat-typography lightThemeClass';
+    }
   }
 }

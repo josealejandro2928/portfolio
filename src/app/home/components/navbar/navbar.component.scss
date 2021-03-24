@@ -13,8 +13,8 @@
   transition: all .5s;
   color: white;
   font-family: 'Roboto Mono', monospace;
-
 }
+
 
 .navbar-layout {
   height: 100%;
@@ -24,9 +24,11 @@
   column-gap: 4rem;
   margin-top: 40px;
   overflow-x: auto;
+  transition: all .35s ease;
+
   @media(max-width:800px) {
-   margin-top: 8px;
-   column-gap: 2.5rem;
+    margin-top: 8px;
+    column-gap: 2.5rem;
   }
 }
 
@@ -37,23 +39,34 @@
   color: #fff;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
 
-  &::after {
-    content: "";
+  &::before {
     content: "";
     position: absolute;
-    width: 8px;
-    height: 2px;
-    bottom: 2px;
-    right: -8px;
-    opacity: 0;
-    transition: background .3s;
+    height: 3px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all .5s;
+  }
+}
+
+.navItem.active {
+  &::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all .5s;
   }
 }
 
 .navItem:hover {
-  &::after {
-    background: white;
-    opacity: 1;
-  }
+ opacity: .5;
 }
+

@@ -15,12 +15,13 @@ export class WriteLetterDirective implements AfterViewInit, OnDestroy {
   _observer: IntersectionObserver;
   text = '';
   @Input() time = 150;
+  @Input() delay = 0;
   constructor(private _elRef: ElementRef) {
     this.elRef = this._elRef.nativeElement;
   }
 
   ngAfterViewInit(): void {
-    this.text = this.elRef.innerText + '_';
+    this.text = this.elRef.innerText;
     this.elRef.innerHTML = `<span>${this.text.substring(0, 1)}</span>`;
     const options = {
       rootMargin: '0px',
@@ -44,14 +45,17 @@ export class WriteLetterDirective implements AfterViewInit, OnDestroy {
   showLetters = () => {
     let i = 1;
 
-    const c = setInterval(() => {
-      if (i == this.text.length) {
-        clearInterval(c);
-        return;
-      }
-      const span = document.createElement('span');
-      span.innerText = this.text[i++];
-      this.elRef.appendChild(span);
-    }, this.time);
+    let x = setTimeout(() => {
+      const c = setInterval(() => {
+        if (i == this.text.length) {
+          clearInterval(c);
+          return;
+        }
+        const span = document.createElement('span');
+        span.innerText = this.text[i++];
+        this.elRef.appendChild(span);
+      }, this.time);
+      clearTimeout(x);
+    }, this.delay);
   };
 }

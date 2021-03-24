@@ -1,15 +1,14 @@
 <div id="header" class="navbar">
   <div class="container">
     <div class="navbar-layout" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="gappx">
-      <div class="navItem" *ngFor="let item of navigation">
+      <a [href]="'#'+item.sectionId" class="navItem" [ngClass]="{'active': item.active}"
+        *ngFor="let item of navigation">
         {{item.label | translate}}
-      </div>
+      </a>
+      <button  (click)="themeToogle()" mat-mini-fab class="btn-theme">
+        <mat-icon matTooltip="{{'Enable dark mode'|translate}}" *ngIf="!darkModeActivated" class="mat-18">dark_mode</mat-icon>
+        <mat-icon matTooltip="{{'Enable light mode'|translate}}" *ngIf="darkModeActivated" class="mat-18">light_mode</mat-icon>
+      </button>
     </div>
   </div>
-
-  <div>
-
-  </div>
-
-
 </div>
