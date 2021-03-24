@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   navigation: INavigation[] = [];
-  resume: any;
+  hello: any;
 
   constructor(private homeService: HomeService) {}
 
@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
     this.homeService.getNavigation().subscribe((data) => {
       this.navigation = data;
     });
-    this.homeService.getResume().subscribe((data) => {
-      this.resume = data;
+    this.homeService.getHello().subscribe((data) => {
+      this.hello = data;
     });
   }
 }

@@ -8,39 +8,39 @@
 
       <section fxFlex class="info">
         <p class="name">
-          {{resume?.name }}
-          {{resume?.lastName }}
+          {{hello?.name }}
+          {{hello?.lastName }}
         </p>
 
         <p class="occupation">
-          {{resume?.occupation |translate }}
+          {{hello?.occupation |translate }}
         </p>
 
         <br>
         <ul class="contact-info">
           <li>
             <span class="item">{{'age'}}:</span>
-            <span class="value">{{resume?.age}}</span>
+            <span class="value">{{hello?.age}}</span>
           </li>
           <li>
             <span class="item">{{'phone'}}:</span>
-            <a [href]="'tel:'+resume?.phone" class="value">{{resume?.phone}}</a>
+            <a [href]="'tel:'+hello?.phone" class="value">{{hello?.phone}}</a>
           </li>
           <li>
             <span class="item">{{'email'}}:</span>
-            <a [href]="'mailto:'+resume?.email" class="value">{{resume?.email}}</a>
+            <a [href]="'mailto:'+hello?.email" class="value">{{hello?.email}}</a>
 
           </li>
           <li>
             <span class="item">{{'address'}}:</span>
-            <span class="value">{{resume?.address}}</span>
+            <span class="value">{{hello?.address}}</span>
           </li>
 
         </ul>
 
         <br>
         <p class="social">
-          <a *ngFor="let social of resume?.socials" [href]="social.url" target="_blank"><i
+          <a *ngFor="let social of hello?.socials" [href]="social.url" target="_blank"><i
               [class]="social.class"></i></a>
         </p>
 
@@ -53,9 +53,9 @@
   <div class="sec-padding container">
 
     <h1 writeLetter time="150" class="title">
-      {{'Resume'|translate}}
+      {{'Hi'|translate}}
     </h1>
-    <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="resume?.resumeText | safeHtml |translate">
+    <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="hello?.resumeText | safeHtml |translate">
 
     </div>
     <br>

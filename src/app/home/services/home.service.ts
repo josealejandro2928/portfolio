@@ -15,7 +15,7 @@ export class HomeService {
     return this.http.get<any>(this.url + 'navigation.json');
   }
 
-  getResume(): Observable<any> {
-    return this.http.get<any>(this.url + 'resume.json');
+  getHello(): Observable<any> {
+    return this.http.get<any>(this.url + 'hello.json');
   }
 }

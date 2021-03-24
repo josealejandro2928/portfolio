@@ -4,16 +4,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home/home.component';
-import { ResumeComponent } from './components/resume/resume.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { DirectivesModule } from '../common/shared/directives/directives/directives.module';
+import { HelloComponent } from './components/hello/hello.component';
 
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent, ResumeComponent],
+  declarations: [HomeComponent, NavbarComponent, HelloComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
