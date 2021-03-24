@@ -8,6 +8,10 @@
   margin-bottom: 40px;
   height: 480px;
   font-family: 'Roboto Mono', monospace;
+
+  @media(max-width:599px) {
+    margin-bottom: 0px;
+  }
 }
 
 .main-header * {
@@ -47,11 +51,60 @@
     margin-top: 64px;
 
     .name {
-      font-size: 44px;
+      font-size: 32px;
       line-height: 50px;
       font-weight: 700;
       margin-top: 40px;
       margin-bottom: 10px
+    }
+
+    .occupation {
+      font-size: 16px;
+    }
+
+    .contact-info {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+
+      li {
+        padding: 8px 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .item {
+        text-transform: uppercase;
+        flex: 1 1 100px;
+        max-width: 100px;
+        font-weight: 800;
+        opacity: .6;
+        font-size: 16px;
+      }
+
+      .value {
+        font-size: 16px;
+        text-decoration: none;
+        color: inherit;
+        flex: 1 1;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+    }
+
+    .social {
+      a {
+        font-size: 24px;
+        margin-right: 15px;
+        opacity: .4;
+        color: #fff;
+
+      }
+
     }
   }
 
@@ -64,7 +117,6 @@
     }
 
     .info {
-      // margin-top: 40px;
       .name {
         font-size: 32px;
         line-height: normal;

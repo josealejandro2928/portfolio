@@ -11,10 +11,6 @@
     "sectionId": "portafolio",
     "id": "portafolio"
   }, {
-    "label": "resume",
-    "sectionId": "resume",
-    "id": "resume"
-  }, {
     "label": "testimonials",
     "sectionId": "testimonials",
     "id": "testimonials"

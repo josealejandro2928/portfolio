@@ -12,10 +12,59 @@
           {{resume?.lastName }}
         </p>
 
+        <p class="occupation">
+          {{resume?.occupation |translate }}
+        </p>
+
+        <br>
+        <ul class="contact-info">
+          <li>
+            <span class="item">{{'age'}}:</span>
+            <span class="value">{{resume?.age}}</span>
+          </li>
+          <li>
+            <span class="item">{{'phone'}}:</span>
+            <a [href]="'tel:'+resume?.phone" class="value">{{resume?.phone}}</a>
+          </li>
+          <li>
+            <span class="item">{{'email'}}:</span>
+            <a [href]="'mailto:'+resume?.email" class="value">{{resume?.email}}</a>
+
+          </li>
+          <li>
+            <span class="item">{{'address'}}:</span>
+            <span class="value">{{resume?.address}}</span>
+          </li>
+
+        </ul>
+
+        <br>
+        <p class="social">
+          <a *ngFor="let social of resume?.socials" [href]="social.url" target="_blank"><i
+              [class]="social.class"></i></a>
+        </p>
+
       </section>
 
     </div>
+  </div>
+
+  <br fxHide.xs><br fxHide.xs>
+  <div class="sec-padding container">
+
+    <h1 class="title">
+      {{'Hi'|translate}}
+    </h1>
+    <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="resume?.resumeText | safeHtml |translate">
+
+    </div>
+    <br>
+    <a href="../../../../assets/archives/cv-jalejandro.pdf" download style="padding: 6px 16px !important;border-radius: 24px !important;" mat-raised-button color="primary">
+      <mat-icon class="mat-18">download</mat-icon>
+      {{'Download CV'|translate}}
+    </a>
 
   </div>
+  <hr>
 
 </div>

@@ -14,6 +14,7 @@ body {
   margin: 0px;
 }
 
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -23,3 +24,30 @@ body {
 @import './assets/scss/helpers/helpers';
 @import './assets/scss/theme/variables';
 @import './assets/scss/theme/material-custom-styles.scss';
+
+.sec-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #555555;
+  font-size: 18px !important;
+
+  .title {
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .innerHtml {
+    font-size: 18px !important;
+    line-height: 30px !important;
+    font-family: Roboto, "Helvetica Neue", sans-serif !important;
+  }
+
+
+  @media(max-width:599px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+}

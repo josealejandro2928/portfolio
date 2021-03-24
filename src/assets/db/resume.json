@@ -1,5 +1,20 @@
 {
   "name": "José Alejandro",
   "lastName": "Concepción Álvarez",
-  "occupation": "Full Stack Developer, Automatic Engineer"
+  "occupation": "Full Stack Developer, Automatic Engineer",
+  "age": 25,
+  "email": "jalejandroc2928@gmail.com",
+  "phone": "+5353613095",
+  "address": "39 #3022 e/ 30 y 34, La Sierra, Playa, La Habana, Cuba",
+  "socials": [{
+    "url": "https://www.linkedin.com/in/jalejandroc/",
+    "class": "fab fa-linkedin"
+  }, {
+    "url": "https://github.com/josealejandro2928",
+    "class": "fab fa-github"
+  }, {
+    "url": "https://gitlab.com/jalejandro2928",
+    "class": "fab fa-gitlab"
+  }],
+  "resumeText": "<p> I am Junior Web developer able to build a Web presence from the ground up - from concept, navigation,layout and programming to UX and SEO.Skilled at writing well - designed, testable and efficient code using current best practices in Web development.Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools. </p>"
 }
