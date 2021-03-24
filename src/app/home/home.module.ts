@@ -11,9 +11,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { DirectivesModule } from '../common/shared/directives/directives/directives.module';
 import { HelloComponent } from './components/hello/hello.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent, HelloComponent],
+  declarations: [HomeComponent, NavbarComponent, HelloComponent, ResumeComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
