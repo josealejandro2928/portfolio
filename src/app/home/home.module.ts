@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { DirectivesModule } from '../common/shared/directives/directives/directives.module';
 
 @NgModule({
   declarations: [HomeComponent, NavbarComponent, ResumeComponent],
@@ -21,7 +22,8 @@ import { MatIconModule } from '@angular/material/icon';
     FlexLayoutModule,
     PipesModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    DirectivesModule,
   ],
 })
 export class HomeModule {}

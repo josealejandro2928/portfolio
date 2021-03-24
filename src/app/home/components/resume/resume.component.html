@@ -52,14 +52,15 @@
   <br fxHide.xs><br fxHide.xs>
   <div class="sec-padding container">
 
-    <h1 class="title">
-      {{'Hi'|translate}}
+    <h1 writeLetter time="150" class="title">
+      {{'Resume'|translate}}
     </h1>
     <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="resume?.resumeText | safeHtml |translate">
 
     </div>
     <br>
-    <a href="../../../../assets/archives/cv-jalejandro.pdf" download style="padding: 6px 16px !important;border-radius: 24px !important;" mat-raised-button color="primary">
+    <a href="../../../../assets/archives/cv-jalejandro.pdf" download
+      style="padding: 6px 16px !important;border-radius: 24px !important;" mat-raised-button color="primary">
       <mat-icon class="mat-18">download</mat-icon>
       {{'Download CV'|translate}}
     </a>
