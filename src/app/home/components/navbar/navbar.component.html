@@ -1,14 +1,50 @@
 <div id="header" class="navbar">
   <div class="container">
-    <div class="navbar-layout" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="gappx">
+    <div fxHide.xs class="navbar-layout" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="gappx">
       <a [href]="'#'+item.sectionId" class="navItem" [ngClass]="{'active': item.active}"
         *ngFor="let item of navigation">
         {{item.label | translate}}
       </a>
-      <button  (click)="themeToogle()" mat-mini-fab class="btn-theme">
-        <mat-icon matTooltip="{{'Enable dark mode'|translate}}" *ngIf="!darkModeActivated" class="mat-18">dark_mode</mat-icon>
-        <mat-icon matTooltip="{{'Enable light mode'|translate}}" *ngIf="darkModeActivated" class="mat-18">light_mode</mat-icon>
+      <button (click)="themeToogle()" mat-mini-fab class="btn-theme">
+        <mat-icon matTooltip="{{'Enable dark mode'|translate}}" *ngIf="!darkModeActivated" class="mat-18">dark_mode
+        </mat-icon>
+        <mat-icon matTooltip="{{'Enable light mode'|translate}}" *ngIf="darkModeActivated" class="mat-18">light_mode
+        </mat-icon>
       </button>
     </div>
+    <div fxHide fxShow.xs class="navbar-layout" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="gappx">
+      <button (click)="onToogleMenu()" mat-icon-button>
+        <mat-icon>menu
+        </mat-icon>
+
+      </button>
+
+      <div fxLayoutAlign="start center">
+        <button (click)="themeToogle()" mat-mini-fab class="btn-theme">
+          <mat-icon matTooltip="{{'Enable dark mode'|translate}}" *ngIf="!darkModeActivated" class="mat-18">dark_mode
+          </mat-icon>
+          <mat-icon matTooltip="{{'Enable light mode'|translate}}" *ngIf="darkModeActivated" class="mat-18">light_mode
+          </mat-icon>
+        </button>
+
+      </div>
+
+    </div>
   </div>
+</div>
+
+<div #menu class="menu-poput">
+  <div fxLayout="row" fxLayoutAlign="end start" fxLayoutGap="gappx">
+    <button (click)="onToogleMenu()" mat-icon-button>
+      <mat-icon>clear
+      </mat-icon>
+    </button>
+  </div>
+
+  <div fxLayout="column" fxLayoutAlign="center center" style="row-gap: 2rem;">
+    <a [href]="'#'+item.sectionId" class="navItem" style="padding: 8px;" [ngClass]="{'active': item.active}" *ngFor="let item of navigation">
+      {{item.label | translate}}
+    </a>
+  </div>
+
 </div>

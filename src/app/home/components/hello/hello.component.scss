@@ -34,6 +34,9 @@
   row-gap: 1rem;
   color: #fff;
   position: relative;
+  box-sizing: border-box;
+  // overflow-x: hidden;
+  max-width: 100%;
 
   img {
     border-radius: 5px;
@@ -45,6 +48,11 @@
     position: relative;
     top: 94px;
     width: 314px;
+    animation-name: fliterBlur;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
   }
 
   .info {
@@ -104,8 +112,10 @@
         color: #fff;
 
       }
-
     }
+
+    animation: fideIn 2s linear 1 forwards;
+
   }
 
   @media(max-width:800px) {
@@ -150,6 +160,26 @@
       }
     }
   }
+}
 
+@keyframes fliterBlur {
+  0% {
+    transform: scale(.2);
+    filter: blur(10px);
+  }
 
+  100% {
+    filter: blur(0px);
+    transform: scale(1);
+  }
+}
+
+@keyframes fideIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

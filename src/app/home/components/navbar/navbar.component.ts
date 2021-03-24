@@ -7,6 +7,7 @@ import {
   AfterViewInit,
   ElementRef,
   ChangeDetectorRef,
+  ViewChild,
 } from '@angular/core';
 
 @Component({
@@ -18,6 +19,7 @@ import {
 export class NavbarComponent implements OnInit, AfterViewInit {
   navigation: INavigation[] = [];
   navBarItems: any;
+  @ViewChild('menu', { static: false }) menu: ElementRef;
 
   @Input() set _navigation(value) {
     if (value) {
@@ -82,5 +84,9 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     } else {
       document.body.className = 'mat-typography lightThemeClass';
     }
+  }
+  onToogleMenu() {
+    this.menu.nativeElement.classList.toggle('active');
+    // console.log("🚀 ~ file: navbar.component.ts ~ line 90 ~ NavbarComponent ~ onToogleMenu ~ this.menu.nativeElement", this.menu.nativeElement)
   }
 }
