@@ -22,6 +22,10 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+:root {
+  --colorTheme: #1565c0;
+}
+
 @import '~ngx-toastr/toastr';
 @import './assets/scss/helpers/helpers';
 @import './assets/scss/theme/variables';

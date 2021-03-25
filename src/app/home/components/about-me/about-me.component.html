@@ -8,39 +8,39 @@
 
       <section fxFlex class="info">
         <p class="name">
-          {{hello?.name }}
-          {{hello?.lastName }}
+          {{about?.name }}
+          {{about?.lastName }}_
         </p>
 
         <p class="occupation">
-          {{hello?.occupation |translate }}
+          {{about?.occupation |translate }}
         </p>
 
         <br>
         <ul class="contact-info">
           <li>
             <span class="item">{{'age'}}:</span>
-            <span class="value">{{hello?.age}}</span>
+            <span class="value">{{about?.age}}</span>
           </li>
           <li>
             <span class="item">{{'phone'}}:</span>
-            <a [href]="'tel:'+hello?.phone" class="value">{{hello?.phone}}</a>
+            <a [href]="'tel:'+about?.phone" class="value">{{about?.phone}}</a>
           </li>
           <li>
             <span class="item">{{'email'}}:</span>
-            <a [href]="'mailto:'+hello?.email" class="value">{{hello?.email}}</a>
+            <a [href]="'mailto:'+about?.email" class="value">{{about?.email}}</a>
 
           </li>
           <li>
             <span class="item">{{'address'}}:</span>
-            <span class="value">{{hello?.address}}</span>
+            <span class="value">{{about?.address}}</span>
           </li>
 
         </ul>
 
         <br>
         <p class="social">
-          <a *ngFor="let social of hello?.socials" [href]="social.url" target="_blank"><i
+          <a *ngFor="let social of about?.socials" [href]="social.url" target="_blank"><i
               [class]="social.class"></i></a>
         </p>
 
@@ -53,9 +53,9 @@
 
 <section class="sec-padding container">
   <h1 writeLetter time="120" class="title">
-    {{'Hi_'|translate}}
+    {{'About me_'|translate}}
   </h1>
-  <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="hello?.resumeText | safeHtml |translate">
+  <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="about?.resumeText | safeHtml |translate">
 
   </div>
   <br>

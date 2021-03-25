@@ -1,0 +1,42 @@
+:host {
+  width: 100%;
+}
+
+.skill {
+  position: relative;
+  padding: 8px 4px;
+
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+    span {
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  .progress-bar {
+    position: absolute;
+    height: 6px;
+    display: flex;
+    overflow: hidden;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+    width: 100%;
+  }
+
+  .progress {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    //  border-radius: .25rem;
+    background-color: var(--colorTheme);
+    transition: width .6s linear;
+  }
+
+}

@@ -9,19 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   navigation: INavigation[] = [];
-  hello: any;
+  about: any;
   resume: any;
 
   constructor(private homeService: HomeService) {}
 
   async ngOnInit() {
-    const [nav, hi, res] = await Promise.all([
+    const [nav, about, res] = await Promise.all([
       this.homeService.getNavigation().toPromise(),
       this.homeService.getHello().toPromise(),
       this.homeService.getResume().toPromise(),
     ]);
     this.navigation = nav;
-    this.hello = hi;
+    this.about = about;
     this.resume = res;
   }
 }

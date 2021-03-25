@@ -12,15 +12,19 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { DirectivesModule } from '../common/shared/directives/directives/directives.module';
-import { HelloComponent } from './components/hello/hello.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { SkillComponent } from './components/skill/skill.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     NavbarComponent,
-    HelloComponent,
+    AboutMeComponent,
     ResumeComponent,
+    SkillComponent,
+    PortfolioComponent,
   ],
   imports: [
     CommonModule,
@@ -33,7 +37,7 @@ import { ResumeComponent } from './components/resume/resume.component';
     MatIconModule,
     DirectivesModule,
     MatDividerModule,
-    MatTooltipModule
+    MatTooltipModule,
   ],
 })
 export class HomeModule {}

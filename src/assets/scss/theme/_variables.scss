@@ -70,6 +70,12 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
     color: #fff !important;
   }
 
+  .resume-list-item {
+    &::before {
+      background-color: #fff;
+    }
+  }
+
 }
 
 .darkThemeClass {
@@ -127,6 +133,12 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
   .btn-theme {
     background-color: $theme-main !important;
     color: #fff !important;
+  }
+
+  .resume-list-item {
+    &::before {
+      background-color: #323232;
+    }
   }
 
 }

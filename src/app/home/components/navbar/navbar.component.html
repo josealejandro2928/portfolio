@@ -42,7 +42,7 @@
   </div>
 
   <div fxLayout="column" fxLayoutAlign="center center" style="row-gap: 2rem;">
-    <a [href]="'#'+item.sectionId" class="navItem" style="padding: 8px;" [ngClass]="{'active': item.active}" *ngFor="let item of navigation">
+    <a (click)="this.onToogleMenu()" [href]="'#'+item.sectionId" class="navItem" style="padding: 8px;" [ngClass]="{'active': item.active}" *ngFor="let item of navigation">
       {{item.label | translate}}
     </a>
   </div>

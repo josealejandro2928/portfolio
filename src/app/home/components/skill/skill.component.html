@@ -1,0 +1,9 @@
+<div class="skill">
+  <div class="labels">
+    <span>{{skill?.name}}</span>
+    <span>{{skill?.value}}%</span>
+  </div>
+  <div class="progress-bar">
+    <div class="progress" [style.width]="skill?.value + '%'"></div>
+  </div>
+</div>

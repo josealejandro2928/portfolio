@@ -3,9 +3,45 @@
   <h1 writeLetter time="120" class="title">
     {{'Resume_'|translate}}
   </h1>
-  <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="resume?.initialText | safeHtml |translate">
+  <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="resume?.initialText | safeHtml |translate"></div>
+  <br>
 
-  </div>
+  <section class="resume-list">
+    <p class="resume-list-title">{{'Education'|translate}}</p>
+
+    <div *ngFor="let item of education" class="resume-list-item">
+      <p class="item-title">{{item.title}}</p>
+      <p class="item-date">{{item.startDate}} - {{item.endDate}}</p>
+
+      <div class="text" [innerHTML]="item?.description | safeHtml |translate"></div>
+
+    </div>
+
+    <p class="resume-list-title">{{'Professional work experience'|translate}}</p>
+    <div *ngFor="let item of professionalEmployment" class="resume-list-item">
+      <p class="item-title">{{item.title}}</p>
+      <p class="item-date">{{item.startDate}} - {{item.endDate}}</p>
+      <div class="text" [innerHTML]="item?.description | safeHtml |translate"></div>
+    </div>
+
+    <p class="resume-list-title">{{'Vocational work experience'|translate}}</p>
+    <div *ngFor="let item of vocationalEmployment" class="resume-list-item">
+      <p class="item-title">{{item.title}}</p>
+      <p class="item-date">{{item.startDate}} - {{item.endDate}}</p>
+      <div class="text" [innerHTML]="item?.description | safeHtml |translate"></div>
+    </div>
+
+    <p class="resume-list-title">{{'General skills'|translate}}</p>
+    <div style="gap:2rem" fxLayout="row wrap" class="w-100" fxLayoutAlign="space-between start" fxLayoutGap="gappx">
+      <app-skill *ngFor="let item of skills" fxFlex="45" fxFlex.lt-md="100" [_skill]="item"></app-skill>
+
+    </div>
+
+
+
+
+  </section>
+
 
 
 </section>
