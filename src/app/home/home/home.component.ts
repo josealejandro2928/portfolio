@@ -12,9 +12,12 @@ export class HomeComponent implements OnInit {
   about: any;
   resume: any;
 
-  constructor(private homeService: HomeService) {}
+  constructor(private homeService: HomeService) {
+
+  }
 
   async ngOnInit() {
+
     const [nav, about, res] = await Promise.all([
       this.homeService.getNavigation().toPromise(),
       this.homeService.getHello().toPromise(),
@@ -24,4 +27,6 @@ export class HomeComponent implements OnInit {
     this.about = about;
     this.resume = res;
   }
+
+
 }

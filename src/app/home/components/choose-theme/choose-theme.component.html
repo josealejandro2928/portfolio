@@ -1,0 +1,15 @@
+<div class="choose-theme" [ngClass]="{'activated': selectStyle}">
+  <div (click)="onSelectStyle()" class="style-selector">
+    <i class="fas fa-adjust"></i>
+  </div>
+  <div class="themes">
+    <div (click)="themeToogle('light')" matTooltip="{{'Enable light mode'|translate}}" class="theme white"
+      [ngClass]="{'selected':!darkModeActivated}">
+    </div>
+    <div (click)="themeToogle('dark')" matTooltip="{{'Enable dark mode'|translate}}" class="theme dark"
+      [ngClass]="{'selected':darkModeActivated}">
+    </div>
+  </div>
+
+
+</div>

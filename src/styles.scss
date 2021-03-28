@@ -22,14 +22,12 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-:root {
-  --colorTheme: #1565c0;
-}
-
 @import '~ngx-toastr/toastr';
 @import './assets/scss/helpers/helpers';
 @import './assets/scss/theme/variables';
 @import './assets/scss/theme/material-custom-styles.scss';
+// @import '../node_modules/swiper/css/swiper.min.css';
+@import '~swiper/swiper-bundle';
 
 .sec-padding {
   padding-top: 60px;
@@ -54,6 +52,17 @@ body {
   @media(max-width:599px) {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+
+}
+
+:root {
+  .lightThemeClass {
+    --colorTheme: #1565c0;
+  }
+
+  .darkThemeClass {
+    --colorTheme: #03a9f4;
   }
 
 }

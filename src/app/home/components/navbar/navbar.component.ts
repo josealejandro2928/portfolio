@@ -30,15 +30,12 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     }
   }
   elRef: HTMLElement;
-  darkModeActivated = false;
+
   constructor(private _elRef: ElementRef, private chRef: ChangeDetectorRef) {
     this.elRef = this._elRef.nativeElement;
-    this.darkModeActivated =
-      localStorage.getItem('darkModeActivated') == 'true';
   }
 
   ngOnInit(): void {
-    this.chooseTheme();
     const navbar: any = this.elRef.querySelector('.navbar');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 25) {
@@ -67,22 +64,6 @@ export class NavbarComponent implements OnInit, AfterViewInit {
           item.active = false;
         }
       }
-    }
-  }
-
-  themeToogle() {
-    this.darkModeActivated = !this.darkModeActivated;
-    localStorage.setItem(
-      'darkModeActivated',
-      this.darkModeActivated ? 'true' : 'false'
-    );
-    this.chooseTheme();
-  }
-  chooseTheme() {
-    if (this.darkModeActivated) {
-      document.body.className = 'mat-typography darkThemeClass';
-    } else {
-      document.body.className = 'mat-typography lightThemeClass';
     }
   }
   onToogleMenu() {

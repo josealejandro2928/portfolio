@@ -1,0 +1,44 @@
+<div class="dialog-content-wrapper">
+
+    <div id="toolbarHeader">
+        <span></span>
+        <button mat-icon-button (click)="dialogRef.close()" aria-label="Close dialog">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+
+    <div mat-dialog-content>
+        <div class="popup" fxFlexFill fxLayout="column" fxLayoutAlign="start center">
+            <div class="swiper-container" [swiper]="configGallery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" *ngFor="let slide of files">
+                        <ng-container *ngIf="slide.type == 'image'">
+                            <div class="slide-item">
+                                <img class="imageNormal" ngp-lazy ngp-threshold="0.1" src="{{apiUrl + slide.file}}" alt="{{slide.file}}">
+                            </div>
+                        </ng-container>
+                        <ng-container *ngIf="slide.type == 'video'">
+                            <div class="slide-item swiper-lazy">
+                                <video controls class="videoNormal">
+                                    <source [src]="apiUrl + slide.file + '#t=1'" type="video/mp4">
+                                </video>
+                            </div>
+                        </ng-container>
+                        <ng-container *ngIf="slide.type == 'externalMedia'">
+                            <div class="slide-item swiper-lazy">
+                                <iframe class="videoIFrame" *ngIf="slide.type=='externalMedia'" [src]="slide.file|safeResourseUrl"
+                                    frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </ng-container>
+                    </div>
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

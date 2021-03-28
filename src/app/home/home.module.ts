@@ -16,6 +16,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { ChooseThemeComponent } from './components/choose-theme/choose-theme.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     ResumeComponent,
     SkillComponent,
     PortfolioComponent,
+    TestimonialComponent,
+    ChooseThemeComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,55 @@
+<div class="galery-slider">
+  <div
+    *ngIf="show"
+    #gallery="ngxSwiper"
+    (slideChange)="this.slidesChange$.next(true)"
+    class="swiper-container h-100"
+    [swiper]="config"
+  >
+    <div class="swiper-wrapper h-100">
+      <div *ngFor="let slide of files | slice: 0:_count" class="swiper-slide loader">
+        <ng-container *ngIf="slide.type == 'image'">
+          <div class="slide-item">
+            <img ngp-lazy ngp-threshold="0.1" [src]="apiUrl + slide.file" alt="{{ slide.file }}" />
+            <div class="dark-overlay"></div>
+          </div>
+        </ng-container>
+        <ng-container *ngIf="slide.type == 'video'">
+          <div class="slide-item">
+            <video
+              ($mediaLoaded)="onVideoLoaded($event)"
+              ngp-lazy
+              ngp-threshold=".75"
+              [src]="apiUrl + slide.file + '#t=1'"
+              (pause)="onPauseVideo(slide)"
+              [id]="'video-' + slide.id"
+              class="videoContainer"
+            ></video>
+            <div class="dark-overlay"></div>
+            <div [id]="'overlay-' + slide.id" class="overlay-video-play about-video">
+              <div (click)="onPlayVideo(slide)" class="video-btn">
+                <a style="cursor: pointer" class="popup-youtube"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+        <ng-container *ngIf="slide.type == 'externalMedia'">
+          <div ($mediaLoaded)="onIframeLoaded($event)" ngp-lazy ngp-threshold="0.1" data-src="true" class="slide-item">
+            <iframe
+              class="videoMedia"
+              *ngIf="slide.type == 'externalMedia'"
+              [src]="slide.file | safeResourseUrl"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </ng-container>
+
+        <button matTooltip="{{ 'Zoom' | translate }}" id="zoomBtn" mat-icon-button (click)="openZoomViewer(slide)">
+          <mat-icon>fullscreen</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="swiper-pagination" [ngClass]="{ hide: this.files.length < 2 }"></div>
+  </div>
+</div>

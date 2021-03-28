@@ -33,6 +33,7 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
   $theme-main-100: mat-color($custom-primary, 100);
   $theme-accent: $accent-color;
   $color: rgba(0, 0, 0, .87);
+
   ///////////////////////////////////////
 
   .color-main-theme {
@@ -81,14 +82,14 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
 .darkThemeClass {
   background-color: #323232;
   color: #fff;
-  $custom-primary: mat-palette($mat-blue, 800);
+  $custom-primary: mat-palette($mat-light-blue, 500);
   $custom-accent: mat-palette($mat-amber, 500);
   $accent-color: mat-color($custom-accent);
   $customTheme: mat-dark-theme($custom-primary, $custom-accent, $warn);
   @include angular-material-theme($customTheme);
 
   // -----Creating Global Variables------
-  $theme-main: mat-color($custom-primary, 700);
+  $theme-main: mat-color($custom-primary);
   $theme-main-400: mat-color($custom-primary, 400);
   $theme-main-300: mat-color($custom-primary, 300);
   $theme-main-200: mat-color($custom-primary, 200);
