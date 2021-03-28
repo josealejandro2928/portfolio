@@ -19,20 +19,20 @@
         <br>
         <ul class="contact-info">
           <li>
-            <span class="item">{{'age'}}:</span>
+            <span class="item">{{'age'|translate}}:</span>
             <span class="value">{{about?.age}}</span>
           </li>
           <li>
-            <span class="item">{{'phone'}}:</span>
+            <span class="item">{{'phone'|translate}}:</span>
             <a [href]="'tel:'+about?.phone" class="value">{{about?.phone}}</a>
           </li>
           <li>
-            <span class="item">{{'email'}}:</span>
+            <span class="item">{{'email'|translate}}:</span>
             <a [href]="'mailto:'+about?.email" class="value">{{about?.email}}</a>
 
           </li>
           <li>
-            <span class="item">{{'address'}}:</span>
+            <span class="item">{{'address'|translate}}:</span>
             <span class="value">{{about?.address}}</span>
           </li>
 
@@ -53,7 +53,7 @@
 
 <section class="sec-padding container">
   <h1 writeLetter time="120" class="title">
-    {{'About me_'|translate}}
+    {{'About me_'}}
   </h1>
   <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="about?.resumeText | safeHtml |translate">
 
@@ -65,4 +65,3 @@
     {{'Download CV'|translate}}
   </a>
 </section>
-

@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   apiUrl: '/assets/db/',
+  imageUrl: '/assets/archives/',
 };
 
 /*

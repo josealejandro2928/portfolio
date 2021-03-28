@@ -1,10 +1,20 @@
 import { DomSanitizer } from '@angular/platform-browser';
-import { Component, OnInit, AfterViewInit, Input, OnDestroy, ViewChild, ElementRef, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  AfterViewInit,
+  Input,
+  OnDestroy,
+  ViewChild,
+  ElementRef,
+  Output,
+  EventEmitter,
+} from '@angular/core';
 import { SwiperConfigInterface, SwiperDirective } from 'ngx-swiper-wrapper';
 import { environment } from 'src/environments/environment';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { DialogGaleryZoomComponent } from '../dialog-galery-zoom/dialog-galery-zoom.component';
-import { IFile } from '../../models/file.model';
+import { IFile } from 'src/app/common/models/file.model';
 
 @Component({
   selector: 'app-galery-files',
@@ -50,7 +60,11 @@ export class GaleryFilesComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input() _count: number;
   @Output() slidesChange$ = new EventEmitter();
 
-  constructor(public sanitazer: DomSanitizer, private elRef: ElementRef, private dialog: MatDialog) {}
+  constructor(
+    public sanitazer: DomSanitizer,
+    private elRef: ElementRef,
+    private dialog: MatDialog
+  ) {}
 
   ngOnInit(): void {}
 
@@ -64,7 +78,9 @@ export class GaleryFilesComponent implements OnInit, AfterViewInit, OnDestroy {
 
   onPlayVideo(file: IFile) {
     // console.log('GaleryFilesComponent -> onPlayVideo -> file', file);
-    let element = this.elRef.nativeElement.querySelector('#video-' + file.id) as HTMLVideoElement;
+    let element = this.elRef.nativeElement.querySelector(
+      '#video-' + file.id
+    ) as HTMLVideoElement;
     element.play();
     let data = this.elRef.nativeElement.querySelector('#overlay-' + file.id);
     data.style.display = 'none';
@@ -76,7 +92,9 @@ export class GaleryFilesComponent implements OnInit, AfterViewInit, OnDestroy {
     if (data) {
       data.style.display = 'flex';
     }
-    let element = this.elRef.nativeElement.querySelector('#video-' + file.id) as HTMLVideoElement;
+    let element = this.elRef.nativeElement.querySelector(
+      '#video-' + file.id
+    ) as HTMLVideoElement;
     if (element) {
       element.controls = false;
       element.pause();
@@ -98,7 +116,9 @@ export class GaleryFilesComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   processingVideo() {
-    let elementVideos = this.elRef.nativeElement.querySelectorAll('.videoContainer, .videoMedia');
+    let elementVideos = this.elRef.nativeElement.querySelectorAll(
+      '.videoContainer, .videoMedia'
+    );
     // console.log(elementVideos);
     elementVideos.forEach((video: any) => {
       let observer = new IntersectionObserver(
@@ -115,12 +135,15 @@ export class GaleryFilesComponent implements OnInit, AfterViewInit, OnDestroy {
             if (entry.target.tagName == 'IFRAME') {
               if (entry.intersectionRatio != 1 && !video.paused) {
                 let iframe = entry.target as HTMLIFrameElement;
-                iframe.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+                iframe.contentWindow.postMessage(
+                  '{"event":"command","func":"' + 'stopVideo' + '","args":""}',
+                  '*'
+                );
               }
             }
           });
         },
-        { threshold: 1 },
+        { threshold: 1 }
       );
       observer.observe(video);
       this.observeVideos.push({ o: observer, t: video });

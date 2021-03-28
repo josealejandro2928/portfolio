@@ -5,6 +5,17 @@
         *ngFor="let item of navigation">
         {{item.label | translate}}
       </a>
+      <a class="navItem" mat-icon-button [matMenuTriggerFor]="langMenu" #langMenuTrigger="matMenuTrigger">
+        <i class="fas fa-globe"></i>
+        <mat-icon class="mat-icon-sm caret cur-icon">arrow_drop_down</mat-icon>
+      </a>
+      <mat-menu #langMenu="matMenu" [overlapTrigger]="false" xPosition="before" class="app-dropdown">
+
+        <button class="lang" [ngClass]="{'selected': lang == flag.lang}" fxLayoutAlign="start center" mat-menu-item
+          *ngFor="let flag of flags" (click)="changeLang(flag)">
+          <img [src]="flag.image" width="18" alt="{{ flag.name }}" /> &nbsp; {{ flag.name | translate }}
+        </button>
+      </mat-menu>
     </div>
     <div fxHide fxShow.xs class="navbar-layout" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="gappx">
       <button (click)="onToogleMenu()" mat-icon-button>
@@ -12,6 +23,19 @@
         </mat-icon>
 
       </button>
+      <div>
+        <a class="navItem" mat-icon-button [matMenuTriggerFor]="langMenu" #langMenuTrigger="matMenuTrigger">
+          <i class="fas fa-globe"></i>
+          <mat-icon class="mat-icon-sm caret cur-icon">arrow_drop_down</mat-icon>
+        </a>
+        <mat-menu #langMenu="matMenu" [overlapTrigger]="false" xPosition="before" class="app-dropdown">
+
+          <button class="lang" [ngClass]="{'selected': lang == flag.lang}" fxLayoutAlign="start center" mat-menu-item
+            *ngFor="let flag of flags" (click)="changeLang(flag)">
+            <img [src]="flag.image" width="18" alt="{{ flag.name }}" /> &nbsp; {{ flag.name | translate }}
+          </button>
+        </mat-menu>
+      </div>
 
     </div>
   </div>
@@ -26,7 +50,8 @@
   </div>
 
   <div fxLayout="column" fxLayoutAlign="center center" style="row-gap: 2rem;">
-    <a (click)="this.onToogleMenu()" [href]="'#'+item.sectionId" class="navItem" style="padding: 8px;" [ngClass]="{'active': item.active}" *ngFor="let item of navigation">
+    <a (click)="this.onToogleMenu()" [href]="'#'+item.sectionId" class="navItem" style="padding: 8px;"
+      [ngClass]="{'active': item.active}" *ngFor="let item of navigation">
       {{item.label | translate}}
     </a>
   </div>

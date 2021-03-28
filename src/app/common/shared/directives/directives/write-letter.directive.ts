@@ -1,3 +1,4 @@
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import {
   AfterViewInit,
   Directive,
@@ -16,12 +17,22 @@ export class WriteLetterDirective implements AfterViewInit, OnDestroy {
   text = '';
   @Input() time = 150;
   @Input() delay = 0;
-  constructor(private _elRef: ElementRef) {
+  constructor(
+    private _elRef: ElementRef,
+    private translateService: TranslateService
+  ) {
     this.elRef = this._elRef.nativeElement;
   }
 
-  ngAfterViewInit(): void {
-    this.text = this.elRef.innerText;
+  async ngAfterViewInit() {
+    try {
+      this.text = await this.translateService
+        .get(this.elRef.innerText)
+        .toPromise();
+    } catch (e) {
+      this.text = this.elRef.innerText;
+    }
+
     this.elRef.innerHTML = `<span>${this.text.substring(0, 1)}</span>`;
     const options = {
       rootMargin: '0px',

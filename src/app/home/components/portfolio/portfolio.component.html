@@ -1,6 +1,6 @@
 <section id="portfolio" class="sec-padding container">
   <h1 writeLetter time="120" class="title">
-    {{'My projects_'|translate}}
+    {{'My projects_'}}
   </h1>
   <div class="tags-section">
     <ul>
@@ -8,14 +8,42 @@
         {{'All'|translate}}
       </li>
       <li>
-        {{'Landing pages'|translate}}
+        {{'landing pages'|translate}}
       </li>
       <li>
-        {{'Mobile apps'|translate}}
+        {{'mobile apps'|translate}}
       </li>
       <li>
-        {{'Web sites'|translate}}
+        {{'web sites'|translate}}
       </li>
     </ul>
+  </div>
+  <br>
+  <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" class="project-card"
+    *ngFor="let app of this.getProject(this.selectedCategory)">
+    <div fxFlex="40" fxFlex.lt-md="100" class="file-section">
+      <app-galery-files [_files]="app?.Files"></app-galery-files>
+    </div>
+
+    <div fxFlex class="details-section" fxFlex.lt-md="100" class="details-section">
+      <p class="name">
+        {{app.name|translate}}
+      </p>
+      <div class="description" [innerHTML]="app?.description | safeHtml |translate">
+      </div>
+
+      <p class="stack">{{'Used Stack'|translate}}:</p>
+      <div class="stacks" fxLayout="row wrap" fxLayoutAlign="start start">
+        <div *ngFor="let item of app.useStacks" class="item">
+          {{item}}
+        </div>
+      </div>
+      <a [href]="'https://' + app.url" target="_blank" *ngIf="app.url" class="url">
+        {{app.url}}
+      </a>
+
+    </div>
+
+
   </div>
 </section>

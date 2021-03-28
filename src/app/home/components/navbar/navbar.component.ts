@@ -9,6 +9,8 @@ import {
   ChangeDetectorRef,
   ViewChild,
 } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -20,6 +22,29 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   navigation: INavigation[] = [];
   navBarItems: any;
   @ViewChild('menu', { static: false }) menu: ElementRef;
+  public flags = [
+    {
+      name: 'Inglés',
+      image: 'assets/images/flags/en.svg',
+      lang: 'en',
+      abbreviation: 'eng',
+    },
+    {
+      name: 'Español',
+      image: 'assets/images/flags/es.svg',
+      lang: 'es',
+      abbreviation: 'esp',
+    },
+    // {
+    //   name: 'Francés',
+    //   image: 'assets/images/flags/fr.svg',
+    //   lang: 'fr',
+    //   abbreviation: 'fra',
+    // },
+  ];
+  flag: any = undefined;
+  _unsubscribeAll = new Subject();
+  lang = 'es';
 
   @Input() set _navigation(value) {
     if (value) {
@@ -31,11 +56,16 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   }
   elRef: HTMLElement;
 
-  constructor(private _elRef: ElementRef, private chRef: ChangeDetectorRef) {
+  constructor(
+    private _elRef: ElementRef,
+    private chRef: ChangeDetectorRef,
+    private translate: TranslateService
+  ) {
     this.elRef = this._elRef.nativeElement;
   }
 
   ngOnInit(): void {
+    this.initSystem();
     const navbar: any = this.elRef.querySelector('.navbar');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 25) {
@@ -68,6 +98,28 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   }
   onToogleMenu() {
     this.menu.nativeElement.classList.toggle('active');
-    // console.log("🚀 ~ file: navbar.component.ts ~ line 90 ~ NavbarComponent ~ onToogleMenu ~ this.menu.nativeElement", this.menu.nativeElement)
+  }
+
+  initSystem() {
+    const defaultLanguage: any = this.flags[0];
+    if ('language' in localStorage) {
+      let language = JSON.parse(localStorage.getItem('language'));
+      language = language ? language : defaultLanguage;
+      this.translate.setDefaultLang(language.lang);
+      this.translate.use(language.lang);
+      this.flag = language;
+      this.lang = language.lang;
+    } else {
+      localStorage.setItem('language', JSON.stringify(defaultLanguage));
+      this.translate.setDefaultLang(defaultLanguage.lang);
+      this.flag = defaultLanguage;
+      this.lang = defaultLanguage.lang;
+    }
+  }
+  public changeLang(flag) {
+    this.translate.use(flag.lang);
+    localStorage.setItem('language', JSON.stringify(flag));
+    this.flag = flag;
+    document.location.reload();
   }
 }
