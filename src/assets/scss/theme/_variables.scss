@@ -142,4 +142,27 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
     }
   }
 
+  .project-card {
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+
+    &:hover {
+      box-shadow: 2px 5px 10px rgba(255, 255, 255, .09) !important;
+    }
+
+    .file-section {
+      background-color: #212121 !important;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .details-section {
+      padding: 24px;
+      color: #fff !important;
+
+      .stacks .item {
+        background-color: #212121 !important;
+      }
+    }
+  }
+
 }
