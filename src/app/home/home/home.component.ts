@@ -11,22 +11,20 @@ export class HomeComponent implements OnInit {
   navigation: INavigation[] = [];
   about: any;
   resume: any;
+  portfolio: any;
 
-  constructor(private homeService: HomeService) {
-
-  }
+  constructor(private homeService: HomeService) {}
 
   async ngOnInit() {
-
-    const [nav, about, res] = await Promise.all([
-      this.homeService.getNavigation().toPromise(),
-      this.homeService.getHello().toPromise(),
-      this.homeService.getResume().toPromise(),
+    const [nav, about, res, projects] = await Promise.all([
+      this.homeService.getSource('navigation.js'),
+      this.homeService.getSource('about-me.js'),
+      this.homeService.getSource('resume.js'),
+      this.homeService.getSource('portfolio.js'),
     ]);
     this.navigation = nav;
     this.about = about;
     this.resume = res;
+    this.portfolio = projects;
   }
-
-
 }

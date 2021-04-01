@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: '/assets/db/',
+  apiUrl: 'src/assets/db/',
   imageUrl: '/assets/archives/',
 };
 
