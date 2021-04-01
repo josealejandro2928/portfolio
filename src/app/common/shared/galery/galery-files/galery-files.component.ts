@@ -101,7 +101,8 @@ export class GaleryFilesComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
-  openZoomViewer(file) {
+  openZoomViewer(file, event) {
+    event.stopPropagation();
     this.onPauseVideo(file);
     this.selectedFile = file;
     let dialogRef: MatDialogRef<DialogGaleryZoomComponent, any>;

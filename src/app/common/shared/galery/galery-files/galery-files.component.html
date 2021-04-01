@@ -29,7 +29,7 @@
           </div>
         </ng-container>
 
-        <button matTooltip="{{ 'Zoom' | translate }}" id="zoomBtn" mat-icon-button (click)="openZoomViewer(slide)">
+        <button matTooltip="{{ 'Zoom' | translate }}" id="zoomBtn" mat-icon-button (click)="openZoomViewer(slide,$event)">
           <mat-icon>fullscreen</mat-icon>
         </button>
       </div>

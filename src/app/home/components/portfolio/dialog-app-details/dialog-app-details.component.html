@@ -1,0 +1,45 @@
+<div class="dialog-content-wrapper">
+
+  <mat-toolbar class="mb-2" matDialogTitle color="primary" id="toolbarHeader">
+    <mat-toolbar-row fxLayoutAlign="space-between center">
+      <span></span>
+      <button mat-icon-button (click)="dialogRef.close()" class="dialog-close">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <div mat-dialog-content class="project-card">
+    <div class="details-section">
+      <p class="name">
+        {{app.name|translate}}
+      </p>
+      <br>
+      <div class="file-section">
+        <app-galery-files [_files]="app?.Files"></app-galery-files>
+      </div>
+      <br>
+      <div class="description" [innerHTML]="app?.description | safeHtml |translate">
+      </div>
+
+      <p class="w-100">
+        <a [href]="'https://' + app.url" target="_blank" *ngIf="app.url" class="url">
+          {{app.url}}
+        </a>
+      </p>
+
+
+      <p class="stack">{{'Used Stack'|translate}}:</p>
+      <div class="stacks" fxLayout="row wrap" fxLayoutAlign="start start">
+        <div *ngFor="let item of app.useStacks" class="item">
+          {{item}}
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</div>

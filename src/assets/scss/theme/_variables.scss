@@ -77,6 +77,10 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
     }
   }
 
+  .dialog-close {
+    color: #222222;
+  }
+
 }
 
 .darkThemeClass {
@@ -163,6 +167,10 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
         background-color: #212121 !important;
       }
     }
+  }
+
+  .dialog-close {
+    color: #fff;
   }
 
 }

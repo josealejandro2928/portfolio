@@ -1,3 +1,4 @@
+import { MatDialogModule } from '@angular/material/dialog';
 import { GaleryModule } from './../common/shared/galery/galery.module';
 import { PipesModule } from './../common/shared/pipes/pipes.module';
 import { TranslateModule } from '@ngx-translate/core';
@@ -20,6 +21,7 @@ import { SkillComponent } from './components/skill/skill.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { ChooseThemeComponent } from './components/choose-theme/choose-theme.component';
+import { DialogAppDetailsComponent } from './components/portfolio/dialog-app-details/dialog-app-details.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { ChooseThemeComponent } from './components/choose-theme/choose-theme.com
     PortfolioComponent,
     TestimonialComponent,
     ChooseThemeComponent,
+    DialogAppDetailsComponent,
   ],
   imports: [
     CommonModule,
@@ -46,6 +49,7 @@ import { ChooseThemeComponent } from './components/choose-theme/choose-theme.com
     MatTooltipModule,
     MatMenuModule,
     GaleryModule,
+    MatDialogModule,
   ],
 })
 export class HomeModule {}

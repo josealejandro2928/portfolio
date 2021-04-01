@@ -19,11 +19,11 @@ let data = [
     sectionId: "testimonials",
     id: "testimonials",
   },
-  {
-    label: "blog",
-    sectionId: "blog",
-    id: "blog",
-  },
+  // {
+  //   label: "blog",
+  //   sectionId: "blog",
+  //   id: "blog",
+  // },
   {
     label: "contact",
     sectionId: "contact",

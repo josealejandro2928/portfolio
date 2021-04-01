@@ -19,7 +19,7 @@
     </ul>
   </div>
   <br>
-  <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" class="project-card"
+  <div (click)="onShowDetailsApp(app)" fxLayout="row wrap" fxLayoutAlign="space-between stretch" class="project-card"
     *ngFor="let app of this.getProject(this.selectedCategory)">
     <div fxFlex="40" fxFlex.lt-md="100" class="file-section">
       <app-galery-files [_files]="app?.Files"></app-galery-files>

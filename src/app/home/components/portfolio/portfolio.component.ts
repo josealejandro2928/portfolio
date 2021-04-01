@@ -1,3 +1,5 @@
+import { DialogAppDetailsComponent } from './dialog-app-details/dialog-app-details.component';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { IApp } from './../../../common/models/app.model';
 import {
   Component,
@@ -37,7 +39,7 @@ export class PortfolioComponent implements OnInit {
       category: 'web sites',
     },
   ];
-  constructor(private cdRef: ChangeDetectorRef) {}
+  constructor(private cdRef: ChangeDetectorRef, private dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.cdRef.markForCheck();
@@ -48,5 +50,17 @@ export class PortfolioComponent implements OnInit {
       return [...this.allProject];
     }
     return this.allProject.filter((x) => x.category == category);
+  }
+
+  onShowDetailsApp(app: IApp) {
+    let dialogRef: MatDialogRef<DialogAppDetailsComponent, any>;
+    dialogRef = this.dialog.open(DialogAppDetailsComponent, {
+      panelClass: 'app-dialog-app-details',
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+      data: {
+        app,
+      },
+    });
   }
 }
