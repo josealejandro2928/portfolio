@@ -13,19 +13,18 @@ let data = {
       startDate: "2014",
       endDate: "2019",
       description: `<strong>Master and Bachelor in Automation Engineering (Single-Cycle, 5 years)</strong>,
-           Biomedical and Automation Faculty, Technological University of Havana (CUJAE), Cuba,
-           granted the “Scientific Merit Award”.`,
+           Biomedical and Automation Faculty, Technological University of Havana (CUJAE), Cuba.
+           <p>Grade: <strong>4.72/5</strong>, granted the “Scientific Merit Award”.</p>`,
     },
   ],
   professionalEmployment: [
     {
-      title: "Full Stack Developer in Guajitech",
+      title: "Full Stack Developer for the cuban startup Guajitech",
       startDate: "2019",
       endDate: "present",
-      description: `Frontend and mobile application development using Javascript
-        frameworks like <strong>Angular</strong>,
-        <strong>Ionic</strong>, <strong>React</strong>. Backend development
-        using <strong>Nodejs</strong> framework with relational
+      description: `Development of mobile and frontend applications using Javascript frameworks
+        like: <strong>Angular</strong>, <strong>Ionic</strong> and  <strong>React</strong>.
+        Backend development using <strong>Nodejs</strong> framework with relational
         and non-relational databases like
         <strong>MySQL</strong> and <strong>MongoDB</strong>.
         Development of several types of applications such as:
@@ -41,7 +40,7 @@ let data = {
     },
     {
       title:
-        "Assistant Professor in Technological University of Havana (CUJAE)",
+        "Intern professor in Technological University of Havana (CUJAE)",
       startDate: "2019",
       endDate: "2020",
       description: `
@@ -53,17 +52,7 @@ let data = {
           Tool.
         </p>
       `,
-    },
-    {
-      title: "Programmer in PiVoT",
-      startDate: "2018",
-      endDate: "2019",
-      description: `
-        <p> Startup company with the goal of offering software and hardware solutions
-        to small businesess in Cuba.
-        </p>
-      `,
-    },
+    }
   ],
 
   vocationalEmployment: [
@@ -87,15 +76,6 @@ let data = {
         Development of simulation
         software for the kinematics of an inverted pendulum system on wheels. Testing of PID
         control algorithms.(<a href="https://youtu.be/O6BeBPsemHU" target="_blank">https://youtu.be/O6BeBPsemHU<a>)
-      `,
-    },
-    {
-      title: "Assistant Student in Technological University of Havana (CUJAE)",
-      startDate: "2017",
-      endDate: "2018",
-      description: `Teaching <strong>Machine Learning</strong>:
-        Neural Networks, Genetic Algorithms and Support Vector
-        Machines and Programming I: C++ programming language.
       `,
     },
     {
