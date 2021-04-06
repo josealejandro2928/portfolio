@@ -10,14 +10,17 @@ let data = {
     {
       url: "https://www.linkedin.com/in/jalejandroc/",
       class: "fab fa-linkedin",
+      name: "Linkedin",
     },
     {
       url: "https://github.com/josealejandro2928",
       class: "fab fa-github",
+      name: "Github"
     },
     {
       url: "https://gitlab.com/jalejandro2928",
       class: "fab fa-gitlab",
+      name: "Gitlab"
     },
   ],
   resumeText: `

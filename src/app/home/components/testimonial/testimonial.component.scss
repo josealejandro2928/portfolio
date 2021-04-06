@@ -1,0 +1,140 @@
+.background {
+  margin: 64px 0px;
+  background-color: var(--colorTheme);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  min-height: 300px;
+  width: 100%;
+  background-image: url(../../../../assets/images/bg.jpeg);
+
+  &::before {
+    background: linear-gradient(54deg, rgba(74, 76, 179, .95) 34%, hsla(0, 34%, 71%, .95));
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    z-index: 0;
+  }
+
+  @media(max-width:599px) {
+    margin: 32px 0px;
+  }
+
+  .circle {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      color: var(--colorTheme);
+      font-size: 18px;
+    }
+  }
+
+}
+
+.background * {
+  z-index: 2
+}
+
+.swiper-container {
+  height: 100%;
+}
+
+
+.container-testimonials {
+  max-width: 800px;
+  margin: 45px auto;
+}
+
+.swiper-slide {
+  height: 100%;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  padding: 24px 30px;
+  // align-items: center;
+
+  .name {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .profession {
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+    opacity: .7;
+  }
+
+  .social {
+    a {
+      font-size: 24px;
+      margin-right: 15px;
+      opacity: .8;
+      color: #fff;
+      margin-left: 12px;
+    }
+
+    // margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 18px;
+    margin: 24px 0px;
+    line-height: 30px;
+  }
+}
+
+:host::ng-deep {
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 1px solid #fff
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #fff;
+  }
+}
+
+.my-swiper-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(50%);
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.my-swiper-next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateX(50%);
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  opacity: .6;
+  cursor: pointer;
+}

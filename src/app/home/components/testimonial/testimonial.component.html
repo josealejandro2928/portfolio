@@ -1,1 +1,39 @@
-<p>testimonial works!</p>
+<div id="testimonials" class="background">
+  <div class="circle">
+    <i class="fa fa-quote-right" aria-hidden="true"></i>
+  </div>
+  <div *ngIf="show" class="swiper-container container" [swiper]="config">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let testimonial of testimonials; let i = index">
+        <div class="container-testimonials">
+          <p class="name">{{testimonial.name}}</p>
+          <p class="profession">{{testimonial.profession}}
+            <span class="social">
+              <a *ngFor="let social of testimonial?.socials" [href]="social.url" target="_blank">
+                <i [class]="social.class">
+                </i>
+              </a>
+            </span>
+          </p>
+          <hr>
+          <p class="text">
+            {{testimonial.text}}
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <button fxHide.xs class="my-swiper-prev">
+      <i class="fas fa-chevron-left "></i>
+    </button>
+    <button fxHide.xs class="my-swiper-next">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+</div>
+
+

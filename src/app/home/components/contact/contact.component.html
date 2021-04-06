@@ -1,0 +1,33 @@
+<section id="contact" class="sec-padding">
+  <div class="container">
+    <h1 writeLetter time="120" class="title">
+      {{'Get in touch_'}}
+    </h1>
+    <div class="W-100" fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="gappx">
+      <ul fxFlex="48" class="contact-info">
+        <li>
+          <span class="item">{{'phone'|translate}}:</span>
+          <a [href]="'tel:'+about?.phone" class="value">{{about?.phone}}</a>
+        </li>
+        <li>
+          <span class="item">{{'email'|translate}}:</span>
+          <a [href]="'mailto:'+about?.email" class="value">{{about?.email}}</a>
+        </li>
+        <li>
+          <span class="item">{{'address'|translate}}:</span>
+          <span class="value">{{about?.address}}</span>
+        </li>
+      </ul>
+      <ul fxFlex="48" class="contact-info">
+        <li *ngFor="let item of about?.socials">
+          <span class="item">{{item.name}}:</span>
+          <a [href]="item.url" target="_blank" class="value">{{item.url}}</a>
+        </li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+</section>

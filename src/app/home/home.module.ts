@@ -1,3 +1,4 @@
+import { SwiperModule } from 'ngx-swiper-wrapper';
 import { MatDialogModule } from '@angular/material/dialog';
 import { GaleryModule } from './../common/shared/galery/galery.module';
 import { PipesModule } from './../common/shared/pipes/pipes.module';
@@ -22,6 +23,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { ChooseThemeComponent } from './components/choose-theme/choose-theme.component';
 import { DialogAppDetailsComponent } from './components/portfolio/dialog-app-details/dialog-app-details.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { DialogAppDetailsComponent } from './components/portfolio/dialog-app-det
     TestimonialComponent,
     ChooseThemeComponent,
     DialogAppDetailsComponent,
+    ContactComponent,
   ],
   imports: [
     CommonModule,
@@ -50,6 +53,7 @@ import { DialogAppDetailsComponent } from './components/portfolio/dialog-app-det
     MatMenuModule,
     GaleryModule,
     MatDialogModule,
+    SwiperModule,
   ],
 })
 export class HomeModule {}

@@ -173,4 +173,10 @@ $grey-900: mat-color(mat-palette($mat-grey), 900);
     color: #fff;
   }
 
+  .background {
+    .circle{
+      background-color: #323232 !important;
+    }
+  }
+
 }

@@ -1,0 +1,39 @@
+#contact {
+  color: white;
+  min-height: 300px;
+  background-color: var(--colorTheme);
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+
+  li {
+    padding: 8px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .item {
+    text-transform: uppercase;
+    flex: 1 1 100px;
+    max-width: 100px;
+    font-weight: 800;
+    opacity: .8;
+    font-size: 16px;
+  }
+
+  .value {
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+    flex: 1 1;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
