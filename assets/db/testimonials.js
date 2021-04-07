@@ -1,17 +1,5 @@
 let data = [
   {
-    name: "Héctor Alonso Remedios",
-    text: `He tenido el placer de trabajar junto a este gran profesional. Lo considero un crack!!
-    Presenta muy buenas habilidades, tanto hard como soft skills. `,
-    profession: "Python Developer",
-    socials: [
-      {
-        class: "fab fa-linkedin",
-        url: "https://www.linkedin.com/mwlite/in/hectorarem",
-      },
-    ],
-  },
-  {
     name: "Alejandro Ravelo Julian",
     text: `Jose Alejandro Concepción is an excellent worker, has exceptional analytical and development skills.
      He has a high knowledge of software architecture and programming languages.
@@ -27,6 +15,19 @@ let data = [
       },
     ],
   },
+  {
+    name: "Héctor Alonso Remedios",
+    text: `He tenido el placer de trabajar junto a este gran profesional. Lo considero un crack!!
+    Presenta muy buenas habilidades, tanto hard como soft skills. `,
+    profession: "Python Developer",
+    socials: [
+      {
+        class: "fab fa-linkedin",
+        url: "https://www.linkedin.com/mwlite/in/hectorarem",
+      },
+    ],
+  },
+
   {
     name: "Yoilan Rios Rosales",
     text: `Gran trabajador, muy dedicado, trata sus proyectos con el amor de una madre por sus hijos.
