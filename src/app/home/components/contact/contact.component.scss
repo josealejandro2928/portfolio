@@ -1,6 +1,6 @@
 #contact {
   color: white;
-  min-height: 300px;
+  min-height: 480px;
   background-color: var(--colorTheme);
 }
 
@@ -33,6 +33,25 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+
+}
+
+.tech {
+  padding: 32px 0px;
+
+  img {
+    object-fit: cover;
+    height: 60px;
+    // width: 60px;
+    margin: 16px;
+    transform:translateY(0px);
+    transition: transform .5s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      transition: transform .5s ease;
     }
   }
 

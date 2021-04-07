@@ -22,7 +22,7 @@
   <div (click)="onShowDetailsApp(app)" fxLayout="row wrap" fxLayoutAlign="space-between stretch" class="project-card"
     *ngFor="let app of this.getProject(this.selectedCategory)">
     <div fxFlex="40" fxFlex.lt-md="100" class="file-section">
-      <app-galery-files [_files]="app?.Files"></app-galery-files>
+      <app-galery-files (click)="$event.stopPropagation()" [_files]="app?.Files"></app-galery-files>
     </div>
 
     <div fxFlex class="details-section" fxFlex.lt-md="100" class="details-section">

@@ -3,8 +3,8 @@
     <h1 writeLetter time="120" class="title">
       {{'Get in touch_'}}
     </h1>
-    <div class="W-100" fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="gappx">
-      <ul fxFlex="48" class="contact-info">
+    <div class="w-100" fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="gappx">
+      <ul fxFlex="48" fxFlex.lt-md="100" class="contact-info">
         <li>
           <span class="item">{{'phone'|translate}}:</span>
           <a [href]="'tel:'+about?.phone" class="value">{{about?.phone}}</a>
@@ -18,14 +18,36 @@
           <span class="value">{{about?.address}}</span>
         </li>
       </ul>
-      <ul fxFlex="48" class="contact-info">
+      <ul fxFlex="48" fxFlex.lt-md="100" class="contact-info">
         <li *ngFor="let item of about?.socials">
-          <span class="item">{{item.name}}:</span>
+          <span fxHide.xs class="item">{{item.name}}:</span>
+          <span fxHide fxShow.xs class="mr-3" ><i [class]="item.class"></i> :</span>
+
           <a [href]="item.url" target="_blank" class="value">{{item.url}}</a>
         </li>
       </ul>
 
     </div>
+
+    <div class="tech" fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="gappx">
+
+      <a target="_blank" href="https://angular.io/">
+        <img src="assets/images/angular-seeklogo.com.svg" />
+      </a>
+      <a target="_blank" href="https://reactjs.org/">
+        <img src="assets/images/react-seeklogo.com.svg" />
+      </a>
+      <a target="_blank" href="https://nodejs.org/">
+        <img src="assets/images/nodejs-icon.svg" />
+      </a>
+      <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+        <img src="assets/images/javascript-seeklogo.com.svg" />
+      </a>
+
+
+    </div>
+
+
 
 
   </div>
