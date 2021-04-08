@@ -17,6 +17,7 @@ import {
 export class PortfolioComponent implements OnInit {
   selectedCategory = 'all';
   allProject: IApp[] = [];
+  allCategories: any[] = ['all', 'web sites', 'landing pages', 'mobile apps','robotics'];
   @Input() set _projects(value) {
     this.allProject = value;
   }
@@ -27,6 +28,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   getProject(category) {
+    // console.log("Entre en el render este")
     if (category == 'all') {
       return [...this.allProject];
     }
@@ -43,5 +45,9 @@ export class PortfolioComponent implements OnInit {
         app,
       },
     });
+  }
+
+  onSelectedCategory(category) {
+    this.selectedCategory = category;
   }
 }

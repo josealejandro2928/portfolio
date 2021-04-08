@@ -3,20 +3,12 @@
     {{'My projects_'}}
   </h1>
   <div class="tags-section">
-    <ul>
-      <li class="selected">
-        {{'All'|translate}}
-      </li>
-      <li>
-        {{'landing pages'|translate}}
-      </li>
-      <li>
-        {{'mobile apps'|translate}}
-      </li>
-      <li>
-        {{'web sites'|translate}}
-      </li>
-    </ul>
+    <div class="tag-container">
+      <div class="tag-item" (click)="onSelectedCategory(item)" *ngFor="let item of allCategories"
+        [ngClass]="{'selected': item == this.selectedCategory}">
+        <div>{{item|translate}}</div>
+      </div>
+    </div>
   </div>
   <br>
   <div (click)="onShowDetailsApp(app)" fxLayout="row wrap" fxLayoutAlign="space-between stretch" class="project-card"
@@ -42,6 +34,7 @@
           {{item}}
         </div>
       </div>
+      <br>
       <a [href]="'https://' + app.url" target="_blank" *ngIf="app.url" class="url">
         {{app.url}}
       </a>

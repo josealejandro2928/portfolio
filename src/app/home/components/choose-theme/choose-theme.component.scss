@@ -6,6 +6,7 @@
   display: flex;
   transform: translateX(84px);
   transition: all .6s;
+  z-index: 99
 }
 
 .choose-theme.activated {

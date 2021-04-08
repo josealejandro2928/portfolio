@@ -16,10 +16,7 @@
       </p>
       <br>
       <div class="file-section">
-        <div class="galery">
-          <app-galery-files [_files]="app?.Files"></app-galery-files>
-        </div>
-
+        <app-galery-files [_files]="app?.Files"></app-galery-files>
       </div>
       <br>
       <div class="description" [innerHTML]="app?.description| parseLang:lang | safeHtml">

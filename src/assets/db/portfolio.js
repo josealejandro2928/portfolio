@@ -73,7 +73,8 @@ let allProject = [
     category: "web sites",
   },
   {
-    name: "Content management system for the website of the Cuban company Gaviota SA",
+    name:
+      "Content management system for the website of the Cuban company Gaviota SA",
     description: {
       es: `Página web institucional, contiene todas las secciones que describen la empresa Gaviota SA.
       Tiene una sección de noticias y un blog, para lograr la mayor interacción de los usuarios.
@@ -102,6 +103,44 @@ let allProject = [
       { file: "gaviota-grupo/5.jpeg", type: "image", id: "5" },
     ],
     category: "landing pages",
+  },
+  {
+    name:
+      "Two Wheel Self Balancing Robot",
+    description: {
+      es: `En este trabajo se diseña y construye un robot autobalanceado sobre dos
+      ruedas basado en el microcontrolador Arduino. Para el control de equilibrio
+      se implementa un algoritmo de tipo PID en cascada. Se aplican diferentes
+      técnicas de filtrado digital para la obtención del ángulo de inclinación, como
+      el Filtro Complemento. Para implementar un controlador PID en cascada,
+      se combinan eficientemente las lecturas de encoders y sensores inerciales que
+      permiten la medición de velocidad del robot. Se construye un prototipo y se le desarrolla una aplicacion movil para u control manual,
+      lectura de sensores y asignacion de coordenadas.`,
+
+      en: `In this work, a two wheels self-balancing robot is developed. For stability
+      control, different algorithms based on PID controllers are evaluated,
+      especially cascaded PID controllers. Different digital filtering techniques are
+      applied to obtain the inclination angle, such as the Complement Filter. In
+      order to implement a cascaded PID controller, the Kalman filter is implemented
+      to efficiently combine the readings of encoders and inertial sensors,
+      obtaining the robot’s speed measurement.A prototype is built and a mobile application is developed for manual control,
+      sensor reading and coordinate assignment.
+      `,
+    },
+    useStacks: [
+      "C++",
+      "Ionic",
+      "Arduino",
+      "HTML5",
+      "CSS3",
+    ],
+    url: "",
+    Files: [
+      { file: "https://www.youtube.com/embed/dg8ftpSStIc", type: "externalMedia", id: "1" },
+      { file: "https://www.youtube.com/embed/mijxUfsSrdE", type: "externalMedia", id: "2" },
+      { file: "https://www.youtube.com/embed/O6BeBPsemHU", type: "externalMedia", id: "3" },
+    ],
+    category: "robotics",
   },
 ];
 
