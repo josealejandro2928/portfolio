@@ -9,15 +9,15 @@ $custom-typography: mat-typography-config($font-family: $font_family);
 @include mat-core($custom-typography);
 $warn: mat-palette($mat-red);
 
-$grey-100: mat-color(mat-palette($mat-grey), 100);
-$grey-200: mat-color(mat-palette($mat-grey), 200);
-$grey-300: mat-color(mat-palette($mat-grey), 300);
-$grey-400: mat-color(mat-palette($mat-grey), 400);
-$grey-500: mat-color(mat-palette($mat-grey), 500);
-$grey-600: mat-color(mat-palette($mat-grey), 600);
-$grey-700: mat-color(mat-palette($mat-grey), 700);
-$grey-800: mat-color(mat-palette($mat-grey), 800);
-$grey-900: mat-color(mat-palette($mat-grey), 900);
+// $grey-100: mat-color(mat-palette($mat-grey), 100);
+// $grey-200: mat-color(mat-palette($mat-grey), 200);
+// $grey-300: mat-color(mat-palette($mat-grey), 300);
+// $grey-400: mat-color(mat-palette($mat-grey), 400);
+// $grey-500: mat-color(mat-palette($mat-grey), 500);
+// $grey-600: mat-color(mat-palette($mat-grey), 600);
+// $grey-700: mat-color(mat-palette($mat-grey), 700);
+// $grey-800: mat-color(mat-palette($mat-grey), 800);
+// $grey-900: mat-color(mat-palette($mat-grey), 900);
 
 
 .lightThemeClass {

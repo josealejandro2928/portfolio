@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   apiUrl: 'src/assets/db/',
-  imageUrl: 'assets/archives/',
+  imageUrl: 'archives/',
   url: 'https://josealejandro2928.github.io/portfolio/',
 };
 
