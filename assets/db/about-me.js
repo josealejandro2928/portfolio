@@ -32,7 +32,7 @@ let data = {
       my thesis work. I participated in the  <strong>ACM International Collegiate Programming Competition (ICPC) </strong> several times,
       and my team managed to classify to the regional finals two times. As a result, I acquired knowledge about data structures
       and efficient algorithm design. In addition, I have  experience developing mobile and web application using frameworks
-      such as <strong>Angular, React, Nodejs, Express, Flask e Ionic </strong>.
+      such as <strong>Angular, React, Nodejs, Express, Flask and Ionic </strong>.
      </p>`,
     es: `
     <p>
