@@ -59,6 +59,7 @@
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, .05);
   transition: all .5s;
+  margin-bottom: 20px;
 
   &:hover {
     box-shadow: 2px 5px 10px rgba(0, 0, 0, .09);
@@ -77,6 +78,10 @@
 
     @media(max-width:800px) {
       height: 300px;
+      padding: 6px;
+    }
+    @media(max-width:599px) {
+      height: 200px;
       padding: 6px;
     }
   }
@@ -146,6 +151,7 @@
 
       .name {
         width: 100%;
+        font-size: 15px;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2;
