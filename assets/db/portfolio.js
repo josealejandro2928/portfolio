@@ -105,8 +105,7 @@ let allProject = [
     category: "landing pages",
   },
   {
-    name:
-      "Two Wheel Self Balancing Robot",
+    name: "Two Wheel Self Balancing Robot",
     description: {
       es: `En este trabajo se diseña y construye un robot autobalanceado sobre dos
       ruedas basado en el microcontrolador Arduino. Para el control de equilibrio
@@ -127,20 +126,169 @@ let allProject = [
       sensor reading and coordinate assignment.
       `,
     },
+    useStacks: ["C++", "Ionic", "Arduino", "HTML5", "CSS3"],
+    url: "",
+    Files: [
+      {
+        file: "https://www.youtube.com/embed/dg8ftpSStIc",
+        type: "externalMedia",
+        id: "1",
+      },
+      {
+        file: "https://www.youtube.com/embed/mijxUfsSrdE",
+        type: "externalMedia",
+        id: "2",
+      },
+      {
+        file: "https://www.youtube.com/embed/O6BeBPsemHU",
+        type: "externalMedia",
+        id: "3",
+      },
+    ],
+    category: "robotics",
+  },
+  {
+    name:
+      "Content management system for the website of the Cuban company Marlin SA",
+    description: {
+      es: `Página web institucional, contiene todas las secciones que describen la empresa Marlin SA.
+      Tiene una sección de noticias y un blog, para lograr la mayor interacción de los usuarios.
+      <p>El sistema tiene una administración donde los usuarios administradores suben y editan todo el contenido de la página</p>`,
+
+      en: `Institutional website, contains all the sections that describe the company Marlin SA.
+      It has a news section and a blog, to achieve the greatest user interaction.
+      <p> The system has an administration where administrative users upload and edit all the content of the page </p>
+      `,
+    },
     useStacks: [
-      "C++",
-      "Ionic",
-      "Arduino",
+      "Nodejs",
+      "Angular",
+      "React",
+      "MySQL",
+      "CKeditor",
+      "Material",
       "HTML5",
       "CSS3",
     ],
+    url: "marlin.cinesoft.cu",
+    Files: [
+      { file: "marinas-marlin/1.jpeg", type: "image", id: "1" },
+      { file: "marinas-marlin/2.jpeg", type: "image", id: "2" },
+      { file: "marinas-marlin/3.jpeg", type: "image", id: "3" },
+      { file: "marinas-marlin/4.jpeg", type: "image", id: "4" },
+      { file: "marinas-marlin/5.jpeg", type: "image", id: "5" },
+      { file: "marinas-marlin/6.jpeg", type: "image", id: "6" },
+      { file: "marinas-marlin/7.jpeg", type: "image", id: "7" },
+      { file: "marinas-marlin/8.jpeg", type: "image", id: "8" },
+      { file: "marinas-marlin/9.jpeg", type: "image", id: "9" },
+    ],
+    category: "landing pages",
+  },
+  {
+    name:
+      "Events management and sale system for the Havanatur SA company. The system allows the creation of hotels and management of their availability. Allows B2B and B2C business modalities.",
+    description: {
+      es: `
+        El sistema permite la gestión de experiencias de un solo día en una administración.
+        Con un diseño de creación basado en airbnb, el usuario crea su experiencia en 5 pasos.
+        Permite la gestión de Agencias y Contratos.
+        <p> El sitio de ventas ofrece al usuario la posibilidad de búsqueda y compra con varias pasarelas de pagos. </p>
+      `,
+
+      en: `
+      The system allows the management of experiences of a single day in an administration.
+      With an airbnb-based creation design, the user creates their experience in 5 steps.
+      It allows the management of Agencies and Contracts.
+      <p> The sales site offers the user the possibility of searching and purchasing with various payment gateways. </p>
+      `,
+    },
+    useStacks: ["Nodejs", "Angular", "MySQL"],
+    url: "experiencias.havanatursa.com",
+    Files: [
+      { file: "experiencias/1.jpeg", type: "image", id: "1" },
+      { file: "experiencias/2.jpeg", type: "image", id: "2" },
+      { file: "experiencias/3.jpeg", type: "image", id: "3" },
+      { file: "experiencias/4.jpeg", type: "image", id: "4" },
+      { file: "experiencias/5.jpeg", type: "image", id: "5" },
+      { file: "experiencias/6.jpeg", type: "image", id: "6" },
+      { file: "experiencias/7.jpeg", type: "image", id: "7" },
+      { file: "experiencias/8.jpeg", type: "image", id: "8" },
+      { file: "experiencias/9.jpeg", type: "image", id: "9" },
+    ],
+    category: "web sites",
+  },
+  {
+    name: "Autonomous navigation on a robot with Ackerman drive",
+    description: {
+      es: `En este video se prueba el algoritmo de seguimiento de un punto en un robot con accionamiento Ackerman.
+      La interfaz grafica se implemento utilizando las tecnologias HTML5, CCS3 y jQuery, esta permite enviar al robot el punto deseado a partir de una referencia local con respecto a su punto de partida. La visualización  del movimiento del mismo se logró utilizando la libreria Canvas.
+      El robot presenta un Arduino Mega para el control del motor de DC en la tracción y el motor de paso en la direccion.
+      Además del procesamiento de los encoders de efecto Hall acoplados al motor de DC y de los sensores inerciales para el posicionamiento.
+      La comunicacon entre la pc y el robot se logra a traves de un api desarrollado en python dentro de una raspberry Pi3.
+      La misma gestiona todas las peticiones del cliente en la computadora, y devuelve el estado del robot ademas que interpreta
+      los comandos y las coordernadas para la navegacion autonoma.`,
+
+      en: `In this video we test the point tracking algorithm on an Ackerman powered robot.
+      The graphical interface was implemented using HTML5, CCS3 and jQuery technologies, it allows to send the robot the desired point from a local reference with respect to its starting point. The visualization of its movement was achieved using the Canvas library.
+      The robot features an Arduino Mega for controlling the DC motor in the traction and the stepper motor in the direction.
+      In addition to processing the Hall effect encoders coupled to the DC motor and inertial sensors for positioning.
+      The communication between the pc and the robot is achieved through an api developed in python inside a raspberry Pi3.
+      It manages all client requests on the computer, and returns the status of the robot as well as interprets
+      commands and coordinates for autonomous navigation.
+      `,
+    },
+    useStacks: ["Python", "JQuery", "JavaScript", "Flask", "HTML5", "CSS3"],
     url: "",
     Files: [
-      { file: "https://www.youtube.com/embed/dg8ftpSStIc", type: "externalMedia", id: "1" },
-      { file: "https://www.youtube.com/embed/mijxUfsSrdE", type: "externalMedia", id: "2" },
-      { file: "https://www.youtube.com/embed/O6BeBPsemHU", type: "externalMedia", id: "3" },
+      {
+        file: "https://www.youtube.com/embed/Kv2xxKv3fYU",
+        type: "externalMedia",
+        id: "1",
+      },
     ],
     category: "robotics",
+  },
+  {
+    name: "Mobile application for the control of a self-balancing robot",
+    description: {
+      es: `Utilizando el framewor ionic, se desarrolló una aplicación para controlar un robot autoequilibrado a partir del uso de bluetooth.
+       El dispositivo se comunica con la placa Mega Arduino que tiene el módulo bluetooth incorporado HC-06`,
+
+      en: `Using the framewor ionic an application was developed to control a self-balancing robot from the use of bluetooth.
+      The device communicates with the Mega Arduino board that has the built-in bluetooth module HC-06
+      `,
+    },
+    useStacks: ["Ionic", "TypeScript", "HTML5", "CSS3"],
+    url:
+      "github.com/josealejandro2928/Self-Balancing-Robot-ionic-apk-controller",
+    Files: [
+      { file: "self-controller/1.jpeg", type: "image", id: "1" },
+      { file: "self-controller/2.jpeg", type: "image", id: "2" },
+      { file: "self-controller/3.jpeg", type: "image", id: "3" },
+      { file: "self-controller/4.jpeg", type: "image", id: "4" },
+    ],
+    category: "mobile apps",
+  },
+  {
+    name: "Mobile application to control investigations during the Covid pandemic: PesquisaActiva",
+    description: {
+      es: `Aplicación movil desarrollada con el framework Ionic para el control de pesquisas durante la pandemia del Covid: PesquisaActiva.
+      La misma presenta secciones de consejos, formularios para autopesquisarse, facilidades para las encuestas de los médicos. Y estadísticas por regiones de Cuba de los contagiados`,
+
+      en: `Mobile application developed with the Ionic framework for the control and investigations during the Covid pandemic: PesquisaActiva.
+      It presents sections of advice, forms for self-consult, facilities for medical surveys. And statistics by regions of Cuba of infecteds
+      `,
+    },
+    useStacks: ["Ionic", "TypeScript", "HTML5", "CSS3","NodeJs"],
+    url:
+      "",
+    Files: [
+      { file: "apk-pesquisa/1.jpeg", type: "image", id: "1" },
+      { file: "apk-pesquisa/2.jpeg", type: "image", id: "2" },
+      { file: "apk-pesquisa/3.jpeg", type: "image", id: "3" },
+      { file: "apk-pesquisa/4.jpeg", type: "image", id: "4" },
+    ],
+    category: "mobile apps",
   },
 ];
 
