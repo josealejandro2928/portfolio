@@ -29,8 +29,12 @@
       <p class="name">
         {{app.name|translate}}
       </p>
-      <div class="description" [innerHTML]="app?.description | safeHtml |translate">
-      </div>
+
+      <p class="more-datails"> <i class="fas fa-info-circle"></i>
+        &nbsp;
+        {{'more details'|translate}}</p>
+      <!-- <div class="description" [innerHTML]="app?.description | safeHtml |translate">
+      </div> -->
 
       <p class="stack">{{'Used Stack'|translate}}:</p>
       <div class="stacks" fxLayout="row wrap" fxLayoutAlign="start start">

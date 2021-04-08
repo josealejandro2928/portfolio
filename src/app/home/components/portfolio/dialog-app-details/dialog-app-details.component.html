@@ -16,10 +16,13 @@
       </p>
       <br>
       <div class="file-section">
-        <app-galery-files [_files]="app?.Files"></app-galery-files>
+        <div class="galery">
+          <app-galery-files [_files]="app?.Files"></app-galery-files>
+        </div>
+
       </div>
       <br>
-      <div class="description" [innerHTML]="app?.description | safeHtml |translate">
+      <div class="description" [innerHTML]="app?.description| parseLang:lang | safeHtml">
       </div>
 
       <p class="w-100">

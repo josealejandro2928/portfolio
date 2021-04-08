@@ -3,32 +3,32 @@
   <h1 writeLetter time="120" class="title">
     {{'Resume_'}}
   </h1>
-  <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="resume?.initialText | safeHtml |translate"></div>
+  <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="resume?.initialText | parseLang:lang | safeHtml "></div>
   <br>
 
   <section class="resume-list">
     <p class="resume-list-title">{{'Education'|translate}}</p>
 
-    <div *ngFor="let item of resume?.education" class="resume-list-item">
-      <p class="item-title">{{item.title}}</p>
+    <div ngpEnterSection dirY="bottom"  *ngFor="let item of resume?.education" class="resume-list-item">
+      <p class="item-title">{{item.title | translate}}</p>
       <p class="item-date">{{item.startDate}} - {{item.endDate}}</p>
 
-      <div class="text" [innerHTML]="item?.description | safeHtml |translate"></div>
+      <div class="text" [innerHTML]="item?.description | parseLang:lang | safeHtml"></div>
 
     </div>
 
     <p class="resume-list-title">{{'Professional work experience'|translate}}</p>
-    <div *ngFor="let item of resume?.professionalEmployment" class="resume-list-item">
-      <p class="item-title">{{item.title}}</p>
+    <div ngpEnterSection dirY="bottom" *ngFor="let item of resume?.professionalEmployment" class="resume-list-item">
+      <p class="item-title">{{item.title | translate}}</p>
       <p class="item-date">{{item.startDate}} - {{item.endDate}}</p>
-      <div class="text" [innerHTML]="item?.description | safeHtml |translate"></div>
+      <div class="text" [innerHTML]="item?.description | parseLang:lang | safeHtml"></div>
     </div>
 
     <p class="resume-list-title">{{'Vocational work experience'|translate}}</p>
-    <div *ngFor="let item of resume?.vocationalEmployment" class="resume-list-item">
-      <p class="item-title">{{item.title}}</p>
+    <div ngpEnterSection dirY="bottom" *ngFor="let item of resume?.vocationalEmployment" class="resume-list-item">
+      <p class="item-title">{{item.title | translate}}</p>
       <p class="item-date">{{item.startDate}} - {{item.endDate}}</p>
-      <div class="text" [innerHTML]="item?.description | safeHtml |translate"></div>
+      <div class="text" [innerHTML]="item?.description | parseLang:lang | safeHtml"></div>
     </div>
 
     <p class="resume-list-title">{{'General skills'|translate}}</p>

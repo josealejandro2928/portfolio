@@ -6,6 +6,7 @@ import {
   OnDestroy,
 } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { TranslateService } from '@ngx-translate/core';
 import { IApp } from 'src/app/common/models/app.model';
 
 @Component({
@@ -16,14 +17,18 @@ import { IApp } from 'src/app/common/models/app.model';
 })
 export class DialogAppDetailsComponent implements OnInit, OnDestroy {
   app: IApp;
+  lang = 'en';
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
+    private translate: TranslateService,
     public dialogRef: MatDialogRef<DialogAppDetailsComponent>
   ) {
     this.dialogRef.disableClose = true;
     this.app = data.app;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.lang = this.translate.currentLang;
+  }
   ngOnDestroy(): void {}
 }

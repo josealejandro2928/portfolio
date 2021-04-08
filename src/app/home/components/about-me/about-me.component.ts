@@ -1,3 +1,4 @@
+import { TranslateService } from '@ngx-translate/core';
 import {
   Component,
   OnInit,
@@ -18,7 +19,10 @@ export class AboutMeComponent implements OnInit {
       this.about = value;
     }
   }
-  constructor() {}
+  lang = 'en';
+  constructor(private translate: TranslateService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.lang = this.translate.currentLang;
+  }
 }

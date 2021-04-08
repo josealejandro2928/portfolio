@@ -81,6 +81,18 @@
     }
   }
 
+  .more-datails {
+    color: var(--colorTheme);
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+      transition: all;
+    }
+
+  }
+
   .details-section {
     padding: 24px;
     color: #555555;
@@ -131,6 +143,7 @@
 
     @media(max-width:800px) {
       padding: 16px;
+
       .name {
         width: 100%;
         overflow: hidden;

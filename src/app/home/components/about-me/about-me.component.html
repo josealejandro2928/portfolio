@@ -55,7 +55,8 @@
   <h1 writeLetter time="120" class="title">
     {{'About me_'}}
   </h1>
-  <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="about?.resumeText | safeHtml |translate">
+  <div class="innerHtml" style="max-width: 58rem;"
+    [innerHTML]="about?.resumeText |parseLang:lang | safeHtml |translate">
 
   </div>
   <br>

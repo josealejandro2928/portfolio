@@ -4,6 +4,7 @@ import {
   ChangeDetectionStrategy,
   Input,
 } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-resume',
@@ -18,7 +19,10 @@ export class ResumeComponent implements OnInit {
       this.resume = value;
     }
   }
-  constructor() {}
+  lang = 'en';
+  constructor(private translate: TranslateService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.lang = this.translate.currentLang;
+  }
 }

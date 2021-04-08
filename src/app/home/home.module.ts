@@ -24,6 +24,7 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
 import { ChooseThemeComponent } from './components/choose-theme/choose-theme.component';
 import { DialogAppDetailsComponent } from './components/portfolio/dialog-app-details/dialog-app-details.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NgpEnterSectionModule } from 'ngp-enter-section';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { ContactComponent } from './components/contact/contact.component';
     GaleryModule,
     MatDialogModule,
     SwiperModule,
+    NgpEnterSectionModule
   ],
 })
 export class HomeModule {}
