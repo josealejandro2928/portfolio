@@ -105,8 +105,7 @@ let allProject = [
     category: "landing pages",
   },
   {
-    name:
-      "Two Wheel Self Balancing Robot",
+    name: "Two Wheel Self Balancing Robot",
     description: {
       es: `En este trabajo se diseña y construye un robot autobalanceado sobre dos
       ruedas basado en el microcontrolador Arduino. Para el control de equilibrio
@@ -127,20 +126,96 @@ let allProject = [
       sensor reading and coordinate assignment.
       `,
     },
+    useStacks: ["C++", "Ionic", "Arduino", "HTML5", "CSS3"],
+    url: "",
+    Files: [
+      {
+        file: "https://www.youtube.com/embed/dg8ftpSStIc",
+        type: "externalMedia",
+        id: "1",
+      },
+      {
+        file: "https://www.youtube.com/embed/mijxUfsSrdE",
+        type: "externalMedia",
+        id: "2",
+      },
+      {
+        file: "https://www.youtube.com/embed/O6BeBPsemHU",
+        type: "externalMedia",
+        id: "3",
+      },
+    ],
+    category: "robotics",
+  },
+  {
+    name:
+      "Content management system for the website of the Cuban company Marlin SA",
+    description: {
+      es: `Página web institucional, contiene todas las secciones que describen la empresa Marlin SA.
+      Tiene una sección de noticias y un blog, para lograr la mayor interacción de los usuarios.
+      <p>El sistema tiene una administración donde los usuarios administradores suben y editan todo el contenido de la página</p>`,
+
+      en: `Institutional website, contains all the sections that describe the company Marlin SA.
+      It has a news section and a blog, to achieve the greatest user interaction.
+      <p> The system has an administration where administrative users upload and edit all the content of the page </p>
+      `,
+    },
     useStacks: [
-      "C++",
-      "Ionic",
-      "Arduino",
+      "Nodejs",
+      "Angular",
+      "React",
+      "MySQL",
+      "CKeditor",
+      "Material",
       "HTML5",
       "CSS3",
     ],
-    url: "",
+    url: "marlin.cinesoft.cu",
     Files: [
-      { file: "https://www.youtube.com/embed/dg8ftpSStIc", type: "externalMedia", id: "1" },
-      { file: "https://www.youtube.com/embed/mijxUfsSrdE", type: "externalMedia", id: "2" },
-      { file: "https://www.youtube.com/embed/O6BeBPsemHU", type: "externalMedia", id: "3" },
+      { file: "marinas-marlin/1.jpeg", type: "image", id: "1" },
+      { file: "marinas-marlin/2.jpeg", type: "image", id: "2" },
+      { file: "marinas-marlin/3.jpeg", type: "image", id: "3" },
+      { file: "marinas-marlin/4.jpeg", type: "image", id: "4" },
+      { file: "marinas-marlin/5.jpeg", type: "image", id: "5" },
+      { file: "marinas-marlin/6.jpeg", type: "image", id: "6" },
+      { file: "marinas-marlin/7.jpeg", type: "image", id: "7" },
+      { file: "marinas-marlin/8.jpeg", type: "image", id: "8" },
+      { file: "marinas-marlin/9.jpeg", type: "image", id: "9" },
     ],
-    category: "robotics",
+    category: "landing pages",
+  },
+  {
+    name:
+      "Events management and sale system for the Havanatur SA company. The system allows the creation of hotels and management of their availability. Allows B2B and B2C business modalities.",
+    description: {
+      es: `
+        El sistema permite la gestión de experiencias de un solo día en una administración.
+        Con un diseño de creación basado en airbnb, el usuario crea su experiencia en 5 pasos.
+        Permite la gestión de Agencias y Contratos.
+        <p> El sitio de ventas ofrece al usuario la posibilidad de búsqueda y compra con varias pasarelas de pagos. </p>
+      `,
+
+      en: `
+      The system allows the management of experiences of a single day in an administration.
+      With an airbnb-based creation design, the user creates their experience in 5 steps.
+      It allows the management of Agencies and Contracts.
+      <p> The sales site offers the user the possibility of searching and purchasing with various payment gateways. </p>
+      `,
+    },
+    useStacks: ["Nodejs", "Angular", "MySQL"],
+    url: "experiencias.havanatursa.com",
+    Files: [
+      { file: "experiencias/1.jpeg", type: "image", id: "1" },
+      { file: "experiencias/2.jpeg", type: "image", id: "2" },
+      { file: "experiencias/3.jpeg", type: "image", id: "3" },
+      { file: "experiencias/4.jpeg", type: "image", id: "4" },
+      { file: "experiencias/5.jpeg", type: "image", id: "5" },
+      { file: "experiencias/6.jpeg", type: "image", id: "6" },
+      { file: "experiencias/7.jpeg", type: "image", id: "7" },
+      { file: "experiencias/8.jpeg", type: "image", id: "8" },
+      { file: "experiencias/9.jpeg", type: "image", id: "9" },
+    ],
+    category: "web sites",
   },
 ];
 
