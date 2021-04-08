@@ -1,3 +1,4 @@
+import { NgpLazyLoadModule } from 'ngp-lazy-load';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { MatDialogModule } from '@angular/material/dialog';
 import { GaleryModule } from './../common/shared/galery/galery.module';
@@ -55,7 +56,8 @@ import { NgpEnterSectionModule } from 'ngp-enter-section';
     GaleryModule,
     MatDialogModule,
     SwiperModule,
-    NgpEnterSectionModule
+    NgpEnterSectionModule,
+    NgpLazyLoadModule
   ],
 })
 export class HomeModule {}
