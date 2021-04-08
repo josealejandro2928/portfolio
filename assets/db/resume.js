@@ -9,7 +9,7 @@ let data = {
     es: `<p>
     Mi labor profesional se ha centrado principalmente en el desarrollo de aplicaciones web y móviles con
     el uso de frameworks <strong>Javascript</strong>. También he realizado trabajos de robótica e impartido clases en
-    La Universidad Tecnológico de la Habana (CUJAE) sobre programación orientada a objetos en C ++, programación en Matlab
+    La Universidad Tecnológica de la Habana (CUJAE) sobre programación orientada a objetos en C ++, programación en Matlab
     y sistemas basados en microcontroladores.
   </p>`,
   },
@@ -76,9 +76,8 @@ let data = {
           <strong> Clases de Microcontroladores I </strong>: Arquitectura interna del microcontrolador 8051, programación
           en ensamblador y lenguaje C.
         <p>
-        <p> <strong> Clases de Introducción a Matlab I </strong>: Programación en Matlab, conceptos básicos, desarrollo
-        entorno, problemas de programación y simulación de procesos físicos utilizando el MatLab
-        Herramienta.
+        <p> <strong> Clases de Introducción a Matlab I </strong>: Programación en Matlab, conceptos básicos,entorno de
+        desarrollo, problemas de programación y simulación de procesos físicos.
       </p>`,
         en: `<p>
           <strong>Teaching Microcontroller I</strong>: Internal architecture of the 8051 microcontroller, programming
@@ -98,8 +97,8 @@ let data = {
       startDate: "2018",
       endDate: "2019",
       description: {
-        es: `<strong> Robot autoequilibrado de dos ruedas </strong>:
-        Diseño de un robot autoequilibrado de dos ruedas
+        es: `<strong> Robot autobalanceado de dos ruedas </strong>:
+        Diseño de un robot autobalanceado de dos ruedas
         basado en el microcontrolador Arduino, desarrollo de algoritmos PID, filtro complementario,
         y filtro de Kalman. <div> (<a  href="https://youtu.be/dg8ftpSStIc" target="_blank"> https://youtu.be/dg8ftpSStIc </a>)<div>`,
         en: `
@@ -151,8 +150,8 @@ let data = {
         en: `Teaching <strong>Object-oriented programming</strong>: Introduction to the C ++ language, fundamental
         characteristics, functions, classes, inheritance, polymorphisms, data structures and algorithms.
       `,
-      es:`Enseñanza de la <strong> programación orientada a objetos </strong>: Introducción al lenguaje C ++,
-      características fundamentales, funciones, clases, herencia, polimorfismos, estructuras de datos y algoritmos.`
+        es: `Enseñanza de la <strong> programación orientada a objetos </strong>: Introducción al lenguaje C ++,
+      características fundamentales, funciones, clases, herencia, polimorfismos, estructuras de datos y algoritmos.`,
       },
     },
   ],
