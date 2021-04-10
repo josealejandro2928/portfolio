@@ -23,10 +23,10 @@ export class TestimonialComponent implements OnInit, AfterViewInit {
   @Input() set _testimonials(value) {
     if (value) {
       this.testimonials = value;
-      console.log(
-        '🚀 ~ file: testimonial.component.ts ~ line 19 ~ TestimonialComponent ~ @Input ~ this.testimonials',
-        this.testimonials
-      );
+      // console.log(
+      //   '🚀 ~ file: testimonial.component.ts ~ line 19 ~ TestimonialComponent ~ @Input ~ this.testimonials',
+      //   this.testimonials
+      // );
     }
   }
 

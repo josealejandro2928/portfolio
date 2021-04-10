@@ -22,6 +22,11 @@ let data = {
       class: "fab fa-gitlab",
       name: "Gitlab",
     },
+    {
+      url: "https://www.npmjs.com/~jalejandro2928",
+      class: "fab fa-npm",
+      name: "Npm",
+    },
   ],
   resumeText: {
     en: `
