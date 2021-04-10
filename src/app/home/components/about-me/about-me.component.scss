@@ -29,8 +29,6 @@
 
 .main-resume {
   padding: 30px 0px;
-  column-gap: 4rem;
-  row-gap: 1rem;
   color: #fff;
   position: relative;
   box-sizing: border-box;
@@ -38,7 +36,7 @@
   max-width: 100%;
 
   img {
-    border-radius: 5px;
+    border-radius: 16px;
     box-shadow: 0 0 27px rgba(96, 96, 96, .34);
     height: 304px;
     -o-object-fit: cover;
@@ -51,11 +49,11 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-
   }
 
   .info {
     margin-top: 64px;
+    padding: 0px 32px;
 
     .name {
       font-size: 32px;
@@ -86,7 +84,7 @@
         flex: 1 1 100px;
         max-width: 100px;
         font-weight: 800;
-        opacity: .6;
+        opacity: .8;
         font-size: 16px;
       }
 
@@ -107,7 +105,7 @@
       a {
         font-size: 24px;
         margin-right: 15px;
-        opacity: .4;
+        opacity: .6;
         color: #fff;
 
       }
@@ -119,7 +117,7 @@
 
   @media(max-width:800px) {
     img {
-      border-radius: 5px;
+      // border-radius: 5px;
       box-shadow: 0 0 27px rgba(96, 96, 96, .34);
       height: 240px;
       width: 214px;
@@ -145,10 +143,12 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
+      padding: 0px;
     }
 
     .info {
       margin-top: 40px;
+      padding: 0px;
 
       .name {
         font-size: 26px;

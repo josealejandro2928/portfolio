@@ -35,7 +35,7 @@
         </div>
       </div>
       <br>
-      <a [href]="'https://' + app.url" target="_blank" *ngIf="app.url" class="url">
+      <a (click)="$event.stopPropagation()" [href]="'https://' + app.url" target="_blank" *ngIf="app.url" class="url">
         {{app.url}}
       </a>
 

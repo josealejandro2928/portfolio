@@ -49,8 +49,8 @@
     </button>
   </div>
 
-  <div fxLayout="column" fxLayoutAlign="center center" style="row-gap: 2rem;">
-    <a (click)="this.onToogleMenu()" [href]="'#'+item.sectionId" class="navItem" style="padding: 8px;"
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <a (click)="this.onToogleMenu()" [href]="'#'+item.sectionId" class="navItem" style="padding: 4px 16px; margin: 1rem 0px;"
       [ngClass]="{'active': item.active}" *ngFor="let item of navigation">
       {{item.label | translate}}
     </a>
