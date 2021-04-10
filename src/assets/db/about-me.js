@@ -36,7 +36,7 @@ let data = {
      </p>`,
     es: `
     <p>
-      Graduado de la carrera de Ingeniería en Automatización. Trabajo como desarrollador  <strong>Full Stack </strong> usando tecnologías basadas en  <strong>Javascript </strong>.
+      Graduado de la carrera de Ingeniería en Automática. Trabajo como desarrollador  <strong>Full Stack </strong> usando tecnologías basadas en  <strong>Javascript </strong>.
       También he investigado en el campo de la Robótica, lo que me ha llevado al desarrollo de proyectos como: El diseño de un
       <strong>Robot con Accionamiento Ackermarn </strong> con tareas como: La evitación de obstáculos y la planificación de trayectorias.
       También desarrollé un <strong>Robot Autobalanceado de dos Ruedas</strong> en mi trabajo de tesis. Participé en el Concurso Internacional de Programación Colegiada  <strong>ACM (ICPC) </strong> varias veces,

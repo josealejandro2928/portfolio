@@ -17,6 +17,7 @@ export class ResumeComponent implements OnInit {
   @Input() set _resume(value) {
     if (value) {
       this.resume = value;
+      this.resume.skills = this.resume?.skills.sort((a,b)=>b.value-a.value);
     }
   }
   lang = 'en';

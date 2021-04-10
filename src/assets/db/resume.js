@@ -22,11 +22,15 @@ let data = {
       description: {
         en: `<strong>Bachelor in Automation Engineering (Single-Cycle, 5 years)</strong>.
         Biomedical and Automation Faculty, Technological University of Havana (CUJAE), Cuba.
-        <p>Grade: <strong>4.72/5</strong>, granted the “Scientific Merit Award”.</p>`,
+        <p>Grade: <strong>4.72/5</strong>.</p>
+        <p>Granted the <strong> “Scientific Merit Award”</strong>.</p>`,
 
-        es: `<strong>Licenciatura en Ingeniería en Automatización (ciclo único, 5 años) </strong>.
-        Facultad de Biomedicina y Automática, Universidad Tecnológica de La Habana (CUJAE), Cuba.
-        <p> Calificación: <strong> 4.72 / 5 </strong>, otorgado el "Premio al mérito científico"`,
+        es: `<strong>Graduado de Ingeniería en Automática (ciclo único, 5 años) </strong>.
+        Facultad de Biomédica y Automática, Universidad Tecnológica de La Habana (CUJAE), Cuba.
+        <p> Calificación: <strong> 4.72 / 5 </strong>.</p>
+        <p>
+         Me fue otorgado el <strong>"Premio al mérito científico".</strong>
+        <p>`,
       },
     },
   ],
@@ -41,28 +45,30 @@ let data = {
         Backend development using <strong>Nodejs</strong> framework with relational
         and non-relational databases like
         <strong>MySQL</strong> and <strong>MongoDB</strong>.
-        Development of several types of applications such as:
+        Experience in several types of applications such as:
         <ul>
-          <li>Dynamic Web Application</li>
+          <li>Dynamic Web Applications</li>
           <li>Single Page and Multi-Page Apps (SPA), (MPA)</li>
-          <li>Portal Web App</li>
+          <li>Portal Web Apps</li>
           <li>Web Applications with a Content Management System</li>
           <li>Simulation environments</li>
           <li>E-commerce Web Apps</li>
+          <li>Development mobile applications</li>
         <ul>
       `,
         es: `Desarrollo de aplicaciones webs y móviles, utilizando frameworks Javascript
         como: <strong> Angular </strong>, <strong> Ionic </strong> y <strong> React </strong>.
         Desarrollo backend con <strong> Nodejs </strong> utilizando bases de datos relacionales y no relacionales:
         <strong> MySQL </strong> y <strong> MongoDB </strong>.
-        Desarrollo de varios tipos de aplicaciones como:
+        Experiencia en varios tipos de aplicaciones como:
         <ul>
-        <li>Dynamic Web Application</li>
-        <li>Single Page and Multi-Page Apps (SPA), (MPA)</li>
-        <li>Portal Web App</li>
-        <li>Web Applications with a Content Management System</li>
-        <li>Simulation environments</li>
-        <li>E-commerce Web Apps</li>
+          <li>Dynamic Web Applications</li>
+          <li>Single Page and Multi-Page Apps (SPA), (MPA)</li>
+          <li>Portal Web Apps</li>
+          <li>Web Applications with a Content Management System</li>
+          <li>Simulation environments</li>
+          <li>E-commerce Web Apps</li>
+          <li>Development mobile Apps</li>
       <ul>`,
       },
     },
@@ -76,7 +82,7 @@ let data = {
           <strong> Clases de Microcontroladores I </strong>: Arquitectura interna del microcontrolador 8051, programación
           en ensamblador y lenguaje C.
         <p>
-        <p> <strong> Clases de Introducción a Matlab I </strong>: Programación en Matlab, conceptos básicos,entorno de
+        <p> <strong> Clases de Introducción a Matlab I </strong>: Programación en Matlab, conceptos básicos, entorno de
         desarrollo, problemas de programación y simulación de procesos físicos.
       </p>`,
         en: `<p>
@@ -171,7 +177,7 @@ let data = {
     { name: "Git", value: 70 },
     { name: "Robotic", value: 75 },
     { name: "Arduino", value: 80 },
-    { name: "MySql", value: 70 },
+    { name: "MySql", value: 60 },
     { name: "MongoDB", value: 60 },
     { name: "Rest api", value: 70 },
     { name: "Linux", value: 60 },

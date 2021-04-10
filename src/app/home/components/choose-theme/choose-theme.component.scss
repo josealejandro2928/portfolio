@@ -4,7 +4,7 @@
   right: 0px;
   cursor: pointer;
   display: flex;
-  transform: translateX(84px);
+  transform: translateX(100px);
   transition: all .6s;
   z-index: 99
 }
@@ -35,20 +35,21 @@
 
 .themes {
   display: flex;
-  padding: 8px;
+  padding: 0px;
   box-shadow: 5px 1px 10px rgba(0, 0, 0, .3);
   height: 50px;
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   background-color: #f0f0f0;
-  gap: 8px;
+
 
   .theme {
     height: 30px;
     width: 30px;
     transition: all .5s ease;
     border-radius: 4px;
+    margin: 8px;
   }
 
   .theme.white {
