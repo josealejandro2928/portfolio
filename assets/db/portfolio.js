@@ -38,7 +38,7 @@ let allProject = [
   {
     name: "Multimedia streaming web application.",
     description: {
-      es: `Sistema de gestión para un sitio de multimedia. La aplicacioón utiliza la librería dashjs para la generación del streaming.
+      es: `Sistema de gestión para un sitio web de multimedia. La aplicación utiliza la librería dashjs para la generación del streaming.
       <p>El sistema le premite a los usuarios subscribirse a la plataforma,
       interactuar con los videos(me gusta, no me gusta, adicionar a favoritos), realizar comentarios y
        realizar búsquedas por categorías.</p>
@@ -77,11 +77,11 @@ let allProject = [
       "Content management system for the website of the Cuban company Gaviota SA",
     description: {
       es: `Página web institucional, contiene todas las secciones que describen la empresa Gaviota SA.
-      Tiene una sección de noticias y un blog, para lograr la mayor interacción de los usuarios.
-      <p>El sistema tiene una administración donde los usuarios administradores suben y editan todo el contenido de la página</p>`,
+      Tiene una sección de noticias y un blog para lograr la mayor interacción de los usuarios.
+      <p>El sistema cuenta con una administración donde los usuarios suben y editan todo el contenido de la página</p>`,
 
       en: `Institutional website, contains all the sections that describe the company Gaviota SA.
-      It has a news section and a blog, to achieve the greatest user interaction.
+      It has a news section and a blog to achieve the greatest user interaction.
       <p> The system has an administration where administrative users upload and edit all the content of the page </p>
       `,
     },
@@ -152,8 +152,8 @@ let allProject = [
       "Content management system for the website of the Cuban company Marlin SA",
     description: {
       es: `Página web institucional, contiene todas las secciones que describen la empresa Marlin SA.
-      Tiene una sección de noticias y un blog, para lograr la mayor interacción de los usuarios.
-      <p>El sistema tiene una administración donde los usuarios administradores suben y editan todo el contenido de la página</p>`,
+      Tiene una sección de noticias y un blog para lograr la mayor interacción de los usuarios.
+      <p>El sistema cuenta con una administración donde los usuarios suben y editan todo el contenido de la página</p>`,
 
       en: `Institutional website, contains all the sections that describe the company Marlin SA.
       It has a news section and a blog, to achieve the greatest user interaction.
@@ -185,8 +185,7 @@ let allProject = [
     category: "landing pages",
   },
   {
-    name:
-      "Events management and sale system for the Havanatur SA company. The system allows the creation of hotels and management of their availability. Allows B2B and B2C business modalities.",
+    name: "Events management and sale system for the Havanatur SA company",
     description: {
       es: `
         El sistema permite la gestión de experiencias de un solo día en una administración.
@@ -251,10 +250,10 @@ let allProject = [
   {
     name: "Mobile application for the control of a self-balancing robot",
     description: {
-      es: `Utilizando el framewor ionic, se desarrolló una aplicación para controlar un robot autoequilibrado a partir del uso de bluetooth.
-       El dispositivo se comunica con la placa Mega Arduino que tiene el módulo bluetooth incorporado HC-06`,
+      es: `Utilizando <strong> El Framework Ionic </strong>, se desarrolló una aplicación para controlar un robot autoequilibrado a partir del uso de bluetooth.
+       El dispositivo se comunica con la placa Arduino Mega que tiene el módulo bluetooth incorporado HC-06`,
 
-      en: `Using the framewor ionic an application was developed to control a self-balancing robot from the use of bluetooth.
+      en: `Using <strong> The Ionic Framework</strong> an application was developed to control a self-balancing robot from the use of bluetooth.
       The device communicates with the Mega Arduino board that has the built-in bluetooth module HC-06
       `,
     },
@@ -270,23 +269,79 @@ let allProject = [
     category: "mobile apps",
   },
   {
-    name: "Mobile application to control investigations during the Covid pandemic: PesquisaActiva",
+    name:
+      "Mobile application to control investigations during the Covid pandemic: PesquisaActiva",
     description: {
-      es: `Aplicación movil desarrollada con el framework Ionic para el control de pesquisas durante la pandemia del Covid: PesquisaActiva.
-      La misma presenta secciones de consejos, formularios para autopesquisarse, facilidades para las encuestas de los médicos. Y estadísticas por regiones de Cuba de los contagiados`,
+      es: `Aplicación movil desarrollada con <strong>El Framework Ionic</strong> para el control de pesquisas durante la pandemia del Covid: <strong>PesquisaActiva</strong>.
+      La misma presenta secciones de consejos, formularios para autopesquisarse, facilidades para las encuestas de los médicos. Y estadísticas de los enfermos por regiones de Cuba`,
 
-      en: `Mobile application developed with the Ionic framework for the control and investigations during the Covid pandemic: PesquisaActiva.
-      It presents sections of advice, forms for self-consult, facilities for medical surveys. And statistics by regions of Cuba of infecteds
+      en: `Mobile application developed with <strong>The Ionic framework </strong> for the control and investigations during the Covid pandemic: PesquisaActiva.
+      It presents sections of advice, forms for self-consult, facilities for medical surveys. And statistics of the sick by regions of Cuba.
       `,
     },
-    useStacks: ["Ionic", "TypeScript", "HTML5", "CSS3","NodeJs"],
-    url:
-      "",
+    useStacks: ["Ionic", "TypeScript", "HTML5", "CSS3", "NodeJs"],
+    url: "",
     Files: [
       { file: "apk-pesquisa/1.jpeg", type: "image", id: "1" },
       { file: "apk-pesquisa/2.jpeg", type: "image", id: "2" },
       { file: "apk-pesquisa/3.jpeg", type: "image", id: "3" },
       { file: "apk-pesquisa/4.jpeg", type: "image", id: "4" },
+    ],
+    category: "mobile apps",
+  },
+  {
+    name: "My portfolio",
+    description: {
+      es: `Mi propio sitio web, donde puedes encontrar la información tecnica acerca de mi, mis habilidades,
+      resumen laboral y los ejemplos de trabajos realizados`,
+
+      en: `My own website, where you can find technical information about me, my skills,
+       job summary and examples of jobs done
+      `,
+    },
+    useStacks: ["Angular", "TypeScript", "HTML5", "CSS3"],
+    url: "https://josealejandro2928.github.io/portfolio/",
+    Files: [
+      { file: "portfolio/1.jpeg", type: "image", id: "1" },
+      { file: "portfolio/2.jpeg", type: "image", id: "2" },
+      { file: "portfolio/3.jpeg", type: "image", id: "3" },
+      { file: "portfolio/4.jpeg", type: "image", id: "4" },
+    ],
+    category: "landing pages",
+  },
+  {
+    name: "Simple image editor in the browser",
+    description: {
+      es: `Herramienta para comprimir, recortar y cambiar de formato imágenes en el navegador de una manera sencilla.
+      Creada completamente en javascript, es compatible con todos los navegadores.`,
+
+      en: `Tool to compress, crop and change the format of images in the browser in a simple way. Created entirely in javascript,
+       it is compatible with all browsers.
+      `,
+    },
+    useStacks: ["JavaScript", "HTML5", "CSS3"],
+    url: "https://cogetuimagen.cubanearme.com/",
+    Files: [
+      { file: "images-editor/1.jpeg", type: "image", id: "1" },
+      { file: "images-editor/2.jpeg", type: "image", id: "2" },
+      { file: "images-editor/3.jpeg", type: "image", id: "3" },
+    ],
+    category: "web sites",
+  },
+  {
+    name: "Simple Chat Ionic App",
+    description: {
+      es: `Aplicación de mensajería instantánea desarrollada en Ionic. Utiliza socket io para la comunicación en tiempo real.`,
+
+      en: `Instant messaging application developed in Ionic. It uses socket io for real-time communication.`,
+    },
+    useStacks: ["Ionic", "NodeJs", "socket-io", "HTML5", "CSS3"],
+    url: "https://github.com/josealejandro2928/simple-chat",
+    Files: [
+      { file: "simple-chat/1.jpeg", type: "image", id: "1" },
+      { file: "simple-chat/2.jpeg", type: "image", id: "2" },
+      { file: "simple-chat/3.jpeg", type: "image", id: "3" },
+      { file: "simple-chat/4.jpeg", type: "image", id: "3" },
     ],
     category: "mobile apps",
   },
