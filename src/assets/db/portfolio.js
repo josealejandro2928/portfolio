@@ -300,7 +300,7 @@ let allProject = [
       `,
     },
     useStacks: ["Angular", "TypeScript", "HTML5", "CSS3"],
-    url: "https://josealejandro2928.github.io/portfolio/",
+    url: "josealejandro2928.github.io/portfolio/",
     Files: [
       { file: "portfolio/1.jpeg", type: "image", id: "1" },
       { file: "portfolio/2.jpeg", type: "image", id: "2" },
@@ -320,7 +320,7 @@ let allProject = [
       `,
     },
     useStacks: ["JavaScript", "HTML5", "CSS3"],
-    url: "https://cogetuimagen.cubanearme.com/",
+    url: "cogetuimagen.cubanearme.com/",
     Files: [
       { file: "images-editor/1.jpeg", type: "image", id: "1" },
       { file: "images-editor/2.jpeg", type: "image", id: "2" },
@@ -336,7 +336,7 @@ let allProject = [
       en: `Instant messaging application developed in Ionic. It uses socket io for real-time communication.`,
     },
     useStacks: ["Ionic", "NodeJs", "socket-io", "HTML5", "CSS3"],
-    url: "https://github.com/josealejandro2928/simple-chat",
+    url: "github.com/josealejandro2928/simple-chat",
     Files: [
       { file: "simple-chat/1.jpeg", type: "image", id: "1" },
       { file: "simple-chat/2.jpeg", type: "image", id: "2" },

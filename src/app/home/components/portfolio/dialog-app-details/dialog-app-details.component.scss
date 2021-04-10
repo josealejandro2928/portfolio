@@ -78,7 +78,7 @@
       height: 360px;
 
       @media screen and (max-width:599px) {
-          height: 210px;
+        height: 210px;
       }
     }
 
@@ -142,6 +142,7 @@
     }
 
     .url {
+      word-break: break-word;
       margin-top: 0px;
       margin-bottom: 20px;
       font-family: Roboto Mono, monospace;
