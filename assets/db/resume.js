@@ -73,7 +73,7 @@ let data = {
       },
     },
     {
-      title: "Intern professor in Technological University of Havana (CUJAE)",
+      title: "Trained professor in Technological University of Havana (CUJAE)",
       startDate: "2019",
       endDate: "2020",
       description: {
@@ -86,9 +86,9 @@ let data = {
         desarrollo, problemas de programación y simulación de procesos físicos.
       </p>`,
         en: `<p>
-          <strong>Teaching Microcontroller I</strong>: Internal architecture of the 8051 microcontroller, programming
+          <strong>I taught Microcontrollers I</strong>: Internal architecture of the 8051 microcontroller, programming
           in assembly and C language.<p>
-          <p> <strong>Teaching Introduction to Matlab I</strong>: Programming at Matlab, Basic concepts, development
+          <p> <strong>I taught Introduction to Matlab I</strong>: Programming at Matlab, Basic concepts, development
           environment, programing problems and simulation of physical processes using the MatLab
           Tool.
       </p>`,

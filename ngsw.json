@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1621009390326,
+  "timestamp": 1621185987956,
   "index": "https://josealejandro2928.github.io/portfolio/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://josealejandro2928.github.io/portfolio/4.b61021b8709d926e3df4.js",
+        "https://josealejandro2928.github.io/portfolio/4.79f18f955f3282377107.js",
         "https://josealejandro2928.github.io/portfolio/favicon.ico",
         "https://josealejandro2928.github.io/portfolio/index.html",
-        "https://josealejandro2928.github.io/portfolio/main.6883c86b45de77e4d299.js",
+        "https://josealejandro2928.github.io/portfolio/main.50797c4b37f7fca758b6.js",
         "https://josealejandro2928.github.io/portfolio/manifest.webmanifest",
         "https://josealejandro2928.github.io/portfolio/polyfills.00096ed7d93ed26ee6df.js",
-        "https://josealejandro2928.github.io/portfolio/runtime.35c1e5649c6f5916e452.js",
-        "https://josealejandro2928.github.io/portfolio/styles.81683278f207c3e74445.css"
+        "https://josealejandro2928.github.io/portfolio/runtime.701ad2b5e92063300845.js",
+        "https://josealejandro2928.github.io/portfolio/styles.b1452d7f621740d5fc31.css"
       ],
       "patterns": []
     },
@@ -31,6 +31,7 @@
       },
       "urls": [
         "https://josealejandro2928.github.io/portfolio/assets/db/about-me.js",
+        "https://josealejandro2928.github.io/portfolio/assets/db/certifications.js",
         "https://josealejandro2928.github.io/portfolio/assets/db/navigation.js",
         "https://josealejandro2928.github.io/portfolio/assets/db/portfolio.js",
         "https://josealejandro2928.github.io/portfolio/assets/db/resume.js",
@@ -46,6 +47,7 @@
         "https://josealejandro2928.github.io/portfolio/assets/icons/icon-512x512.png",
         "https://josealejandro2928.github.io/portfolio/assets/icons/icon-72x72.png",
         "https://josealejandro2928.github.io/portfolio/assets/icons/icon-96x96.png",
+        "https://josealejandro2928.github.io/portfolio/assets/images/acm-icpc.png",
         "https://josealejandro2928.github.io/portfolio/assets/images/angular-seeklogo.com.svg",
         "https://josealejandro2928.github.io/portfolio/assets/images/bg.jpeg",
         "https://josealejandro2928.github.io/portfolio/assets/images/flags/de.svg",
@@ -54,6 +56,7 @@
         "https://josealejandro2928.github.io/portfolio/assets/images/flags/fr.svg",
         "https://josealejandro2928.github.io/portfolio/assets/images/flags/ru.svg",
         "https://josealejandro2928.github.io/portfolio/assets/images/flags/tr.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/hackerRank.jpeg",
         "https://josealejandro2928.github.io/portfolio/assets/images/img_avatar.jpg",
         "https://josealejandro2928.github.io/portfolio/assets/images/javascript-seeklogo.com.svg",
         "https://josealejandro2928.github.io/portfolio/assets/images/nodejs-icon.svg",
@@ -67,14 +70,15 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://josealejandro2928.github.io/portfolio/4.b61021b8709d926e3df4.js": "b7311b59e1cb9b6e196c4a08b230a39b661e13c3",
-    "https://josealejandro2928.github.io/portfolio/assets/db/about-me.js": "c60668c84c512550a301a69d6ab1c65aa4e09ad2",
-    "https://josealejandro2928.github.io/portfolio/assets/db/navigation.js": "99d0f0e9ccbf2aa6f7ee05df1980b91d368ab2be",
+    "https://josealejandro2928.github.io/portfolio/4.79f18f955f3282377107.js": "8d40877bc0f6b68a41c9420b38ca35b6b0792421",
+    "https://josealejandro2928.github.io/portfolio/assets/db/about-me.js": "dbf844f4d59167aa369a0c45f6a4e8cf61702677",
+    "https://josealejandro2928.github.io/portfolio/assets/db/certifications.js": "9747feaf952c536974e4425d723ab69303016315",
+    "https://josealejandro2928.github.io/portfolio/assets/db/navigation.js": "7719f75bc8a7b05e21e579c75b47ffd1613b0d3f",
     "https://josealejandro2928.github.io/portfolio/assets/db/portfolio.js": "b0b886c7b29adfca3615aa407aba2034d5ab982d",
-    "https://josealejandro2928.github.io/portfolio/assets/db/resume.js": "c9a7d6bfe7ee8636eaed8557b1acd602bdcd8b0e",
+    "https://josealejandro2928.github.io/portfolio/assets/db/resume.js": "4d510aca1ed8a1f8e11cffd7641b924029fd4b58",
     "https://josealejandro2928.github.io/portfolio/assets/db/testimonials.js": "b0704c8b6ba0809d5536479a8c7ffcbc7c6cefb5",
-    "https://josealejandro2928.github.io/portfolio/assets/i18n/en.json": "03e93ad097b683cd500fcfc37cd619ce521bd5a2",
-    "https://josealejandro2928.github.io/portfolio/assets/i18n/es.json": "364d36c9a0e5957a66f8795cadb488382dd09b61",
+    "https://josealejandro2928.github.io/portfolio/assets/i18n/en.json": "70a8273e45ab146c9540285edc49e818da674dff",
+    "https://josealejandro2928.github.io/portfolio/assets/i18n/es.json": "b3fd13e14d2c5b58179531709887797f87265733",
     "https://josealejandro2928.github.io/portfolio/assets/i18n/index.js": "b31fc7eb3c46c4f7891e3a0dfb0fc22717a02fe0",
     "https://josealejandro2928.github.io/portfolio/assets/icons/icon-128x128.png": "254434a060542d5647a1c3dc4b86d1b3ea548cc2",
     "https://josealejandro2928.github.io/portfolio/assets/icons/icon-144x144.png": "284a8109bf3f0392dd4db72c16d4f1821f384f4b",
@@ -84,6 +88,7 @@
     "https://josealejandro2928.github.io/portfolio/assets/icons/icon-512x512.png": "5648b0176aa673fa5f5f20780bee7cf3b7e5157c",
     "https://josealejandro2928.github.io/portfolio/assets/icons/icon-72x72.png": "ec65c0c91e1c1619236bcadc45cf92e0622fd6db",
     "https://josealejandro2928.github.io/portfolio/assets/icons/icon-96x96.png": "23dd26705586b25ec787f6f186b58d97227f2080",
+    "https://josealejandro2928.github.io/portfolio/assets/images/acm-icpc.png": "2ac444d7a8134a61d192c4845fd744f901109258",
     "https://josealejandro2928.github.io/portfolio/assets/images/angular-seeklogo.com.svg": "9d179562dee9592b9a88dd4705734950b055ef0a",
     "https://josealejandro2928.github.io/portfolio/assets/images/bg.jpeg": "41ed6f8226901b1e715675038c02c2df57adab30",
     "https://josealejandro2928.github.io/portfolio/assets/images/flags/de.svg": "5a7f1ccefd0016fe3bf63056897f58599da9a21b",
@@ -92,6 +97,7 @@
     "https://josealejandro2928.github.io/portfolio/assets/images/flags/fr.svg": "1dd619dab2457aeaff34b1e361962051a313721a",
     "https://josealejandro2928.github.io/portfolio/assets/images/flags/ru.svg": "859551f8f641ca588c6b23eb9303493fc335b62f",
     "https://josealejandro2928.github.io/portfolio/assets/images/flags/tr.svg": "ca5527c8e51df351d1757aec7f65b73a927a06b9",
+    "https://josealejandro2928.github.io/portfolio/assets/images/hackerRank.jpeg": "a3263c24c218fe21cf9a45c2c10813b98beebf9b",
     "https://josealejandro2928.github.io/portfolio/assets/images/img_avatar.jpg": "eb7dad27ea2d81d47be03dfb3896cca410aeb6e5",
     "https://josealejandro2928.github.io/portfolio/assets/images/javascript-seeklogo.com.svg": "b18ea414b87b0b8b885560c2387cb6f453947c68",
     "https://josealejandro2928.github.io/portfolio/assets/images/nodejs-icon.svg": "357875f5c806cbaa37f48a56ec1aaabe472a4536",
@@ -100,12 +106,12 @@
     "https://josealejandro2928.github.io/portfolio/assets/scss/helpers/_helpers.scss": "b1c17508da342d2485c4ac93580ab6edf0e3c3ec",
     "https://josealejandro2928.github.io/portfolio/assets/scss/theme/_variables.scss": "f26b5d9858a39bde4976934e1490e8b7ebc3b89a",
     "https://josealejandro2928.github.io/portfolio/favicon.ico": "ec65c0c91e1c1619236bcadc45cf92e0622fd6db",
-    "https://josealejandro2928.github.io/portfolio/index.html": "c48f8aa547fb4c0d07efd3afeaf1bdcd954a6e84",
-    "https://josealejandro2928.github.io/portfolio/main.6883c86b45de77e4d299.js": "25075134ab3e20db1b1c2adebc2ef46f88180ef7",
+    "https://josealejandro2928.github.io/portfolio/index.html": "e9599b4d4646afb8b3bfd1d6751d1cec1b91384c",
+    "https://josealejandro2928.github.io/portfolio/main.50797c4b37f7fca758b6.js": "cf2bbc5c26de05781dfe970dfdbd71bdb6e52dd4",
     "https://josealejandro2928.github.io/portfolio/manifest.webmanifest": "1dc22f9b3107a671d9a3ed67442287f4ae599b18",
     "https://josealejandro2928.github.io/portfolio/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "https://josealejandro2928.github.io/portfolio/runtime.35c1e5649c6f5916e452.js": "dc54a75e4e0452d0f637b576dc974da4922246c6",
-    "https://josealejandro2928.github.io/portfolio/styles.81683278f207c3e74445.css": "73405fcb943e438ed875a092026f9a444a0fb717"
+    "https://josealejandro2928.github.io/portfolio/runtime.701ad2b5e92063300845.js": "d1c7814ee8dd2243bf362a60cddd4b6785416faa",
+    "https://josealejandro2928.github.io/portfolio/styles.b1452d7f621740d5fc31.css": "fc69e3d583b040398016f25b8622b99ad2439808"
   },
   "navigationUrls": [
     {
