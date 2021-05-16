@@ -67,7 +67,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.initSystem();
     const navbar: any = this.elRef.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', (e) => {
       if (window.scrollY > 25) {
         navbar.classList.add('active');
       } else {
@@ -86,9 +86,9 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     for (const item of this.navigation) {
       const section = document.getElementById(item.sectionId);
       if (section) {
-        const top = section.getBoundingClientRect().top;
+        const { top, height } = section.getBoundingClientRect();
         const bodyHeigt = document.body.offsetHeight;
-        if (bodyHeigt / 2 > top - 150 && top >= 0) {
+        if (Math.abs(top) - 150 < bodyHeigt) {
           item.active = true;
         } else {
           item.active = false;

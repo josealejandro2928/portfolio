@@ -26,6 +26,8 @@ import { ChooseThemeComponent } from './components/choose-theme/choose-theme.com
 import { DialogAppDetailsComponent } from './components/portfolio/dialog-app-details/dialog-app-details.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NgpEnterSectionModule } from 'ngp-enter-section';
+import { CertificationsComponent } from './components/certifications/certifications.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { NgpEnterSectionModule } from 'ngp-enter-section';
     ChooseThemeComponent,
     DialogAppDetailsComponent,
     ContactComponent,
+    CertificationsComponent,
   ],
   imports: [
     CommonModule,
@@ -57,7 +60,8 @@ import { NgpEnterSectionModule } from 'ngp-enter-section';
     MatDialogModule,
     SwiperModule,
     NgpEnterSectionModule,
-    NgpLazyLoadModule
+    NgpLazyLoadModule,
+    MatProgressSpinnerModule,
   ],
 })
 export class HomeModule {}

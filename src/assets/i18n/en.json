@@ -24,6 +24,7 @@
   "resume": "resume",
   "portfolio": "portfolio",
   "testimonials": "testimonials",
+  "certifications": "certifications",
   "blog": "blog",
   "contact": "contact",
   "Full Stack Developer, Automation Engineer": "Full Stack Developer, Automation Engineer",
@@ -43,8 +44,9 @@
   "Two Wheel Self Balancing Robot": "Two Wheel Self Balancing Robot",
   "Autonomous navigation on a robot with Ackerman drive": "Autonomous navigation on a robot with Ackerman drive",
   "Mobile application for the control of a self-balancing robot": "Mobile application for the control of a self-balancing robot",
-  "Mobile application to control investigations during the Covid pandemic: PesquisaActiva":"Mobile application to control investigations during the Covid pandemic: PesquisaActiva",
-  "Simple image editor in the browser":"Simple image editor in the browser",
-  "My portfolio":"My portfolio",
-  "Simple Chat Ionic App":"Simple chat application developed in Ionic"
+  "Mobile application to control investigations during the Covid pandemic: PesquisaActiva": "Mobile application to control investigations during the Covid pandemic: PesquisaActiva",
+  "Simple image editor in the browser": "Simple image editor in the browser",
+  "My portfolio": "My portfolio",
+  "Simple Chat Ionic App": "Simple chat application developed in Ionic",
+  "Mis certificaciones_":"Mis certificaciones_"
 }

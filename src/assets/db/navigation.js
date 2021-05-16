@@ -15,6 +15,11 @@ let data = [
     id: "portfolio",
   },
   {
+    label: "certifications",
+    sectionId: "certifications",
+    id: "certifications",
+  },
+  {
     label: "testimonials",
     sectionId: "testimonials",
     id: "testimonials",

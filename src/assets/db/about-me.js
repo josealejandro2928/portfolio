@@ -30,25 +30,56 @@ let data = {
   ],
   resumeText: {
     en: `
-    <p>
-      Graduated from a degree in Automation Engineering. I work as a  <strong>Full Stack developer </strong> using technologies based on the  <strong>Javascript </strong>
-      programming language. I have also researched in the field of Robotics, leading me to develop projects such as an <strong>Ackermarn Drive Robot</strong>
-      with smart features like obstacle avoidance and path planning, as well as building a two wheel <strong> Self-Balancing Robot </strong> that was
-      my thesis work. I participated in the  <strong>ACM International Collegiate Programming Competition (ICPC) </strong> several times,
-      and my team managed to classify to the regional finals two times. As a result, I acquired knowledge about data structures
-      and efficient algorithm design. In addition, I have  experience developing mobile and web application using frameworks
-      such as <strong>Angular, React, Nodejs, Express, Flask and Ionic </strong>.
-     </p>`,
+    <div>
+    Graduated in Automation Engineering.
+    <strong><p>As a university student:</p></strong>
+    <p>I have done research in the field of Robotics where I have developed prototypes of mobile robots such as: Ackerman Drive Robot and Two-Wheeled Self-Balancing Robot.
+    I have participated several times in the ACM International Collegiate Programming Competition (ICPC) which allowed me to acquire knowledge about data structures and efficient algorithm design.
+    </p>
+    <strong><p>As a software developer:</p></strong>
+    <ul>
+       <li>
+       3 years of experience developing web applications using frameworks such
+       as: <strong>Angular</strong>(3), <strong>Vue</strong>(1) and <strong>React</strong>(1).
+       </li>
+       <li>
+       2 years of backend developer using <strong>NodeJs, ExpressJs and MySQL</strong>.
+       </li>
+       <li>
+       Strong Javascript programming skills.
+       </li>
+       <li>
+       Proficiency in HTML5 and CSS for creating user interfaces and user experience.
+       </li>
+       <li>
+       Work with agile development methodologies.
+       </li>
+    </ul>
+     </div>`,
     es: `
-    <p>
-      Graduado de la carrera de Ingeniería en Automática. Trabajo como desarrollador  <strong>Full Stack </strong> usando tecnologías basadas en  <strong>Javascript </strong>.
-      También he investigado en el campo de la Robótica, lo que me ha llevado al desarrollo de proyectos como: El diseño de un
-      <strong>Robot con Accionamiento Ackermarn </strong> con tareas como: La detección de obstáculos y la planificación de trayectorias.
-      También desarrollé un <strong>Robot Autobalanceado de dos Ruedas</strong> en mi trabajo de tesis. Participé en el Concurso Internacional de Programación Colegiada  <strong>ACM (ICPC) </strong> varias veces,
-      y mi equipo logró clasificar a la final regional en dos ocasiones. Como resultado, adquirí conocimientos sobre  <strong>estructuras de datos y
-      diseño de algoritmos eficientes </strong>. Además, tengo experiencia en el desarrollo de aplicaciones web y móviles utilizando frameworks.
-      como <strong>Angular, React, Nodejs, Express, Flask e Ionic </strong>.
-    </p>`,
+    <div>
+      Graduado en Ingeniería en Automática.
+      <strong><p>Como estudiante universitario:</p>
+      </strong>
+      <p>He investigado en el campo de la Robótica donde he desarrollado prototipos de robots móviles como: Robot con Accionamiento Ackerman
+      y Robot Autobalanceado de solo dos ruedas.
+      He participado varias veces en la ACM International Collegiate Programming Competition (ICPC) lo que me permitió adquirir
+      conocimientos sobre estructuras de datos y diseño eficiente de algoritmos .
+      </p>
+      <strong><p>Como desarrollador de software:</p></strong>
+      <ul>
+        <li>
+        3 años de experiencia en el desarrollo de aplicaciones web utilizando frameworks como
+        como: <strong>Angular</strong>(3), <strong>Vue</strong>(1) y <strong>React</strong>(1).
+        </li>
+        <li>2 años de desarrollador backend utilizando <strong>NodeJs, ExpressJs y MySQL</strong>.</li>
+        <li>
+        Sólidos conocimientos de programación en Javascript.
+        </li>
+        <li> Dominio de HTML5 y CSS para crear interfaces de usuario y experiencia de usuario.</li>
+        <li>Trabajo con metodologías ágiles de desarrollo de software.</li>
+      </ul>
+    </div> `,
   },
 };
 module.exports = data;

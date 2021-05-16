@@ -1,0 +1,31 @@
+<section id="certifications" class="sec-padding container">
+  <h1 writeLetter time="120" class="title">
+    {{'My certifications_'}}
+  </h1>
+  <ul>
+    <a [href]="certification.url" target="_blank" *ngFor="let certification of allCertifications">
+      <li>
+        <img class="mr-3" height="56px" [src]="certification.image" [alt]="certification.name">
+        <div fxFlex>
+          <p class="title">{{certification.title}}</p>
+          <p class="org">{{certification.organization}}</p>
+          <p class="date">{{certification.issueDate}}</p>
+        </div>
+      </li>
+    </a>
+  </ul>
+</section>
+
+<div *ngIf="this.showCredential" class="popup">
+  <div class="content">
+    <button style="position: absolute;top: 8px;right: 8px;" mat-icon-button (click)="this.showCredential = false">
+      <mat-icon>close</mat-icon>
+    </button>
+    <iframe style="height: 100%;width: 100%;" [src]="selectedCredential.url | safeResourseUrl" frameborder="0"
+      target="_parent"></iframe>
+    <mat-spinner style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 10;"
+      *ngIf="loading">
+    </mat-spinner>
+  </div>
+
+</div>
