@@ -18,7 +18,7 @@ export class CertificationsComponent implements OnInit {
   @Input() set _certifications(value) {
     this.allCertifications = value;
   }
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
