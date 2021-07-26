@@ -1,0 +1,182 @@
+// ---------------Material Themin -----------------///
+@import "~@angular/material/theming";
+@include mat-core();
+$font_family: Roboto,
+"Helvetica Neue",
+sans-serif;
+$custom-typography: mat-typography-config($font-family: $font_family);
+// Override the typography in the core CSS.
+@include mat-core($custom-typography);
+$warn: mat-palette($mat-red);
+
+// $grey-100: mat-color(mat-palette($mat-grey), 100);
+// $grey-200: mat-color(mat-palette($mat-grey), 200);
+// $grey-300: mat-color(mat-palette($mat-grey), 300);
+// $grey-400: mat-color(mat-palette($mat-grey), 400);
+// $grey-500: mat-color(mat-palette($mat-grey), 500);
+// $grey-600: mat-color(mat-palette($mat-grey), 600);
+// $grey-700: mat-color(mat-palette($mat-grey), 700);
+// $grey-800: mat-color(mat-palette($mat-grey), 800);
+// $grey-900: mat-color(mat-palette($mat-grey), 900);
+
+
+.lightThemeClass {
+  $custom-primary: mat-palette($mat-blue, 800);
+  $custom-accent: mat-palette($mat-amber, 500);
+  $accent-color: mat-color($custom-accent);
+  $customTheme: mat-light-theme($custom-primary, $custom-accent, $warn);
+  @include angular-material-theme($customTheme);
+
+  // -----Creating Global Variables------
+  $theme-main: mat-color($custom-primary);
+  $theme-main-300: mat-color($custom-primary, 300);
+  $theme-main-100: mat-color($custom-primary, 100);
+  $theme-accent: $accent-color;
+  $color: rgba(0, 0, 0, .87);
+
+  ///////////////////////////////////////
+
+  .color-main-theme {
+    color: $theme-main !important;
+  }
+
+  .color-accent-theme {
+    color: $theme-accent !important;
+  }
+
+
+  .navbar.active {
+    background-color: #fff;
+    color: $theme-main;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .21);
+
+    .navbar-layout {
+      margin-top: 0px !important;
+    }
+
+    .navItem {
+      color: $theme-main;
+    }
+
+    .navItem.active {
+      &::before {
+        background-color: $theme-main;
+      }
+    }
+
+  }
+
+  .btn-theme {
+    background-color: $theme-main !important;
+    color: #fff !important;
+  }
+
+  .resume-list-item {
+    &::before {
+      background-color: #fff;
+    }
+  }
+
+  .dialog-close {
+    color: #222222;
+  }
+
+}
+
+.darkThemeClass {
+  background-color: #323232;
+  color: #fff;
+  $custom-primary: mat-palette($mat-light-blue, 500);
+  $custom-accent: mat-palette($mat-amber, 500);
+  $accent-color: mat-color($custom-accent);
+  $customTheme: mat-dark-theme($custom-primary, $custom-accent, $warn);
+  @include angular-material-theme($customTheme);
+
+  // -----Creating Global Variables------
+  $theme-main: mat-color($custom-primary);
+  $theme-main-400: mat-color($custom-primary, 400);
+  $theme-main-300: mat-color($custom-primary, 300);
+  $theme-main-200: mat-color($custom-primary, 200);
+  $theme-main-100: mat-color($custom-primary, 100);
+  $theme-accent: $accent-color;
+  $color: #fff;
+
+  ///////////////////////////////////////
+  .color-main-theme {
+    color: $theme-main !important;
+  }
+
+  .color-accent-theme {
+    color: $theme-accent !important;
+  }
+
+  .navbar.active {
+    background-color: #212121;
+    color: $theme-main;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .21);
+
+    .navbar-layout {
+      margin-top: 0px !important;
+    }
+
+    .navItem {
+      color: $theme-main;
+    }
+
+    .navItem.active {
+      &::before {
+        background-color: $theme-main;
+      }
+    }
+
+  }
+
+  .sec-padding {
+    color: #fff !important;
+  }
+
+  .btn-theme {
+    background-color: $theme-main !important;
+    color: #fff !important;
+  }
+
+  .resume-list-item {
+    &::before {
+      background-color: #323232;
+    }
+  }
+
+  .project-card {
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+
+    &:hover {
+      box-shadow: 2px 5px 10px rgba(255, 255, 255, .09) !important;
+    }
+
+    .file-section {
+      background-color: #212121 !important;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .details-section {
+      padding: 24px;
+      color: #fff !important;
+
+      .stacks .item {
+        background-color: #212121 !important;
+      }
+    }
+  }
+
+  .dialog-close {
+    color: #fff;
+  }
+
+  .background {
+    .circle{
+      background-color: #323232 !important;
+    }
+  }
+
+}

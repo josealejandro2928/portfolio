@@ -1,0 +1,135 @@
+{
+  "configVersion": 1,
+  "timestamp": 1627322869210,
+  "index": "https://josealejandro2928.github.io/portfolio/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://josealejandro2928.github.io/portfolio/4.02d4510ff69b995dda3f.js",
+        "https://josealejandro2928.github.io/portfolio/favicon.ico",
+        "https://josealejandro2928.github.io/portfolio/index.html",
+        "https://josealejandro2928.github.io/portfolio/main.50797c4b37f7fca758b6.js",
+        "https://josealejandro2928.github.io/portfolio/manifest.webmanifest",
+        "https://josealejandro2928.github.io/portfolio/polyfills.00096ed7d93ed26ee6df.js",
+        "https://josealejandro2928.github.io/portfolio/runtime.f71ab2f8de7acc019134.js",
+        "https://josealejandro2928.github.io/portfolio/styles.b1452d7f621740d5fc31.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://josealejandro2928.github.io/portfolio/assets/db/about-me.js",
+        "https://josealejandro2928.github.io/portfolio/assets/db/certifications.js",
+        "https://josealejandro2928.github.io/portfolio/assets/db/navigation.js",
+        "https://josealejandro2928.github.io/portfolio/assets/db/portfolio.js",
+        "https://josealejandro2928.github.io/portfolio/assets/db/resume.js",
+        "https://josealejandro2928.github.io/portfolio/assets/db/testimonials.js",
+        "https://josealejandro2928.github.io/portfolio/assets/i18n/en.json",
+        "https://josealejandro2928.github.io/portfolio/assets/i18n/es.json",
+        "https://josealejandro2928.github.io/portfolio/assets/i18n/index.js",
+        "https://josealejandro2928.github.io/portfolio/assets/icons/icon-128x128.png",
+        "https://josealejandro2928.github.io/portfolio/assets/icons/icon-144x144.png",
+        "https://josealejandro2928.github.io/portfolio/assets/icons/icon-152x152.png",
+        "https://josealejandro2928.github.io/portfolio/assets/icons/icon-192x192.png",
+        "https://josealejandro2928.github.io/portfolio/assets/icons/icon-384x384.png",
+        "https://josealejandro2928.github.io/portfolio/assets/icons/icon-512x512.png",
+        "https://josealejandro2928.github.io/portfolio/assets/icons/icon-72x72.png",
+        "https://josealejandro2928.github.io/portfolio/assets/icons/icon-96x96.png",
+        "https://josealejandro2928.github.io/portfolio/assets/images/acm-icpc.png",
+        "https://josealejandro2928.github.io/portfolio/assets/images/angular-seeklogo.com.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/bg.jpeg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/flags/de.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/flags/en.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/flags/es.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/flags/fr.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/flags/ru.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/flags/tr.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/hackerRank.jpeg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/img_avatar.jpg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/javascript-seeklogo.com.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/nodejs-icon.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/react-seeklogo.com.svg",
+        "https://josealejandro2928.github.io/portfolio/assets/images/share.jpeg",
+        "https://josealejandro2928.github.io/portfolio/assets/scss/helpers/_helpers.scss",
+        "https://josealejandro2928.github.io/portfolio/assets/scss/theme/_variables.scss"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://josealejandro2928.github.io/portfolio/4.02d4510ff69b995dda3f.js": "822358bc5eb5be434f498007e3068c8ccd494908",
+    "https://josealejandro2928.github.io/portfolio/assets/db/about-me.js": "dbf844f4d59167aa369a0c45f6a4e8cf61702677",
+    "https://josealejandro2928.github.io/portfolio/assets/db/certifications.js": "7934813d7f77c2775b7beedcdec88e8fd786b0ad",
+    "https://josealejandro2928.github.io/portfolio/assets/db/navigation.js": "7719f75bc8a7b05e21e579c75b47ffd1613b0d3f",
+    "https://josealejandro2928.github.io/portfolio/assets/db/portfolio.js": "d9951ebcda0dd03283852a8c4e2ac4da63e6f665",
+    "https://josealejandro2928.github.io/portfolio/assets/db/resume.js": "f806712bf11ffd6422dd4cb22b665193155d63f0",
+    "https://josealejandro2928.github.io/portfolio/assets/db/testimonials.js": "b0704c8b6ba0809d5536479a8c7ffcbc7c6cefb5",
+    "https://josealejandro2928.github.io/portfolio/assets/i18n/en.json": "028381aae513065238c7e240250788b6b2771b35",
+    "https://josealejandro2928.github.io/portfolio/assets/i18n/es.json": "41276ac592e084b93174c7f2f02c7131714a1e48",
+    "https://josealejandro2928.github.io/portfolio/assets/i18n/index.js": "b31fc7eb3c46c4f7891e3a0dfb0fc22717a02fe0",
+    "https://josealejandro2928.github.io/portfolio/assets/icons/icon-128x128.png": "254434a060542d5647a1c3dc4b86d1b3ea548cc2",
+    "https://josealejandro2928.github.io/portfolio/assets/icons/icon-144x144.png": "284a8109bf3f0392dd4db72c16d4f1821f384f4b",
+    "https://josealejandro2928.github.io/portfolio/assets/icons/icon-152x152.png": "76004b4eb8bf2d15a94efb19ed606ffc3d04a2d5",
+    "https://josealejandro2928.github.io/portfolio/assets/icons/icon-192x192.png": "38650fc7ddc8f61dac2703b0087049ccbdf2deff",
+    "https://josealejandro2928.github.io/portfolio/assets/icons/icon-384x384.png": "38650fc7ddc8f61dac2703b0087049ccbdf2deff",
+    "https://josealejandro2928.github.io/portfolio/assets/icons/icon-512x512.png": "5648b0176aa673fa5f5f20780bee7cf3b7e5157c",
+    "https://josealejandro2928.github.io/portfolio/assets/icons/icon-72x72.png": "ec65c0c91e1c1619236bcadc45cf92e0622fd6db",
+    "https://josealejandro2928.github.io/portfolio/assets/icons/icon-96x96.png": "23dd26705586b25ec787f6f186b58d97227f2080",
+    "https://josealejandro2928.github.io/portfolio/assets/images/acm-icpc.png": "2ac444d7a8134a61d192c4845fd744f901109258",
+    "https://josealejandro2928.github.io/portfolio/assets/images/angular-seeklogo.com.svg": "9d179562dee9592b9a88dd4705734950b055ef0a",
+    "https://josealejandro2928.github.io/portfolio/assets/images/bg.jpeg": "41ed6f8226901b1e715675038c02c2df57adab30",
+    "https://josealejandro2928.github.io/portfolio/assets/images/flags/de.svg": "5a7f1ccefd0016fe3bf63056897f58599da9a21b",
+    "https://josealejandro2928.github.io/portfolio/assets/images/flags/en.svg": "3a04829268179b5e4ce702367a3f747b1f71c5fb",
+    "https://josealejandro2928.github.io/portfolio/assets/images/flags/es.svg": "67e52f35ac49474984f19dc0d69bf5b100d812c1",
+    "https://josealejandro2928.github.io/portfolio/assets/images/flags/fr.svg": "1dd619dab2457aeaff34b1e361962051a313721a",
+    "https://josealejandro2928.github.io/portfolio/assets/images/flags/ru.svg": "859551f8f641ca588c6b23eb9303493fc335b62f",
+    "https://josealejandro2928.github.io/portfolio/assets/images/flags/tr.svg": "ca5527c8e51df351d1757aec7f65b73a927a06b9",
+    "https://josealejandro2928.github.io/portfolio/assets/images/hackerRank.jpeg": "a3263c24c218fe21cf9a45c2c10813b98beebf9b",
+    "https://josealejandro2928.github.io/portfolio/assets/images/img_avatar.jpg": "eb7dad27ea2d81d47be03dfb3896cca410aeb6e5",
+    "https://josealejandro2928.github.io/portfolio/assets/images/javascript-seeklogo.com.svg": "b18ea414b87b0b8b885560c2387cb6f453947c68",
+    "https://josealejandro2928.github.io/portfolio/assets/images/nodejs-icon.svg": "357875f5c806cbaa37f48a56ec1aaabe472a4536",
+    "https://josealejandro2928.github.io/portfolio/assets/images/react-seeklogo.com.svg": "005f43a8f8f3e6ede47497d298392c8478740155",
+    "https://josealejandro2928.github.io/portfolio/assets/images/share.jpeg": "6eae91914b390a9ab91b3b12ea517af02b62c55e",
+    "https://josealejandro2928.github.io/portfolio/assets/scss/helpers/_helpers.scss": "b1c17508da342d2485c4ac93580ab6edf0e3c3ec",
+    "https://josealejandro2928.github.io/portfolio/assets/scss/theme/_variables.scss": "f26b5d9858a39bde4976934e1490e8b7ebc3b89a",
+    "https://josealejandro2928.github.io/portfolio/favicon.ico": "ec65c0c91e1c1619236bcadc45cf92e0622fd6db",
+    "https://josealejandro2928.github.io/portfolio/index.html": "4c6e94df27a6ac522905197ddb84ba9b05185934",
+    "https://josealejandro2928.github.io/portfolio/main.50797c4b37f7fca758b6.js": "cf2bbc5c26de05781dfe970dfdbd71bdb6e52dd4",
+    "https://josealejandro2928.github.io/portfolio/manifest.webmanifest": "1dc22f9b3107a671d9a3ed67442287f4ae599b18",
+    "https://josealejandro2928.github.io/portfolio/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "https://josealejandro2928.github.io/portfolio/runtime.f71ab2f8de7acc019134.js": "04bf7785fd36dd0f2b2de4cb99e1b98ad55f7791",
+    "https://josealejandro2928.github.io/portfolio/styles.b1452d7f621740d5fc31.css": "fc69e3d583b040398016f25b8622b99ad2439808"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
