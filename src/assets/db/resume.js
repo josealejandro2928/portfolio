@@ -36,7 +36,55 @@ let data = {
   ],
   professionalEmployment: [
     {
-      title: "Full Stack Developer for the cuban startup Guajitech",
+      title: "React Developer, BOOZ",
+      startDate: "2021",
+      endDate: "present",
+      description: {
+        en: `
+        <p>
+         <p style="margin:0px">Development and maintenance of an e-commerce platform for beverages sales.</p>
+         <p style="margin:0px">(techs: React, Next.js)</p>
+          <a href="https://www.booz.cl/" rel="noopener noreferrer" target="_blank">
+          https://www.booz.cl/
+          </a>
+        </p>
+      `,
+        es: `
+          <p>
+          <p style="margin:0px">Desarrollo y mantenimiento de una plataforma de comercio electrónico para la venta de bebidas.</p> <p
+          <p style="margin:0px">(tecnologías: React, Next.js)</p>
+            <a href="https://www.booz.cl/" rel="noopener noreferrer" target="_blank">
+            https://www.booz.cl/
+            </a>
+          </p>
+          <p>
+
+        `,
+      },
+    },
+    {
+      title: "JavaScript Developer, Alegra",
+      startDate: "2021",
+      endDate: "present",
+      description: {
+        en: `
+        <ul>
+          <li>Development of serverless microservices with AWS.</li>
+          <li>Development of lambda functions in NodeJs environment.</li>
+          <li>Integrations with Amazon Web Services such as S3, Aurora RDS, API Gateway, Lambda functions.</li>
+        </ul>
+      `,
+        es: `
+        <ul>
+          <li>Desarrollo de microservicios serverless con AWS.</li>
+          <li>Desarrollo de funciones lambda en entorno NodeJs.</li>
+          <li>Integraciones con Amazon Web Services como S3, Aurora RDS, API Gateway, funciones Lambda.</li>
+        </ul>
+        `,
+      },
+    },
+    {
+      title: "Full Stack Developer, Guajitech",
       startDate: "2019",
       endDate: "present",
       description: {

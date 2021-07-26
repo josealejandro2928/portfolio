@@ -1,7 +1,7 @@
 let allProject = [
   {
     name:
-      "Ecommerce Platform for the cuban startup Guajitech. Allows B2C and B2B business modalities.",
+      "Development of an ecommerce system with B2B and B2C business models for the Mercedez Benz agency in Cuba.",
     description: {
       es: `Sistema de gestión de tiendas online.
           Permite las relaciones comerciales B2B y B2C.
@@ -13,7 +13,7 @@ let allProject = [
             <li> Customización de productos, marcas, categorías, tarifas de envío y reglas de cancelación </li>
             <li> Venta directa en la administración. </li>
           </ul>`,
-      en: ` Ecommerce management system.
+      en: `Ecommerce management system.
         Allows B2B and B2C business relationships.
         Key Features:
         <ul>
@@ -25,13 +25,18 @@ let allProject = [
         </ul>`,
     },
     useStacks: ["Angular", "NodeJS", "Javascript", "CSS", "HTML", "MySQL"],
-    url: "www.sinkoola.com",
+    url: "https://www.mcvcommercial.com/",
     Files: [
       { file: "ecommerce/1.jpeg", type: "image", id: "1" },
       { file: "ecommerce/2.jpeg", type: "image", id: "2" },
       { file: "ecommerce/3.jpeg", type: "image", id: "3" },
       { file: "ecommerce/4.jpeg", type: "image", id: "4" },
       { file: "ecommerce/5.jpeg", type: "image", id: "5" },
+      { file: "ecommerce/6.jpeg", type: "image", id: "6" },
+      { file: "ecommerce/7.jpeg", type: "image", id: "7" },
+      { file: "ecommerce/8.jpeg", type: "image", id: "8" },
+      { file: "ecommerce/9.jpeg", type: "image", id: "9" },
+      { file: "ecommerce/10.jpeg", type: "image", id: "10" },
     ],
     category: "web sites",
   },
