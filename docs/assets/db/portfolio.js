@@ -25,7 +25,7 @@ let allProject = [
         </ul>`,
     },
     useStacks: ["Angular", "NodeJS", "Javascript", "CSS", "HTML", "MySQL"],
-    url: "www.mcvcommercial.com",
+    url: "tienda.mcvcommercial.com",
     Files: [
       { file: "ecommerce/1.jpeg", type: "image", id: "1" },
       { file: "ecommerce/2.jpeg", type: "image", id: "2" },
