@@ -175,7 +175,7 @@ let allProject = [
       "HTML5",
       "CSS3",
     ],
-    url: "marlin.cinesoft.cu",
+    url: "nauticamarlin.com",
     Files: [
       { file: "marinas-marlin/1.jpeg", type: "image", id: "1" },
       { file: "marinas-marlin/2.jpeg", type: "image", id: "2" },
