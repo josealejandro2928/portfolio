@@ -1,47 +1,96 @@
 <section id="resume" class="sec-padding container">
-
   <h1 writeLetter time="120" class="title">
-    {{'Resume_'}}
+    {{ "Resume_" }}
   </h1>
-  <div class="innerHtml" style="max-width: 58rem;" [innerHTML]="resume?.initialText | parseLang:lang | safeHtml "></div>
-  <br>
+  <div
+    class="innerHtml"
+    style="max-width: 58rem"
+    [innerHTML]="resume?.initialText | parseLang: lang | safeHtml"
+  ></div>
+  <br />
 
   <section class="resume-list">
-    <p class="resume-list-title">{{'Education'|translate}}</p>
+    <p class="resume-list-title">{{ "Education" | translate }}</p>
 
-    <div ngpEnterSection dirY="bottom"  *ngFor="let item of resume?.education" class="resume-list-item">
-      <p class="item-title">{{item.title | translate}}</p>
-      <p class="item-date">{{item.startDate}} - {{item.endDate}}</p>
+    <div
+      ngpEnterSection
+      dirY="bottom"
+      *ngFor="let item of resume?.education"
+      class="resume-list-item"
+    >
+      <p class="item-title">
+        {{ item.title | translate }}
+        <img
+          *ngIf="item?.image"
+          style="float: right; height: 38px; width: 38px; border-radius: 50%"
+          [src]="item?.image"
+          alt=""
+        />
+      </p>
+      <p class="item-date">{{ item.startDate }} - {{ item.endDate }}</p>
 
-      <div class="text" [innerHTML]="item?.description | parseLang:lang | safeHtml"></div>
-
+      <div
+        class="text"
+        [innerHTML]="item?.description | parseLang: lang | safeHtml"
+      ></div>
     </div>
 
-    <p class="resume-list-title">{{'Professional work experience'|translate}}</p>
-    <div ngpEnterSection dirY="bottom" *ngFor="let item of resume?.professionalEmployment" class="resume-list-item">
-      <p class="item-title">{{item.title | translate}}</p>
-      <p class="item-date">{{item.startDate}} - {{item.endDate}}</p>
-      <div class="text" [innerHTML]="item?.description | parseLang:lang | safeHtml"></div>
+    <p class="resume-list-title">
+      {{ "Professional work experience" | translate }}
+    </p>
+    <div
+      ngpEnterSection
+      dirY="bottom"
+      *ngFor="let item of resume?.professionalEmployment"
+      class="resume-list-item"
+    >
+      <p class="item-title">
+        {{ item.title | translate }}
+        <img
+          *ngIf="item?.image"
+          style="float: right; height: 38px; width: 38px; border-radius: 50%"
+          [src]="item?.image"
+          alt=""
+        />
+      </p>
+      <p class="item-date">{{ item.startDate }} - {{ item.endDate }}</p>
+      <div
+        class="text"
+        [innerHTML]="item?.description | parseLang: lang | safeHtml"
+      ></div>
     </div>
 
-    <p class="resume-list-title">{{'Vocational work experience'|translate}}</p>
-    <div ngpEnterSection dirY="bottom" *ngFor="let item of resume?.vocationalEmployment" class="resume-list-item">
-      <p class="item-title">{{item.title | translate}}</p>
-      <p class="item-date">{{item.startDate}} - {{item.endDate}}</p>
-      <div class="text" [innerHTML]="item?.description | parseLang:lang | safeHtml"></div>
+    <p class="resume-list-title">
+      {{ "Vocational work experience" | translate }}
+    </p>
+    <div
+      ngpEnterSection
+      dirY="bottom"
+      *ngFor="let item of resume?.vocationalEmployment"
+      class="resume-list-item"
+    >
+      <p class="item-title">{{ item.title | translate }}</p>
+      <p class="item-date">{{ item.startDate }} - {{ item.endDate }}</p>
+      <div
+        class="text"
+        [innerHTML]="item?.description | parseLang: lang | safeHtml"
+      ></div>
     </div>
 
-    <p class="resume-list-title">{{'General skills'|translate}}</p>
-    <div style="gap:2rem" fxLayout="row wrap" class="w-100" fxLayoutAlign="space-between start" fxLayoutGap="gappx">
-      <app-skill *ngFor="let item of resume?.skills" fxFlex="45" fxFlex.lt-md="100" [_skill]="item"></app-skill>
-
+    <p class="resume-list-title">{{ "General skills" | translate }}</p>
+    <div
+      style="gap: 2rem"
+      fxLayout="row wrap"
+      class="w-100"
+      fxLayoutAlign="space-between start"
+      fxLayoutGap="gappx"
+    >
+      <app-skill
+        *ngFor="let item of resume?.skills"
+        fxFlex="45"
+        fxFlex.lt-md="100"
+        [_skill]="item"
+      ></app-skill>
     </div>
-
-
-
-
   </section>
-
-
-
 </section>

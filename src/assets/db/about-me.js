@@ -1,11 +1,11 @@
 let data = {
   name: "José Alejandro",
   lastName: "Concepción Álvarez",
-  occupation: "Full Stack Developer, Automation Engineer",
-  age: 25,
+  occupation: "Computer Science PhD student at GSSI | Software Developer | Automation Engineer",
+  age: 26,
   email: "jalejandroc2928@gmail.com",
-  phone: "+5353613095",
-  address: "39 #3022 e/ 30 y 34, La Sierra, Playa, La Habana, Cuba",
+  phone: "+393518182513",
+  address: "Via Della Beata Antonia 4, 67100, L'Aquila, Italy",
   socials: [
     {
       url: "https://www.linkedin.com/in/jalejandroc/",
