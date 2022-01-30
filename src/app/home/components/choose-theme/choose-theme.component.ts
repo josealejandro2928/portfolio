@@ -10,7 +10,9 @@ export class ChooseThemeComponent implements OnInit {
   selectStyle = false;
   constructor() {
     this.darkModeActivated =
-      localStorage.getItem('darkModeActivated') == 'true';
+      localStorage.getItem('darkModeActivated') == undefined
+        ? true
+        : Boolean(localStorage.getItem('darkModeActivated'));
   }
 
   ngOnInit(): void {
