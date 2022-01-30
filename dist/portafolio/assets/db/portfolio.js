@@ -28,8 +28,8 @@ let allProject = [
     useStacks: ["Angular","JavaScript", "HTML5", "CSS3"],
     url: "ngp-image-picker.surge.sh",
     Files: [
-      { file: "images-editor/1.jpeg", type: "image", id: "1" },
-      { file: "images-editor/2.jpeg", type: "image", id: "2" },
+      { file: "images-editor/1-1.jpeg", type: "image", id: "1" },
+      { file: "images-editor/2-1.jpeg", type: "image", id: "2" },
     ],
     category: "web sites",
   },

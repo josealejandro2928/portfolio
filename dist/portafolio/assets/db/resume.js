@@ -142,6 +142,7 @@ let data = {
       title: "Trained professor in Technological University of Havana (CUJAE)",
       startDate: "2019",
       endDate: "2020",
+      image: 'assets/images/cujae-logo.png',
       description: {
         es: `
         <p>
@@ -233,10 +234,11 @@ let data = {
     { name: "HTML", value: 90 },
     { name: "CSS", value: 85 },
     { name: "TypeScript", value: 85 },
-    { name: "Python", value: 60 },
+    { name: "Python", value: 80 },
     { name: "C++", value: 60 },
     { name: "Angular", value: 90 },
-    { name: "React", value: 70 },
+    { name: "React", value: 85 },
+    { name: "Vue", value: 75 },
     { name: "Nodejs", value: 85 },
     // { name: "Material", value: 80 },
     // { name: "Bootstrap", value: 60 },
