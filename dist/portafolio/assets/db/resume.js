@@ -2,13 +2,13 @@ let data = {
   initialText: {
     en: `<p>
       My professional work has focused mainly on the development of web and mobile applications with
-      the use of <strong>Javascript</strong>. I have also done robotics work and taught classes at the Technological
+      the use of <strong>Javascript</strong> and <strong>Python</strong>. I have also done robotics work and taught classes at the Technological
       University of Havana (CUJAE) on object-oriented programming in C ++, matlab programming
       and microcontroller-based systems.
     </p>`,
     es: `<p>
     Mi labor profesional se ha centrado principalmente en el desarrollo de aplicaciones web y móviles con
-    el uso de frameworks <strong>Javascript</strong>. También he realizado trabajos de robótica e impartido clases en
+    el uso de frameworks <strong>Javascript</strong> and <strong>Python</strong>. También he realizado trabajos de robótica e impartido clases en
     La Universidad Tecnológica de la Habana (CUJAE) sobre programación orientada a objetos en C ++, programación en Matlab
     y sistemas basados en microcontroladores.
   </p>`,
@@ -16,20 +16,33 @@ let data = {
   education: [
     {
       title:
-        "Biomedical and Automation Faculty, Technological University of Havana (CUJAE)",
+        "Computer Science, Gran Sasso Science Institute (GSSI)",
+      startDate: "01/11/2021",
+      endDate: "present",
+      image: 'assets/images/gssi-image.jpg',
+      description: {
+        en: `PhD program in Computer Science. Study topics such as: Algorithms, Formal Methods and Software Engineering.`,
+
+        es: `Programa de doctorado en Ciencias de la Computación. Temas de estudio como: Algoritmos, Métodos Formales e Ingeniería de Software.`,
+      },
+    },
+    {
+      title:
+        "Automation Faculty, Technological University of Havana (CUJAE)",
       startDate: "2014",
       endDate: "2019",
+      image: 'assets/images/cujae-logo.png',
       description: {
-        en: `<strong>Bachelor in Automation Engineering (Single-Cycle, 5 years)</strong>.
+        en: `Bachelor in Automation Engineering (Single-Cycle, 5 years).
         Biomedical and Automation Faculty, Technological University of Havana (CUJAE), Cuba.
-        <p>Grade: <strong>4.72/5</strong>.</p>
-        <p>Granted the <strong> “Scientific Merit Award”</strong>.</p>`,
+        <p>Grade: 4.72/5.</p>
+        <p>Granted the  “Scientific Merit Award”.</p>`,
 
-        es: `<strong>Graduado de Ingeniería en Automática (ciclo único, 5 años) </strong>.
+        es: `Graduado de Ingeniería en Automática (ciclo único, 5 años) .
         Facultad de Biomédica y Automática, Universidad Tecnológica de La Habana (CUJAE), Cuba.
-        <p> Calificación: <strong> 4.72 / 5 </strong>.</p>
+        <p> Calificación:  4.72 / 5 .</p>
         <p>
-         Me fue otorgado el <strong>"Premio al mérito científico".</strong>
+         Me fue otorgado el "Premio al mérito científico".
         <p>`,
       },
     },
@@ -37,24 +50,27 @@ let data = {
   professionalEmployment: [
     {
       title: "React Developer, BOOZ",
-      startDate: "2021",
-      endDate: "present",
+      startDate: "01/07/2021",
+      endDate: "01/11/2021",
+      image: 'assets/images/booz-logo.png',
       description: {
         en: `
         <p>
          <p style="margin:0px">Development and maintenance of an e-commerce platform for beverages sales.</p>
+         <p>Working with Next.js framework, react components development, using react-redux , react hooks and tailwindcss.</p>
          <p style="margin:0px">(techs: React, Next.js)</p>
-          <a href="https://www.booz.cl/" rel="noopener noreferrer" target="_blank">
-          https://www.booz.cl/
+          <a href="https://booz.dev/" rel="noopener noreferrer" target="_blank">
+          https://booz.dev/
           </a>
         </p>
       `,
         es: `
           <p>
-          <p style="margin:0px">Desarrollo y mantenimiento de una plataforma de comercio electrónico para la venta de bebidas.</p> <p
+          <p style="margin:0px">Desarrollo y mantenimiento de una plataforma de comercio electrónico para la venta de bebidas.</p>
+          <p>Trabajando con el framework Next.js, desarrollo de react components, usando react-redux, react hooks y tailwindcss.</p>
           <p style="margin:0px">(tecnologías: React, Next.js)</p>
-            <a href="https://www.booz.cl/" rel="noopener noreferrer" target="_blank">
-            https://www.booz.cl/
+            <a href="https://booz.dev/" rel="noopener noreferrer" target="_blank">
+            https://booz.dev/
             </a>
           </p>
           <p>
@@ -64,8 +80,9 @@ let data = {
     },
     {
       title: "JavaScript Developer, Alegra",
-      startDate: "2021",
-      endDate: "present",
+      startDate: "14/06/2021",
+      endDate: "01/09/2021",
+      image: 'assets/images/alegra-logo.png',
       description: {
         en: `
         <ul>
@@ -85,8 +102,9 @@ let data = {
     },
     {
       title: "Full Stack Developer, Guajitech",
-      startDate: "2019",
-      endDate: "present",
+      startDate: "10/09/2018",
+      endDate: "01/04/2021",
+      image: 'assets/images/logo-guajiro.jpeg',
       description: {
         en: `Development of mobile and frontend applications using Javascript frameworks
         like: <strong>Angular</strong>, <strong>Ionic</strong> and  <strong>React</strong>.

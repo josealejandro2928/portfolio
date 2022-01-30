@@ -1,5 +1,39 @@
 let allProject = [
   {
+    name: "Simple image editor in the browser form compress, reformat and resize your image",
+    description: {
+      es: `Herramienta para comprimir, recortar y cambiar de formato imágenes en el navegador de una manera sencilla.
+      Creada completamente en javascript, es compatible con todos los navegadores.
+      Esta aplicación web permite al usuario realizar las siguientes operaciones en el navegador:
+      <ul>
+        <li>Sube una imagen y cambia su formato entre: png, webp, jpeg.</li>
+        <li>Cambia el porcentaje de calidad de la imagen para reducir su tamaño.</li>
+        <li>Cambia el tamaño del ancho y el alto de la imagen.</li>
+        <li>Recorta la imagen.</li>
+       </ul>
+      `,
+
+      en: `Tool to compress, crop and change the format of images in the browser in a simple way. Created entirely in javascript,
+       it is compatible with all browsers.
+       This web application allows the user to perform the following operations in the browser:
+      <ul>
+        <li>Upload an image and change its format between: png, webp, jpeg.</li>
+        <li>Change the quality percentage of the image to reduce its size.</li>
+        <li>Resize the width and height of the image.</li>
+        <li>Crop the image.</li>
+       </ul>
+
+      `,
+    },
+    useStacks: ["Angular","JavaScript", "HTML5", "CSS3"],
+    url: "ngp-image-picker.surge.sh",
+    Files: [
+      { file: "images-editor/1.jpeg", type: "image", id: "1" },
+      { file: "images-editor/2.jpeg", type: "image", id: "2" },
+    ],
+    category: "web sites",
+  },
+  {
     name:
       "Development of an ecommerce system with B2B and B2C business models for the Mercedez Benz agency in Cuba.",
     description: {
@@ -152,45 +186,9 @@ let allProject = [
     ],
     category: "robotics",
   },
-  {
-    name:
-      "Content management system for the website of the Cuban company Marlin SA",
-    description: {
-      es: `Página web institucional, contiene todas las secciones que describen la empresa Marlin SA.
-      Tiene una sección de noticias y un blog para lograr la mayor interacción de los usuarios.
-      <p>El sistema cuenta con una administración donde los usuarios suben y editan todo el contenido de la página</p>`,
 
-      en: `Institutional website, contains all the sections that describe the company Marlin SA.
-      It has a news section and a blog, to achieve the greatest user interaction.
-      <p> The system has an administration where administrative users upload and edit all the content of the page </p>
-      `,
-    },
-    useStacks: [
-      "Nodejs",
-      "Angular",
-      "React",
-      "MySQL",
-      "CKeditor",
-      "Material",
-      "HTML5",
-      "CSS3",
-    ],
-    url: "nauticamarlin.com",
-    Files: [
-      { file: "marinas-marlin/1.jpeg", type: "image", id: "1" },
-      { file: "marinas-marlin/2.jpeg", type: "image", id: "2" },
-      { file: "marinas-marlin/3.jpeg", type: "image", id: "3" },
-      { file: "marinas-marlin/4.jpeg", type: "image", id: "4" },
-      { file: "marinas-marlin/5.jpeg", type: "image", id: "5" },
-      { file: "marinas-marlin/6.jpeg", type: "image", id: "6" },
-      { file: "marinas-marlin/7.jpeg", type: "image", id: "7" },
-      { file: "marinas-marlin/8.jpeg", type: "image", id: "8" },
-      { file: "marinas-marlin/9.jpeg", type: "image", id: "9" },
-    ],
-    category: "landing pages",
-  },
   {
-    name: "Events management and sale system for the Havanatur SA company",
+    name: "Hotels and Events management system for the Havanatur SA company",
     description: {
       es: `
         El sistema permite la gestión de experiencias de un solo día en una administración.
@@ -207,14 +205,13 @@ let allProject = [
       `,
     },
     useStacks: ["Nodejs", "Angular", "MySQL"],
-    url: "experiencias.havanatursa.com",
+    url: "www.havanatur.cu/",
     Files: [
       { file: "experiencias/1.jpeg", type: "image", id: "1" },
       { file: "experiencias/2.jpeg", type: "image", id: "2" },
-      { file: "experiencias/3.jpeg", type: "image", id: "3" },
       { file: "experiencias/4.jpeg", type: "image", id: "4" },
-      { file: "experiencias/5.jpeg", type: "image", id: "5" },
-      { file: "experiencias/6.jpeg", type: "image", id: "6" },
+      // { file: "experiencias/5.jpeg", type: "image", id: "5" },
+      // { file: "experiencias/6.jpeg", type: "image", id: "6" },
       { file: "experiencias/7.jpeg", type: "image", id: "7" },
       { file: "experiencias/8.jpeg", type: "image", id: "8" },
       { file: "experiencias/9.jpeg", type: "image", id: "9" },
@@ -274,27 +271,6 @@ let allProject = [
     category: "mobile apps",
   },
   {
-    name:
-      "Mobile application to control investigations during the Covid pandemic: PesquisaActiva",
-    description: {
-      es: `Aplicación movil desarrollada con <strong>El Framework Ionic</strong> para el control de pesquisas durante la pandemia del Covid: <strong>PesquisaActiva</strong>.
-      La misma presenta secciones de consejos, formularios para autopesquisarse, facilidades para las encuestas de los médicos. Y estadísticas de los enfermos por regiones de Cuba`,
-
-      en: `Mobile application developed with <strong>The Ionic framework </strong> for the control and investigations during the Covid pandemic: PesquisaActiva.
-      It presents sections of advice, forms for self-consult, facilities for medical surveys. And statistics of the sick by regions of Cuba.
-      `,
-    },
-    useStacks: ["Ionic", "TypeScript", "HTML5", "CSS3", "NodeJs"],
-    url: "",
-    Files: [
-      { file: "apk-pesquisa/1.jpeg", type: "image", id: "1" },
-      { file: "apk-pesquisa/2.jpeg", type: "image", id: "2" },
-      { file: "apk-pesquisa/3.jpeg", type: "image", id: "3" },
-      { file: "apk-pesquisa/4.jpeg", type: "image", id: "4" },
-    ],
-    category: "mobile apps",
-  },
-  {
     name: "My portfolio",
     description: {
       es: `Mi propio sitio web, donde puedes encontrar la información tecnica acerca de mi, mis habilidades,
@@ -313,25 +289,6 @@ let allProject = [
       { file: "portfolio/4.jpeg", type: "image", id: "4" },
     ],
     category: "landing pages",
-  },
-  {
-    name: "Simple image editor in the browser",
-    description: {
-      es: `Herramienta para comprimir, recortar y cambiar de formato imágenes en el navegador de una manera sencilla.
-      Creada completamente en javascript, es compatible con todos los navegadores.`,
-
-      en: `Tool to compress, crop and change the format of images in the browser in a simple way. Created entirely in javascript,
-       it is compatible with all browsers.
-      `,
-    },
-    useStacks: ["JavaScript", "HTML5", "CSS3"],
-    url: "cogetuimagen.cubanearme.com/",
-    Files: [
-      { file: "images-editor/1.jpeg", type: "image", id: "1" },
-      { file: "images-editor/2.jpeg", type: "image", id: "2" },
-      { file: "images-editor/3.jpeg", type: "image", id: "3" },
-    ],
-    category: "web sites",
   },
   {
     name: "Simple Chat Ionic App",

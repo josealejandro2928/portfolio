@@ -146,18 +146,38 @@ $intervals:(4, 8, 16, 32, 48);
 }
 
 
-$intervalWith: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100); // Adjust this to include the pixel amounts you need.
+$intervalWidth: 5,
+10,
+15,
+20,
+25,
+30,
+35,
+40,
+45,
+50,
+55,
+60,
+65,
+70,
+75,
+80,
+85,
+90,
+95,
+100; // Adjust this to include the pixel amounts you need.
 
-@each $with in $intervalWith {
-  .w-#{$with} {
-    width: #{$with}% !important;
+@each $width in $intervalWidth {
+  .w-#{$width} {
+    width: percentage($width / 100);
   }
 
-  .h-#{$with} {
-    height: #{$with}% !important;
+  .h-#{$width} {
+    height: percentage($width / 100);
   }
 
 }
+
 
 .container {
   padding-right: 15px;
