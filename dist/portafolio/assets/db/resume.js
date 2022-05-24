@@ -2,13 +2,13 @@ let data = {
   initialText: {
     en: `<p>
       My professional work has focused mainly on the development of web and mobile applications with
-      the use of <strong>Javascript</strong> and <strong>Python</strong>. I have also done robotics work and taught classes at the Technological
+      the use of Javascript and Python. I have also done robotics work and taught classes at the Technological
       University of Havana (CUJAE) on object-oriented programming in C ++, matlab programming
       and microcontroller-based systems.
     </p>`,
     es: `<p>
     Mi labor profesional se ha centrado principalmente en el desarrollo de aplicaciones web y móviles con
-    el uso de frameworks <strong>Javascript</strong> and <strong>Python</strong>. También he realizado trabajos de robótica e impartido clases en
+    el uso de frameworks Javascript and Python. También he realizado trabajos de robótica e impartido clases en
     La Universidad Tecnológica de la Habana (CUJAE) sobre programación orientada a objetos en C ++, programación en Matlab
     y sistemas basados en microcontroladores.
   </p>`,
@@ -107,10 +107,10 @@ let data = {
       image: 'assets/images/logo-guajiro.jpeg',
       description: {
         en: `Development of mobile and frontend applications using Javascript frameworks
-        like: <strong>Angular</strong>, <strong>Ionic</strong> and  <strong>React</strong>.
-        Backend development using <strong>Nodejs</strong> framework with relational
+        like: Angular, Ionic and  React.
+        Backend development using Nodejs framework with relational
         and non-relational databases like
-        <strong>MySQL</strong> and <strong>MongoDB</strong>.
+        MySQL and MongoDB.
         Experience in several types of applications such as:
         <ul>
           <li>Dynamic Web Applications</li>
@@ -123,9 +123,9 @@ let data = {
         <ul>
       `,
         es: `Desarrollo de aplicaciones webs y móviles, utilizando frameworks Javascript
-        como: <strong> Angular </strong>, <strong> Ionic </strong> y <strong> React </strong>.
-        Desarrollo backend con <strong> Nodejs </strong> utilizando bases de datos relacionales y no relacionales:
-        <strong> MySQL </strong> y <strong> MongoDB </strong>.
+        como:  Angular ,  Ionic  y  React .
+        Desarrollo backend con  Nodejs  utilizando bases de datos relacionales y no relacionales:
+         MySQL  y  MongoDB .
         Experiencia en varios tipos de aplicaciones como:
         <ul>
           <li>Dynamic Web Applications</li>
@@ -146,16 +146,16 @@ let data = {
       description: {
         es: `
         <p>
-          <strong> Clases de Microcontroladores I </strong>: Arquitectura interna del microcontrolador 8051, programación
+           Clases de Microcontroladores I : Arquitectura interna del microcontrolador 8051, programación
           en ensamblador y lenguaje C.
         <p>
-        <p> <strong> Clases de Introducción a Matlab I </strong>: Programación en Matlab, conceptos básicos, entorno de
+        <p>  Clases de Introducción a Matlab I : Programación en Matlab, conceptos básicos, entorno de
         desarrollo, problemas de programación y simulación de procesos físicos.
       </p>`,
         en: `<p>
-          <strong>I taught Microcontrollers I</strong>: Internal architecture of the 8051 microcontroller, programming
+          I taught Microcontrollers I: Internal architecture of the 8051 microcontroller, programming
           in assembly and C language.<p>
-          <p> <strong>I taught Introduction to Matlab I</strong>: Programming at Matlab, Basic concepts, development
+          <p> I taught Introduction to Matlab I: Programming at Matlab, Basic concepts, development
           environment, programing problems and simulation of physical processes using the MatLab
           Tool.
       </p>`,
@@ -170,12 +170,12 @@ let data = {
       startDate: "2018",
       endDate: "2019",
       description: {
-        es: `<strong> Robot autobalanceado de dos ruedas </strong>:
+        es: ` Robot autobalanceado de dos ruedas :
         Diseño de un robot autobalanceado de dos ruedas
         basado en el microcontrolador Arduino, desarrollo de algoritmos PID, filtro complementario,
         y filtro de Kalman. <div> (<a  href="https://youtu.be/dg8ftpSStIc" target="_blank"> https://youtu.be/dg8ftpSStIc </a>)<div>`,
         en: `
-        <strong>Two Wheel Self Balancing Robot</strong>:
+        Two Wheel Self Balancing Robot:
           Design of a two wheel self-balancing robot
           based on the Arduino microcontroller, development of PID algorithms, complementary filter,
           and Kalman filter. (<a href="https://youtu.be/dg8ftpSStIc" target="_blank">https://youtu.be/dg8ftpSStIc</a>)
@@ -188,12 +188,12 @@ let data = {
       startDate: "2018",
       endDate: "2019",
       description: {
-        en: ` Development of a <strong>simulator for an inverted pendulum system</strong>:
+        en: ` Development of a simulator for an inverted pendulum system:
           Development of simulation
           software for the kinematics of an inverted pendulum system on wheels. Testing of PID
           control algorithms.(<a href="https://youtu.be/O6BeBPsemHU" target="_blank">https://youtu.be/O6BeBPsemHU</a>)
         `,
-        es: `Desarrollo de un <strong> simulador de un sistema de péndulo invertido </strong>:
+        es: `Desarrollo de un  simulador de un sistema de péndulo invertido :
         Desarrollo de una plataforma software para la  simulación
         de la cinemática de un sistema de péndulo invertido sobre ruedas. Prueba de
         algoritmos de control PID. (<a href="https://youtu.be/O6BeBPsemHU" target="_blank"> https://youtu.be/O6BeBPsemHU </a>)`,
@@ -205,12 +205,12 @@ let data = {
       startDate: "2016",
       endDate: "2018",
       description: {
-        en: `Designing a <strong>Robotic Platform with Ackerman steering geometry</strong> and
-        Development of <strong>Tracking and Path Planing Algorithms</strong> for Wheeled Mobile Robots.
+        en: `Designing a Robotic Platform with Ackerman steering geometry and
+        Development of Tracking and Path Planing Algorithms for Wheeled Mobile Robots.
         (<a href="https://https://youtu.be/Kv2xxKv3fYU" target="_blank">https://https://youtu.be/Kv2xxKv3fYU</a>)
           `,
-        es: `Diseño de una <strong> plataforma robótica con accionamiento Ackerman </strong> y
-        desarrollo de <strong> algoritmos de seguimiento y planificación de trayectorias </strong> para robots móviles con ruedas.
+        es: `Diseño de una  plataforma robótica con accionamiento Ackerman  y
+        desarrollo de  algoritmos de seguimiento y planificación de trayectorias  para robots móviles con ruedas.
         <div>(<a href="https://https://youtu.be/Kv2xxKv3fYU" target="_blank"> https: // https: //youtu.be/Kv2xxKv3fYU </a>)</div>
           `,
       },
@@ -220,10 +220,10 @@ let data = {
       startDate: "2015",
       endDate: "2016",
       description: {
-        en: `Teaching <strong>Object-oriented programming</strong>: Introduction to the C ++ language, fundamental
+        en: `Teaching Object-oriented programming: Introduction to the C ++ language, fundamental
         characteristics, functions, classes, inheritance, polymorphisms, data structures and algorithms.
       `,
-        es: `Enseñanza de la <strong> programación orientada a objetos </strong>: Introducción al lenguaje C ++,
+        es: `Enseñanza de la  programación orientada a objetos : Introducción al lenguaje C ++,
       características fundamentales, funciones, clases, herencia, polimorfismos, estructuras de datos y algoritmos.`,
       },
     },

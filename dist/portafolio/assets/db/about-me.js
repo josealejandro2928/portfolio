@@ -5,7 +5,7 @@ let data = {
   age: 26,
   email: "jalejandroc2928@gmail.com",
   phone: "+393518182513",
-  address: "Via Della Beata Antonia 4, 67100, L'Aquila, Italy",
+  address: "L'Aquila, Italy",
   socials: [
     {
       url: "https://www.linkedin.com/in/jalejandroc/",
@@ -31,56 +31,31 @@ let data = {
   resumeText: {
     en: `
     <div>
-    Graduated in Automation Engineering.
-    <strong><p>As a software developer:</p></strong>
-    <ul>
-       <li>
-       3 years of experience developing web applications using frameworks such
-       as: <strong>Angular</strong>(3), <strong>Vue</strong>(1) and <strong>React</strong>(1).
-       </li>
-       <li>
-       2 years of backend developer using <strong>NodeJs, ExpressJs, MySQL and MongoDB</strong>.
-       </li>
-       <li>
-       Strong Javascript programming skills.
-       </li>
-       <li>
-       Proficiency in HTML5 and CSS for creating user interfaces and user experience.
-       </li>
-       <li>
-       Work with agile development methodologies.
-       </li>
-    </ul>
-    <strong><p>As a university student:</p></strong>
-    <p>I have done research in the field of Robotics where I have developed prototypes of mobile robots such as: Ackerman Drive Robot and Two-Wheeled Self-Balancing Robot.
-    I have participated several times in the ACM International Collegiate Programming Competition (ICPC) which allowed me to acquire knowledge about data structures and efficient algorithm design.
-    </p>
-
-     </div>`,
+      <p>I have a degree in Automation Engineering and I am currently enrolled in a Ph.D. program in Computer Science.</p>
+      <p style="font-weight:500">As a software developer:</p>
+      <p>I have three years of experience developing web applications using JavaScript and Python frameworks.
+        I have developed different complex interfaces for the UI and created several services for the backend.
+        I have created mobile applications for controlling cyber-physical systems. All the experience accumulated was under agile work methodologies.
+      </p>
+      <p style="font-weight:500">As a university student:</p>
+      <p>I have researched in the robotics field, working on and developing prototypes of wheeled mobile robots.
+      I have participated in the ACM International Collegiate Programming Competition (ICPC), where I solved programming problems that require
+      algorithm and data structure knowledge.</p>
+    </div>
+    `,
     es: `
     <div>
-      Graduado en Ingeniería en Automática.
-      <strong><p>Como desarrollador de software:</p></strong>
-      <ul>
-        <li>
-        3 años de experiencia en el desarrollo de aplicaciones web utilizando frameworks como
-        como: <strong>Angular</strong>(3), <strong>Vue</strong>(1) y <strong>React</strong>(1).
-        </li>
-        <li>2 años de desarrollador backend utilizando <strong>NodeJs, ExpressJs, MySQL y MongoDB</strong>.</li>
-        <li>
-        Sólidos conocimientos de programación en Javascript.
-        </li>
-        <li> Dominio de HTML5 y CSS para crear interfaces de usuario y experiencia de usuario.</li>
-        <li>Trabajo con metodologías ágiles de desarrollo de software.</li>
-      </ul>
-      <strong><p>Como estudiante universitario:</p>
-      </strong>
-      <p>He investigado en el campo de la Robótica donde he desarrollado prototipos de robots móviles como: Robot con Accionamiento Ackerman
-      y Robot Autobalanceado de solo dos ruedas.
-      He participado varias veces en la ACM International Collegiate Programming Competition (ICPC) lo que me permitió adquirir
-      conocimientos sobre estructuras de datos y diseño eficiente de algoritmos .
-      </p>
-    </div> `,
+    <p>Tengo un título en Ingeniería de Automatización y actualmente estoy cursando un Ph.D. programa en Cibernética.</p>
+    <p style="font-weight:500">Como desarrollador de software:</p>
+    <p>Tengo tres años de experiencia en el desarrollo de aplicaciones web utilizando frameworks JavaScript y Python.
+      He desarrollado diferentes interfaces en entorno Web y Android y he desarrollado varios servicios en el backend.
+      He creado aplicaciones móviles para el control de sistemas ciberfísicos. Toda la experiencia acumulada fue bajo metodologías ágiles de trabajo.
+    </p>
+    <p style="font-weight:500">Como estudiante universitario:</p>
+    <p>He investigado en el campo de la robótica, trabajando y desarrollando prototipos de robots móviles con ruedas.
+    He participado en la ACM International Collegiate Programming Competition (ICPC), donde resolví problemas de programación que requieren
+    conocimiento de algoritmos y estructuras de datos.</p>
+  </div> `,
   },
 };
 module.exports = data;
