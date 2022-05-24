@@ -76,4 +76,8 @@ p {
   a {
     color: var(--colorTheme) !important;
   }
+
+  a.desc-link {
+    color: inherit !important;
+  }
 }

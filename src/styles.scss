@@ -51,6 +51,7 @@ body {
   @media(max-width:599px) {
     padding-top: 32px;
     padding-bottom: 32px;
+
     .title {
       margin-bottom: 36px;
       font-size: 30px;
@@ -68,4 +69,24 @@ body {
   .darkThemeClass {
     --colorTheme: #03a9f4;
   }
+}
+
+.link-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    vertical-align: baseline;
+    padding-left: 0.3em;
+    padding-right: 0.2em;
+    height: 16px;
+    fill: white;
+  }
+}
+
+.desc-link{
+  cursor: pointer;
+  text-decoration: unset;
+  color: inherit !important;
+
 }

@@ -1,46 +1,67 @@
 <section id="portfolio" class="sec-padding container">
   <h1 writeLetter time="120" class="title">
-    {{'My projects_'}}
+    {{ "My projects_" }}
   </h1>
-  <div class="tags-section">
-    <div class="tag-container">
-      <div class="tag-item" (click)="onSelectedCategory(item)" *ngFor="let item of allCategories"
-        [ngClass]="{'selected': item == this.selectedCategory}">
-        <div>{{item|translate}}</div>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div (click)="onShowDetailsApp(app)" fxLayout="row wrap" fxLayoutAlign="space-between stretch" class="project-card"
-    *ngFor="let app of this.getProject(this.selectedCategory)">
-    <div fxFlex="40" fxFlex.lt-md="100" class="file-section">
-      <app-galery-files (click)="$event.stopPropagation()" [_files]="app?.Files"></app-galery-files>
-    </div>
+  <mat-tab-group
+    dynamicHeight="true"
+    (selectedTabChange)="onSelectedCategory($event.index)"
+  >
+    <mat-tab
+      *ngFor="let item of allCategories"
+      [ngClass]="{ selected: item == this.selectedCategory }"
+      [label]="item"
+    >
+      <div
+        (click)="onShowDetailsApp(app)"
+        fxLayout="row wrap"
+        fxLayoutAlign="space-between stretch"
+        class="project-card"
+        *ngFor="let app of this.getProject(this.selectedCategory)"
+      >
+        <div fxFlex="40" fxFlex.lt-md="100" class="file-section">
+          <app-galery-files
+            (click)="$event.stopPropagation()"
+            [_files]="app?.Files"
+          ></app-galery-files>
+        </div>
 
-    <div fxFlex class="details-section" fxFlex.lt-md="100" class="details-section">
-      <p class="name">
-        {{app.name|translate}}
-      </p>
+        <div
+          fxFlex
+          class="details-section"
+          fxFlex.lt-md="100"
+          class="details-section"
+        >
+          <p class="name">
+            {{ app.name | translate }}
+          </p>
 
-      <p class="more-datails"> <i class="fas fa-info-circle"></i>
-        &nbsp;
-        {{'more details'|translate}}</p>
-      <!-- <div class="description" [innerHTML]="app?.description | safeHtml |translate">
+          <p class="more-datails">
+            <i class="fas fa-info-circle"></i>
+            &nbsp;
+            {{ "more details" | translate }}
+          </p>
+          <!-- <div class="description" [innerHTML]="app?.description | safeHtml |translate">
       </div> -->
 
-      <p class="stack">{{'Used Stack'|translate}}:</p>
-      <div class="stacks" fxLayout="row wrap" fxLayoutAlign="start start">
-        <div *ngFor="let item of app.useStacks" class="item">
-          {{item}}
+          <p class="stack">{{ "Used Stack" | translate }}:</p>
+          <div class="stacks" fxLayout="row wrap" fxLayoutAlign="start start">
+            <div *ngFor="let item of app.useStacks" class="item">
+              {{ item }}
+            </div>
+          </div>
+          <br />
+          <a
+            (click)="$event.stopPropagation()"
+            [href]="'https://' + app.url"
+            target="_blank"
+            *ngIf="app.url"
+            class="url"
+          >
+            {{ app.url }}
+          </a>
         </div>
       </div>
-      <br>
-      <a (click)="$event.stopPropagation()" [href]="'https://' + app.url" target="_blank" *ngIf="app.url" class="url">
-        {{app.url}}
-      </a>
-
-    </div>
-
-
-  </div>
+    </mat-tab>
+  </mat-tab-group>
+  <br />
 </section>

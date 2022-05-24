@@ -28,6 +28,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NgpEnterSectionModule } from 'ngp-enter-section';
 import { CertificationsComponent } from './components/certifications/certifications.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     NgpEnterSectionModule,
     NgpLazyLoadModule,
     MatProgressSpinnerModule,
+    MatTabsModule
   ],
 })
 export class HomeModule {}

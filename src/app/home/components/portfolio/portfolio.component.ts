@@ -17,7 +17,14 @@ import {
 export class PortfolioComponent implements OnInit {
   selectedCategory = 'all';
   allProject: IApp[] = [];
-  allCategories: any[] = ['all', 'web sites', 'landing pages', 'mobile apps','robotics'];
+  allCategories: any[] = [
+    'all',
+    'web sites',
+    'landing pages',
+    'mobile apps',
+    'robotics',
+    'desktop',
+  ];
   @Input() set _projects(value) {
     this.allProject = value;
   }
@@ -32,7 +39,7 @@ export class PortfolioComponent implements OnInit {
     if (category == 'all') {
       return [...this.allProject];
     }
-    return this.allProject.filter((x) => x.category == category);
+    return this.allProject.filter((x) => x.category == category) || [];
   }
 
   onShowDetailsApp(app: IApp) {
@@ -47,7 +54,7 @@ export class PortfolioComponent implements OnInit {
     });
   }
 
-  onSelectedCategory(category) {
-    this.selectedCategory = category;
+  onSelectedCategory(index) {
+    this.selectedCategory = this.allCategories[index];
   }
 }
