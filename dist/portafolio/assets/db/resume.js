@@ -49,31 +49,161 @@ let data = {
   ],
   professionalEmployment: [
     {
+      title: "Computer Science Ph.D. student",
+      startDate: "01/11/2021",
+      endDate: "present",
+      image: 'assets/images/gssi-image.jpg',
+      description: {
+        en: `
+        <div>
+          <p>I have worked on projects related to robotics, IoT systems, and algorithms:</p>
+          <ul>
+            <li>
+              <a href="https://github.com/josealejandro2928/Self-Balancing-Arduino-Robot-Controller" rel="noopener noreferrer" target="_blank" class="desc-link">
+              The development of a self-adaptative strategy on top of PID algorithms for a two-wheel self-balancing robot
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a>.
+            </li>
+            <li>
+              <a href="https://github.com/josealejandro2928/clean-app-backend" rel="noopener noreferrer" target="_blank" class="desc-link">
+              The development of a microservice for waste image classification and materials label extractions
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a>.
+            </li>
+            <li>
+              <a href="https://github.com/josealejandro2928/Aproximation-Algorithms-Scripts" rel="noopener noreferrer" target="_blank" class="desc-link">
+              The development of an algorithm based on Dijkstra modification for solving the SSSP on electric vehicles with battery duration constraints
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a>.
+            </li>
+            <li>
+              <a href="https://youtu.be/6iVXQYM4GPg" rel="noopener noreferrer" target="_blank" class="desc-link">
+              The development of a file browsing application for Linux that uses a multithreaded BFS algorithm
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a>.
+            </li>
+          </ul>
+
+        </div>
+
+
+      `,
+        es: `
+        <div>
+          <p>He trabajado en proyectos relacionados con robótica, sistemas IoT y algoritmos:</p>
+          <ul>
+            <li>
+              <a href="https://github.com/josealejandro2928/Self-Balancing-Arduino-Robot-Controller" rel="noopener noreferrer" target="_blank" class="desc-link">
+              El desarrollo de una estrategia autoadaptativa sobre algoritmos PID para un robot autoequilibrado de dos ruedas
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a>.
+            </li>
+            <li>
+              <a href="https://github.com/josealejandro2928/clean-app-backend" rel="noopener noreferrer" target="_blank" class="desc-link">
+              El desarrollo de un microservicio para la clasificación de imágenes de residuos y extracciones de etiquetas de materiales
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a>.
+            </li>
+            <li>
+              <a href="https://github.com/josealejandro2928/Aproximation-Algorithms-Scripts" rel="noopener noreferrer" target="_blank" class="desc-link">
+              El desarrollo de un algoritmo basado en la modificación de Dijkstra para resolver el SSSP en vehículos eléctricos con restricciones de duración de la batería
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a>.
+            </li>
+            <li>
+              <a href="https://youtu.be/6iVXQYM4GPg" rel="noopener noreferrer" target="_blank" class="desc-link">
+              El desarrollo de una aplicación de exploración de archivos para Linux que utiliza un algoritmo BFS multihilos
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a>.
+            </li>
+          </ul>
+
+        </div>
+
+        `,
+      },
+    },
+    {
       title: "React Developer, BOOZ",
       startDate: "01/07/2021",
       endDate: "01/11/2021",
       image: 'assets/images/booz-logo.png',
       description: {
         en: `
-        <p>
-         <p style="margin:0px">Development and maintenance of an e-commerce platform for beverages sales.</p>
-         <p>Working with Next.js framework, react components development, using react-redux , react hooks and tailwindcss.</p>
-         <p style="margin:0px">(techs: React, Next.js)</p>
-          <a href="https://booz.dev/" rel="noopener noreferrer" target="_blank">
-          https://booz.dev/
-          </a>
-        </p>
+        <div>
+          <p>Development and maintenance of an eCommerce platform for the sale of beverages. Working with NextJs framework,
+          React components development using Redux, React hooks, and Tailwindcss.</p>
+          <p>
+            (<a target="_blank" href="https://booz.dev/" rel="noopener noreferrer">
+              <span>booz.dev</span>
+              <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+                </svg>
+              </span>
+            </a>)
+          </p>
+        </div>
       `,
         es: `
-          <p>
-          <p style="margin:0px">Desarrollo y mantenimiento de una plataforma de comercio electrónico para la venta de bebidas.</p>
-          <p>Trabajando con el framework Next.js, desarrollo de react components, usando react-redux, react hooks y tailwindcss.</p>
-          <p style="margin:0px">(tecnologías: React, Next.js)</p>
-            <a href="https://booz.dev/" rel="noopener noreferrer" target="_blank">
-            https://booz.dev/
-            </a>
+        <div>
+            <p>
+              Desarrollo y mantenimiento de una plataforma de comercio electrónico para la venta de bebidas. Trabajando con el framework NextJs,
+              Desarrollo de componentes de React usando Redux, React hooks y Tailwindcss.
+            </p>
+            <p>
+            (<a target="_blank" href="https://booz.dev/" rel="noopener noreferrer">
+              <span>booz.dev</span>
+              <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+                </svg>
+              </span>
+            </a>)
           </p>
-          <p>
+        </div>
 
         `,
       },
@@ -106,36 +236,87 @@ let data = {
       endDate: "01/04/2021",
       image: 'assets/images/logo-guajiro.jpeg',
       description: {
-        en: `Development of mobile and frontend applications using Javascript frameworks
-        like: Angular, Ionic and  React.
-        Backend development using Nodejs framework with relational
-        and non-relational databases like
-        MySQL and MongoDB.
-        Experience in several types of applications such as:
-        <ul>
-          <li>Dynamic Web Applications</li>
-          <li>Single Page and Multi-Page Apps (SPA), (MPA)</li>
-          <li>Portal Web Apps</li>
-          <li>Web Applications with a Content Management System</li>
-          <li>Simulation environments</li>
-          <li>E-commerce Web Apps</li>
-          <li>Development mobile applications</li>
-        <ul>
+        en: `
+        <div>
+          <p>Frontend development and backend development using JavaScript frameworks like: NodeJs, Angular and Ionic.</p>
+          <ul>
+            <li>
+              <a href="https://tv.cubaeduca.cu/" rel="noopener noreferrer" target="_blank" class="desc-link">
+                Development of a streaming web application based on Netflix design
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a> (<em>techs: Node.js, Angular, MySQL</em>).
+            </li>
+            <li>
+              <a class="desc-link" href="https://tienda.mcvcommercial.com/" rel="noopener noreferrer" target="_blank">
+                Development of an ecommerce system with B2B and B2C business models for the Mercedez Benz agency
+                in Cuba
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a>
+              (<em>techs: Node.js, Angular, MySQL, MongoDB, Ionic</em>).
+            </li>
+            <li>
+              <a class="desc-link" href="https://www.havanatursa.com/" rel="noopener noreferrer" target="_blank">
+              Development of hotel and events management system for HavanaturSA
+                <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                  <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                  <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                  <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg>
+                </span>
+              </a> (<em>techs: Node.js, Angular, Vue.js, MySQL</em>).
+            </li>
+          </ul>
+        </div>
       `,
-        es: `Desarrollo de aplicaciones webs y móviles, utilizando frameworks Javascript
-        como:  Angular ,  Ionic  y  React .
-        Desarrollo backend con  Nodejs  utilizando bases de datos relacionales y no relacionales:
-         MySQL  y  MongoDB .
-        Experiencia en varios tipos de aplicaciones como:
+        es: ` <div>
+        <p>Desarrollo frontend y backend usando frameworks JavaScript como: NodeJs, Angular e Ionic.</p>
         <ul>
-          <li>Dynamic Web Applications</li>
-          <li>Single Page and Multi-Page Apps (SPA), (MPA)</li>
-          <li>Portal Web Apps</li>
-          <li>Web Applications with a Content Management System</li>
-          <li>Simulation environments</li>
-          <li>E-commerce Web Apps</li>
-          <li>Development mobile Apps</li>
-      <ul>`,
+          <li>
+            <a href="https://tv.cubaeduca.cu/" rel="noopener noreferrer" target="_blank" class="desc-link">
+            Desarrollo de una aplicación web de streaming basada en el diseño de Netflix
+              <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+                </svg>
+              </span>
+            </a> (<em>techs: Node.js, Angular, MySQL</em>).
+          </li>
+          <li>
+            <a class="desc-link" href="https://tienda.mcvcommercial.com/" rel="noopener noreferrer" target="_blank">
+            Desarrollo de un sistema de comercio electrónico con modelos de negocio B2B y B2C para la agencia Mercedes Benz en Cuba
+              <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+                </svg>
+              </span>
+            </a>
+            (<em>techs: Node.js, Angular, MySQL, MongoDB, Ionic</em>).
+          </li>
+          <li>
+            <a class="desc-link" href="https://www.havanatursa.com/" rel="noopener noreferrer" target="_blank">
+            Desarrollo de sistema de gestión hotelera y de eventos para HavanaturSA
+              <span class="link-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                <path d="M27 33H5a2 2 0 01-2-2V9a2 2 0 012-2h10v2H5v22h22V21h2v10a2 2 0 01-2 2z"></path>
+                <path d="M18 3a1 1 0 000 2h11.59L15.74 18.85a1 1 0 101.41 1.41L31 6.41V18a1 1 0 002 0V3z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+                </svg>
+              </span>
+            </a> (<em>techs: Node.js, Angular, Vue.js, MySQL</em>).
+          </li>
+        </ul>
+      </div>`,
       },
     },
     {
@@ -145,19 +326,9 @@ let data = {
       image: 'assets/images/cujae-logo.png',
       description: {
         es: `
-        <p>
-           Clases de Microcontroladores I : Arquitectura interna del microcontrolador 8051, programación
-          en ensamblador y lenguaje C.
-        <p>
-        <p>  Clases de Introducción a Matlab I : Programación en Matlab, conceptos básicos, entorno de
-        desarrollo, problemas de programación y simulación de procesos físicos.
-      </p>`,
+        <p> He impartido clases prácticas de programación de microcontroladores 8051 en lenguaje ensamblador y C. También cómo usar la herramienta Matlab.</p>`,
         en: `<p>
-          I taught Microcontrollers I: Internal architecture of the 8051 microcontroller, programming
-          in assembly and C language.<p>
-          <p> I taught Introduction to Matlab I: Programming at Matlab, Basic concepts, development
-          environment, programing problems and simulation of physical processes using the MatLab
-          Tool.
+        I have taught practical classes about programming 8051 microcontrollers in assembly and C language. Also how to use the Matlab tool.
       </p>`,
       },
     },

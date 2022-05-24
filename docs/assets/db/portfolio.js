@@ -1,5 +1,32 @@
 let allProject = [
   {
+    name: "Linux Search Everything: A faster and more flexible file browser for Linux",
+    description: {
+      en: `A faster and more flexible file browser for Linux. It offers rich capabilities such as case sensitivity,
+      regular expression-based search, search by selecting multiple file types, control of the algorithm's depth, and more.
+      Also, it allows the choice of custom files not to be taken into account in the search process to improve the search speed.
+      <p>It was made using the Electron framework. The UI was created with Reactjs version 18, using the new concurrency capabilities in this new release.
+       Redux library was used as the global state feature.</p>
+      `,
+      es: `A faster and more flexible file browser for Linux. It offers rich capabilities such as case sensitivity,
+      regular expression-based search, search by selecting multiple file types, control of the algorithm's depth, and more.
+      Also, it allows the choice of custom files not to be taken into account in the search process to improve the search speed.
+      <p>It was made using the Electron framework. The UI was created with Reactjs version 18, using the new concurrency capabilities in this new release.
+       Redux library was used as the global state feature.</p>
+        `,
+    },
+    useStacks: ["Electron", "NodeJs", "React", "Redux"],
+    url: "github.com/josealejandro2928/01-Linux-Search-Everything-Documentation",
+    Files: [
+      {
+        file: "https://www.youtube.com/embed/6iVXQYM4GPg",
+        type: "externalMedia",
+        id: "0",
+      },
+    ],
+    category: "desktop",
+  },
+  {
     name: "Simple image editor in the browser form compress, reformat and resize your image",
     description: {
       es: `Herramienta para comprimir, recortar y cambiar de formato imágenes en el navegador de una manera sencilla.
@@ -25,13 +52,86 @@ let allProject = [
 
       `,
     },
-    useStacks: ["Angular","JavaScript", "HTML5", "CSS3"],
+    useStacks: ["Angular", "JavaScript", "HTML5", "CSS3"],
     url: "ngp-image-picker.surge.sh",
     Files: [
-      { file: "images-editor/1-1.jpeg", type: "image", id: "1" },
-      { file: "images-editor/2-1.jpeg", type: "image", id: "2" },
+      { file: "images-editor/1.jpeg", type: "image", id: "1" },
+      { file: "images-editor/2.png", type: "image", id: "2" },
+      { file: "images-editor/3.png", type: "image", id: "3" },
+      { file: "images-editor/4.png", type: "image", id: "4" },
+      { file: "images-editor/5.png", type: "image", id: "5" },
     ],
     category: "web sites",
+  },
+  {
+    name: "Two Wheel Self Balancing Robot",
+    description: {
+      es: `En este trabajo se diseña y construye un robot autobalanceado sobre dos
+      ruedas basado en el microcontrolador Arduino. Para el control de equilibrio
+      se implementa un algoritmo de tipo PID en cascada. Se aplican diferentes
+      técnicas de filtrado digital para la obtención del ángulo de inclinación, como
+      el Filtro Complemento. Para implementar un controlador PID en cascada,
+      se combinan eficientemente las lecturas de encoders y sensores inerciales que
+      permiten la medición de velocidad del robot. Se construye un prototipo y se le desarrolla una aplicacion movil para u control manual,
+      lectura de sensores y asignacion de coordenadas.`,
+
+      en: `In this work, a two wheels self-balancing robot is developed. For stability
+      control, different algorithms based on PID controllers are evaluated,
+      especially cascaded PID controllers. Different digital filtering techniques are
+      applied to obtain the inclination angle, such as the Complement Filter. In
+      order to implement a cascaded PID controller, the Kalman filter is implemented
+      to efficiently combine the readings of encoders and inertial sensors,
+      obtaining the robot’s speed measurement.A prototype is built and a mobile application is developed for manual control,
+      sensor reading and coordinate assignment.
+      `,
+    },
+    useStacks: ["C++", "Ionic", "Arduino", "HTML5", "CSS3"],
+    url:
+      "github.com/josealejandro2928/Self-Balancing-Arduino-Robot-Controller",
+    Files: [
+      {
+        file: "https://www.youtube.com/embed/NTQIz3hWsak",
+        type: "externalMedia",
+        id: "0",
+      },
+      {
+        file: "https://www.youtube.com/embed/dg8ftpSStIc",
+        type: "externalMedia",
+        id: "1",
+      },
+      {
+        file: "https://www.youtube.com/embed/mijxUfsSrdE",
+        type: "externalMedia",
+        id: "2",
+      },
+      {
+        file: "https://www.youtube.com/embed/O6BeBPsemHU",
+        type: "externalMedia",
+        id: "3",
+      },
+    ],
+    category: "robotics",
+  },
+  {
+    name: "Mobile application for the control of a self-balancing robot",
+    description: {
+      es: `Utilizando <strong> El Framework Ionic </strong>, se desarrolló una aplicación para controlar un robot autoequilibrado a partir del uso de bluetooth.
+       El dispositivo se comunica con la placa Arduino Mega que tiene el módulo bluetooth incorporado HC-06`,
+
+      en: `Using <strong> The Ionic Framework</strong> an application was developed to control a self-balancing robot from the use of bluetooth.
+      The device communicates with the Mega Arduino board that has the built-in bluetooth module HC-06
+      `,
+    },
+    useStacks: ["Ionic", "React", "TypeScript", "HTML5", "CSS3"],
+    url:
+      "github.com/josealejandro2928/ionic-react-mobile-app-self-balancing-robot",
+    Files: [
+      { file: "self-controller/1.png", type: "image", id: "1" },
+      { file: "self-controller/2.png", type: "image", id: "2" },
+      { file: "self-controller/3.png", type: "image", id: "3" },
+      { file: "self-controller/4.png", type: "image", id: "4" },
+    ],
+    category: "mobile apps",
   },
   {
     name:
@@ -143,49 +243,6 @@ let allProject = [
     ],
     category: "landing pages",
   },
-  {
-    name: "Two Wheel Self Balancing Robot",
-    description: {
-      es: `En este trabajo se diseña y construye un robot autobalanceado sobre dos
-      ruedas basado en el microcontrolador Arduino. Para el control de equilibrio
-      se implementa un algoritmo de tipo PID en cascada. Se aplican diferentes
-      técnicas de filtrado digital para la obtención del ángulo de inclinación, como
-      el Filtro Complemento. Para implementar un controlador PID en cascada,
-      se combinan eficientemente las lecturas de encoders y sensores inerciales que
-      permiten la medición de velocidad del robot. Se construye un prototipo y se le desarrolla una aplicacion movil para u control manual,
-      lectura de sensores y asignacion de coordenadas.`,
-
-      en: `In this work, a two wheels self-balancing robot is developed. For stability
-      control, different algorithms based on PID controllers are evaluated,
-      especially cascaded PID controllers. Different digital filtering techniques are
-      applied to obtain the inclination angle, such as the Complement Filter. In
-      order to implement a cascaded PID controller, the Kalman filter is implemented
-      to efficiently combine the readings of encoders and inertial sensors,
-      obtaining the robot’s speed measurement.A prototype is built and a mobile application is developed for manual control,
-      sensor reading and coordinate assignment.
-      `,
-    },
-    useStacks: ["C++", "Ionic", "Arduino", "HTML5", "CSS3"],
-    url: "",
-    Files: [
-      {
-        file: "https://www.youtube.com/embed/dg8ftpSStIc",
-        type: "externalMedia",
-        id: "1",
-      },
-      {
-        file: "https://www.youtube.com/embed/mijxUfsSrdE",
-        type: "externalMedia",
-        id: "2",
-      },
-      {
-        file: "https://www.youtube.com/embed/O6BeBPsemHU",
-        type: "externalMedia",
-        id: "3",
-      },
-    ],
-    category: "robotics",
-  },
 
   {
     name: "Hotels and Events management system for the Havanatur SA company",
@@ -249,27 +306,7 @@ let allProject = [
     ],
     category: "robotics",
   },
-  {
-    name: "Mobile application for the control of a self-balancing robot",
-    description: {
-      es: `Utilizando <strong> El Framework Ionic </strong>, se desarrolló una aplicación para controlar un robot autoequilibrado a partir del uso de bluetooth.
-       El dispositivo se comunica con la placa Arduino Mega que tiene el módulo bluetooth incorporado HC-06`,
 
-      en: `Using <strong> The Ionic Framework</strong> an application was developed to control a self-balancing robot from the use of bluetooth.
-      The device communicates with the Mega Arduino board that has the built-in bluetooth module HC-06
-      `,
-    },
-    useStacks: ["Ionic", "TypeScript", "HTML5", "CSS3"],
-    url:
-      "github.com/josealejandro2928/Self-Balancing-Robot-ionic-apk-controller",
-    Files: [
-      { file: "self-controller/1.jpeg", type: "image", id: "1" },
-      { file: "self-controller/2.jpeg", type: "image", id: "2" },
-      { file: "self-controller/3.jpeg", type: "image", id: "3" },
-      { file: "self-controller/4.jpeg", type: "image", id: "4" },
-    ],
-    category: "mobile apps",
-  },
   {
     name: "My portfolio",
     description: {
