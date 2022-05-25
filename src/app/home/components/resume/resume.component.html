@@ -13,8 +13,6 @@
     <p class="resume-list-title">{{ "Education" | translate }}</p>
 
     <div
-      ngpEnterSection
-      dirY="bottom"
       *ngFor="let item of resume?.education"
       class="resume-list-item"
     >
@@ -39,8 +37,6 @@
       {{ "Professional work experience" | translate }}
     </p>
     <div
-      ngpEnterSection
-      dirY="bottom"
       *ngFor="let item of resume?.professionalEmployment"
       class="resume-list-item"
     >
@@ -64,8 +60,6 @@
       {{ "Vocational work experience" | translate }}
     </p>
     <div
-      ngpEnterSection
-      dirY="bottom"
       *ngFor="let item of resume?.vocationalEmployment"
       class="resume-list-item"
     >

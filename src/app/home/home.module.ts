@@ -25,7 +25,6 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
 import { ChooseThemeComponent } from './components/choose-theme/choose-theme.component';
 import { DialogAppDetailsComponent } from './components/portfolio/dialog-app-details/dialog-app-details.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { NgpEnterSectionModule } from 'ngp-enter-section';
 import { CertificationsComponent } from './components/certifications/certifications.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -60,7 +59,6 @@ import { MatTabsModule } from '@angular/material/tabs';
     GaleryModule,
     MatDialogModule,
     SwiperModule,
-    NgpEnterSectionModule,
     NgpLazyLoadModule,
     MatProgressSpinnerModule,
     MatTabsModule
