@@ -169,8 +169,6 @@ let allProject = [
       { file: "ecommerce/6.jpeg", type: "image", id: "6" },
       { file: "ecommerce/7.jpeg", type: "image", id: "7" },
       { file: "ecommerce/8.jpeg", type: "image", id: "8" },
-      { file: "ecommerce/9.jpeg", type: "image", id: "9" },
-      { file: "ecommerce/10.jpeg", type: "image", id: "10" },
     ],
     category: "web sites",
   },
