@@ -136,7 +136,7 @@ export class GaleryFilesComponent implements OnInit, AfterViewInit, OnDestroy {
             if (entry.target.tagName == 'IFRAME') {
               if (entry.intersectionRatio != 1 && !video.paused) {
                 let iframe = entry.target as HTMLIFrameElement;
-                iframe.contentWindow.postMessage(
+                iframe?.contentWindow?.postMessage(
                   '{"event":"command","func":"' + 'stopVideo' + '","args":""}',
                   '*'
                 );

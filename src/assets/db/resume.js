@@ -1,16 +1,12 @@
 let data = {
   initialText: {
     en: `<p>
-      My professional work has focused mainly on the development of web and mobile applications with
-      the use of Javascript and Python. I have also done robotics work and taught classes at the Technological
-      University of Havana (CUJAE) on object-oriented programming in C ++, matlab programming
-      and microcontroller-based systems.
+    My professional work has focused mainly on developing web and mobile applications using Javascript and Python.
+    I have also done robotics work based on Arduino Board Microcontroller and Raspberry Pi SBC.
     </p>`,
     es: `<p>
-    Mi labor profesional se ha centrado principalmente en el desarrollo de aplicaciones web y móviles con
-    el uso de frameworks Javascript and Python. También he realizado trabajos de robótica e impartido clases en
-    La Universidad Tecnológica de la Habana (CUJAE) sobre programación orientada a objetos en C ++, programación en Matlab
-    y sistemas basados en microcontroladores.
+    Mi trabajo profesional se ha centrado principalmente en el desarrollo de aplicaciones web y móviles utilizando Javascript y Python.
+    También he realizado trabajos de robótica basados en Arduino Board Microcontroller y Raspberry Pi SBC.
   </p>`,
   },
   education: [
