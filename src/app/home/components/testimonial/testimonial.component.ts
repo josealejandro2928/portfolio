@@ -57,6 +57,7 @@ export class TestimonialComponent implements OnInit, AfterViewInit {
         disableOnInteraction: false,
       },
       speed: 1200,
+      autoHeight: true,
       // effect: 'fade',
     };
   }
