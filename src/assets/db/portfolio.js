@@ -64,6 +64,30 @@ let allProject = [
     category: "web sites",
   },
   {
+    name: "React Pokedex Web Page",
+    description: {
+      en: `It is a sample project for testing frontend skills using react library.
+      Simple React app for searching Pokemons
+      The app was generated using create-react-app with **typescripts** and **scss**.
+      No external CSS framework was used. Only fontawesome and google font CDN was used in the project.`,
+      es: `Es un proyecto de ejemplo para probar las habilidades de frontend usando la biblioteca de react.
+      Simple aplicación React para buscar Pokemons
+      La aplicación fue generada usando create-react-app con **typescripts** y **scss**.
+      No se utilizó ningún framework CSS externo. Sólo se utilizó fontawesome y google font CDN en el proyecto.
+      `,
+
+    },
+    useStacks: ["React", "JavaScript","TypeScript", "HTML5", "CSS3"],
+    url: "react-my-pokedex.surge.sh",
+    Files: [
+      { file: "pokedex/1.jpeg", type: "image", id: "1" },
+      { file: "pokedex/2.jpeg", type: "image", id: "2" },
+      { file: "pokedex/3.jpeg", type: "image", id: "3" },
+      { file: "pokedex/4.jpeg", type: "image", id: "4" },
+    ],
+    category: "web sites",
+  },
+  {
     name: "Two Wheel Self Balancing Robot",
     description: {
       es: `En este trabajo se diseña y construye un robot autobalanceado sobre dos
